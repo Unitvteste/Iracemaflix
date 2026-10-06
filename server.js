@@ -61,7 +61,7 @@ const MAX_M3U_ITEMS_VALUE = Number(process.env.MAX_M3U_ITEMS || 0);
 const MAX_M3U_ITEMS = MAX_M3U_ITEMS_VALUE > 0 ? MAX_M3U_ITEMS_VALUE : Infinity;
 
 if (!M3U_URL) {
-  console.error('ERRO: defina M3U_URL nas variáveis de ambiente do Render.');
+  console.error('ERRO: nenhuma playlist M3U foi configurada.');
   process.exit(1);
 }
 
@@ -342,6 +342,23 @@ async function tmdbSearch(query, type) {
   return (data.results || []).slice(0, 20);
 }
 
+async function imdbSuggestionById(id) {
+  const url = new URL(`https://v3.sg.media-imdb.com/suggestion/x/${encodeURIComponent(id)}.json`);
+  const data = await fetchJsonWithTimeout(url, TMDB_TIMEOUT_MS, 'IMDb');
+  const item = Array.isArray(data?.d)
+    ? data.d.find((candidate) => candidate.id === id)
+    : undefined;
+
+  if (!item?.l) return undefined;
+
+  return {
+    title: item.l,
+    original_title: item.l,
+    original_name: item.l,
+    release_date: item.y ? String(item.y) : undefined
+  };
+}
+
 function tmdbResultTitle(result) {
   return result.title || result.name || result.original_title || result.original_name || '';
 }
@@ -400,7 +417,7 @@ async function findM3uEntryForImdbId(type, id) {
   if (!match) return undefined;
 
   const results = await tmdbSearch(match[1], type);
-  const result = results[0];
+  const result = results[0] || (!TMDB_API_KEY ? await imdbSuggestionById(match[1]) : undefined);
   if (!result) return undefined;
 
   return findM3uEntryForTmdb(
@@ -1906,12 +1923,333 @@ builder.defineStreamHandler(
  * Homepage do addon + rotas Stremio.
  */
 const app = express();
+app.get('/manus-routes.json', (_req, res) => {
+  res.type('application/json').sendFile(path.join(__dirname, 'manus-routes.json'));
+});
 app.use(getRouter(builder.getInterface()));
 app.get('/', (_req, res) => {
   res.setHeader('content-type', 'text/html; charset=utf-8');
-  res.end(`<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Iracemaflix</title><style>
-:root{color-scheme:dark;--bg:#070b14;--line:#26334b;--text:#f7f9ff;--muted:#9da9bd;--accent:#e50914}*{box-sizing:border-box}body{margin:0;min-height:100vh;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;background:radial-gradient(circle at 15% 0%,#1a2237 0,var(--bg) 42%);color:var(--text)}main{width:min(1120px,calc(100% - 40px));margin:auto;padding:28px 0 64px}nav{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:8px 0 48px}.brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.2px;font-size:1.15rem}.mark{width:34px;height:34px;display:grid;place-items:center;background:var(--accent);clip-path:polygon(0 0,100% 0,100% 72%,72% 100%,0 100%);font-weight:900}.eyebrow{color:#ff7880;text-transform:uppercase;letter-spacing:.18em;font-size:.72rem;font-weight:800;margin-bottom:18px}h1{font-size:clamp(2.6rem,7vw,5.6rem);line-height:.95;letter-spacing:-.07em;max-width:760px;margin:0 0 24px}h1 span{color:var(--accent)}p{color:var(--muted);line-height:1.65;max-width:620px;font-size:1.05rem}.hero{padding:42px 0 72px}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}.cta{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:50px;padding:0 22px;border-radius:6px;text-decoration:none;font-weight:800;color:white;background:var(--accent);box-shadow:0 12px 26px #e5091433;transition:transform .2s ease,background .2s ease}.cta:hover{transform:translateY(-2px);background:#f31924}.secondary{color:#dce3f2;text-decoration:none;padding:14px 0;font-weight:700}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;border-top:1px solid var(--line);padding-top:22px}.feature{padding:22px;min-height:170px;background:linear-gradient(145deg,#141d2e,#0c1220);border:1px solid var(--line);border-radius:10px}.icon{color:#ff5a62;font-size:1.5rem;margin-bottom:24px}h2{margin:0 0 8px;font-size:1.15rem}.feature p{font-size:.92rem;margin:0}footer{border-top:1px solid var(--line);margin-top:72px;padding-top:22px;color:#748198;font-size:.82rem;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}@media(max-width:700px){main{width:min(100% - 28px,560px)}nav{padding-bottom:26px}.hero{padding-top:28px;padding-bottom:48px}.grid{grid-template-columns:1fr}h1{font-size:3.3rem}}
-</style></head><body><main><nav><div class="brand"><div class="mark">▶</div><div>IRACEMAFLIX</div></div><div style="color:#9da9bd;font-size:.86rem">Filmes · Séries · Ao Vivo</div></nav><section class="hero"><div class="eyebrow">Seu entretenimento em um só lugar</div><h1>Assista ao que você <span>ama.</span></h1><p>Filmes, séries e canais ao vivo com uma experiência simples, rápida e organizada. Entre no catálogo completo do Iracemaflix e encontre sua próxima sessão.</p><div class="actions"><a class="cta" href="https://iracemaflix.eu.cc/">Abrir Iracemaflix <span aria-hidden="true">↗</span></a><a class="secondary" id="stremioLink" href="stremio:///discover">Abrir no Stremio</a><a class="secondary" href="https://nuvio.tv/">Abrir Nuvio</a><a class="secondary" href="/manifest.json">Copiar manifest para instalar</a></div><script>document.getElementById("stremioLink").href="stremio://"+location.host+"/manifest.json";</script></section><section class="grid" aria-label="Categorias"><article class="feature"><div class="icon">▣</div><h2>Filmes</h2><p>Lançamentos, clássicos, 4K e diferentes gêneros para sua sessão.</p></article><article class="feature"><div class="icon">◈</div><h2>Séries</h2><p>Temporadas e episódios organizados para você continuar de onde parou.</p></article><article class="feature"><div class="icon">◉</div><h2>Canais ao vivo</h2><p>Notícias, esportes, entretenimento e programação ao vivo.</p></article></section><footer><span>© ${new Date().getFullYear()} Iracemaflix</span><span>Uma experiência de entretenimento em português</span></footer></main></body></html>`);
+
+  res.end(`<!doctype html>
+<html lang="pt-BR">
+
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Iracemaflix</title>
+
+<style>
+:root{
+  color-scheme:dark;
+  --bg:#070b14;
+  --line:#26334b;
+  --text:#f7f9ff;
+  --muted:#9da9bd;
+  --accent:#348cfe;
+}
+
+*{
+  box-sizing:border-box;
+}
+
+body{
+  margin:0;
+  min-height:100vh;
+  font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+  background:radial-gradient(circle at 15% 0%,#1a2237 0,var(--bg) 42%);
+  color:var(--text);
+}
+
+main{
+  width:min(1120px,calc(100% - 40px));
+  margin:auto;
+  padding:28px 0 64px;
+}
+
+nav{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+  padding:8px 0 48px;
+}
+
+.brand{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  font-weight:800;
+  letter-spacing:.2px;
+  font-size:1.15rem;
+}
+
+.mark{
+  width:34px;
+  height:34px;
+  display:grid;
+  place-items:center;
+  background:var(--accent);
+  clip-path:polygon(0 0,100% 0,100% 72%,72% 100%,0 100%);
+  font-weight:900;
+}
+
+.eyebrow{
+  color:#6eacff;
+  text-transform:uppercase;
+  letter-spacing:.18em;
+  font-size:.72rem;
+  font-weight:800;
+  margin-bottom:18px;
+}
+
+h1{
+  font-size:clamp(2.6rem,7vw,5.6rem);
+  line-height:.95;
+  letter-spacing:-.07em;
+  max-width:760px;
+  margin:0 0 24px;
+}
+
+h1 span{
+  color:var(--accent);
+}
+
+p{
+  color:var(--muted);
+  line-height:1.65;
+  max-width:620px;
+  font-size:1.05rem;
+}
+
+.hero{
+  padding:42px 0 72px;
+}
+
+.actions{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  margin-top:30px;
+}
+
+.cta{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  min-height:50px;
+  padding:0 22px;
+  border-radius:6px;
+  text-decoration:none;
+  font-weight:800;
+  color:white;
+  background:var(--accent);
+  box-shadow:0 12px 26px #348cfe33;
+  transition:transform .2s ease,background .2s ease;
+}
+
+.cta:hover{
+  transform:translateY(-2px);
+  background:#5aa0ff;
+}
+
+.secondary{
+  color:#dce3f2;
+  text-decoration:none;
+  padding:14px 0;
+  font-weight:700;
+}
+
+.secondary:hover{
+  color:var(--accent);
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:16px;
+  border-top:1px solid var(--line);
+  padding-top:22px;
+}
+
+.feature{
+  padding:22px;
+  min-height:170px;
+  background:linear-gradient(145deg,#141d2e,#0c1220);
+  border:1px solid var(--line);
+  border-radius:10px;
+}
+
+.icon{
+  color:#5aa0ff;
+  font-size:1.5rem;
+  margin-bottom:24px;
+}
+
+h2{
+  margin:0 0 8px;
+  font-size:1.15rem;
+}
+
+.feature p{
+  font-size:.92rem;
+  margin:0;
+}
+
+footer{
+  border-top:1px solid var(--line);
+  margin-top:72px;
+  padding-top:22px;
+  color:#748198;
+  font-size:.82rem;
+  display:flex;
+  justify-content:space-between;
+  gap:16px;
+  flex-wrap:wrap;
+}
+
+@media(max-width:700px){
+  main{
+    width:min(100% - 28px,560px);
+  }
+
+  nav{
+    padding-bottom:26px;
+  }
+
+  .hero{
+    padding-top:28px;
+    padding-bottom:48px;
+  }
+
+  .grid{
+    grid-template-columns:1fr;
+  }
+
+  h1{
+    font-size:3.3rem;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<main>
+
+<nav>
+  <div class="brand">
+    <div class="mark">▶</div>
+    <div>IRACEMAFLIX</div>
+  </div>
+
+  <div style="color:#9da9bd;font-size:.86rem">
+    Filmes · Séries · Ao Vivo
+  </div>
+</nav>
+
+<section class="hero">
+
+  <div class="eyebrow">
+    Seu entretenimento em um só lugar
+  </div>
+
+  <h1>
+    Assista ao que você <span>ama.</span>
+  </h1>
+
+  <p>
+    Filmes, séries e canais ao vivo com uma experiência simples,
+    rápida e organizada. Entre no catálogo completo do Iracemaflix
+    e encontre sua próxima sessão.
+  </p>
+
+  <div class="actions">
+
+    <a
+      class="cta"
+      href="https://iracemaflix.eu.cc/"
+    >
+      Abrir Iracemaflix
+      <span aria-hidden="true">↗</span>
+    </a>
+
+    <a
+      class="secondary"
+      id="stremioLink"
+      href="stremio:///discover"
+    >
+      Abrir no Stremio
+    </a>
+
+    <a
+      class="secondary"
+      href="https://nuvio.tv/"
+    >
+      Abrir Nuvio
+    </a>
+
+    <a
+      class="secondary"
+      href="/manifest.json"
+    >
+      Manifest
+    </a>
+
+  </div>
+
+</section>
+
+<section class="grid" aria-label="Categorias">
+
+  <article class="feature">
+    <div class="icon">▣</div>
+    <h2>Filmes</h2>
+    <p>
+      Lançamentos, clássicos, 4K e diferentes gêneros
+      para sua sessão.
+    </p>
+  </article>
+
+  <article class="feature">
+    <div class="icon">◈</div>
+    <h2>Séries</h2>
+    <p>
+      Temporadas e episódios organizados para você
+      continuar de onde parou.
+    </p>
+  </article>
+
+  <article class="feature">
+    <div class="icon">◉</div>
+    <h2>Canais ao vivo</h2>
+    <p>
+      Notícias, esportes, entretenimento e programação
+      ao vivo.
+    </p>
+  </article>
+
+</section>
+
+<footer>
+  <span>
+    © ${new Date().getFullYear()} Iracemaflix
+  </span>
+
+  <span>
+    Uma experiência de entretenimento em português
+  </span>
+</footer>
+
+</main>
+
+<script>
+document.getElementById('stremioLink').href =
+  'stremio://' + location.host + '/manifest.json';
+</script>
+
+</body>
+</html>`);
 });
 const server = app.listen(PORT, () => {
   console.log(`HTTP addon accessible at: http://127.0.0.1:${PORT}/manifest.json`);
