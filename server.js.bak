@@ -14,6 +14,7 @@ const getRouter = require('stremio-addon-sdk/src/getRouter');
 const { fetch: undiciFetch, Agent } = require('undici');
 
 const AdmZip = require('adm-zip');
+const path = require('path');
 
 try {
     const zip = new AdmZip(path.join(__dirname, 'playlist-real-full.zip'));
