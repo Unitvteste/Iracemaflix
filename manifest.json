@@ -1,0 +1,173 @@
+{
+  "id": "Iracemaflix",
+  "version": "1.0.0",
+  "name": "Iracemaflix",
+  "description": "Filmes, séries e TV",
+  "logo": "https://files.catbox.moe/628bx9.png",
+  "resources": [
+    "catalog",
+    "meta",
+    "stream"
+  ],
+  "types": [
+    "movie",
+    "series",
+    "tv"
+  ],
+  "idPrefixes": [
+    "m3u-",
+    "m3u-series-",
+    "xtream-",
+    "tt"
+  ],
+  "catalogs": [
+    {
+      "type": "movie",
+      "id": "m3u-movies",
+      "name": "Iracemaflix • Filmes",
+      "extra": [
+        {
+          "name": "search",
+          "isRequired": false
+        },
+        {
+          "name": "genre",
+          "isRequired": false,
+          "options": [
+            "ANIMACAO/INFANTIL",
+            "ANIMES",
+            "AÇAO",
+            "CINEMA",
+            "COMEDIA",
+            "DC",
+            "DOCUMENTARIOS · Filmes",
+            "DRAMA",
+            "ESPECIAL DE NATAL",
+            "FAROESTE",
+            "FICCAO/FANTASIA",
+            "GUERRA",
+            "LANCAMENTOS",
+            "LANÇAMENTOS LEGENDADOS",
+            "LEGENDADOS · Filmes",
+            "LOLLAPALOOZA BRASIL 2025",
+            "MARVEL",
+            "NACIONAIS",
+            "RELIGIOSOS · Filmes",
+            "ROMANCE",
+            "SHOWS INTERNACIONAIS",
+            "SHOWS NACIONAIS",
+            "STAND-UP",
+            "SUSPENSE",
+            "TERROR",
+            "THE TOWN 2025",
+            "UHD 4K · Filmes"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "series",
+      "id": "m3u-series",
+      "name": "Iracemaflix • Séries",
+      "extra": [
+        {
+          "name": "search",
+          "isRequired": false
+        },
+        {
+          "name": "genre",
+          "isRequired": false,
+          "options": [
+            "AMAZON PRIME VIDEO",
+            "APPLETV+",
+            "BRASIL PARALELO",
+            "CRUNCHYROLL",
+            "DESENHOS",
+            "DISCOVERY+",
+            "DISNEY+ · Séries",
+            "DORAMA",
+            "FILMES E SERIES · Séries",
+            "GLOBOPLAY",
+            "HBO MAX",
+            "NETFLIX",
+            "NOVELAS",
+            "PARAMOUNT+",
+            "SERIES TV",
+            "SHORTS",
+            "SHOWS",
+            "STAR+"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "tv",
+      "id": "m3u-tv",
+      "name": "Iracemaflix • TV ao vivo",
+      "extra": [
+        {
+          "name": "search",
+          "isRequired": false
+        },
+        {
+          "name": "genre",
+          "isRequired": false,
+          "options": [
+            "24 HORAS PARA RELAXAR",
+            "A FAZENDA 18",
+            "ABERTOS",
+            "ANIMES 24 HORAS",
+            "BAND",
+            "BRASILEIRAO",
+            "CINE SKY",
+            "CLIPES 24 HORAS",
+            "DAZN",
+            "DESENHOS 24 HORAS",
+            "DISCOVERY",
+            "DISNEY+ · Canais",
+            "DOCUMENTARIOS · Canais",
+            "ELEVEN SPORTS",
+            "ESPN",
+            "ESPORTES",
+            "ESTADUAIS",
+            "FILMES 24 HORAS",
+            "FILMES E SERIES · Canais",
+            "GLOBO CAPITAIS",
+            "GLOBO INTERIOR",
+            "H265/HEVC",
+            "HBO",
+            "INFANTIS",
+            "JOGOS DO DIA",
+            "LEGENDADOS · Canais",
+            "MAX",
+            "MUSICAS",
+            "NBA PAY-PER-VIEW",
+            "NFL GAMEPASS",
+            "NOTICIAS",
+            "NOTICIAS INTERNACIONAIS",
+            "PAY-PER-VIEW",
+            "PREMIERE",
+            "PROGRAMAS DE TV 24 HORAS",
+            "RECORD TV",
+            "REELSHORT 24 HORAS",
+            "RELIGIOSOS · Canais",
+            "SBT",
+            "SERIES 24 HORAS",
+            "SERIES 24H POR TEMPORADA",
+            "SPORTS WORLD",
+            "SPORTV",
+            "STAND-UP 24 HORAS",
+            "TELECINE",
+            "UHD 4K · Canais",
+            "VARIEDADES",
+            "YOUTUBE 24 HORAS"
+          ]
+        }
+      ]
+    }
+  ],
+  "behaviorHints": {
+    "configurable": false,
+    "configurationRequired": false
+  }
+}
