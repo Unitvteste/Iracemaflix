@@ -43,10 +43,16 @@ dns.setDefaultResultOrder('ipv4first');
 
 const PORT = Number(process.env.PORT || 7000);
 const M3U_URL = process.env.M3U_URL || './playlist-real-full.m3u';
+const M3U_SOURCES = [
+  { id: 'lista-m3u', name: process.env.M3U_SOURCE_NAME || 'Lista M3U', url: M3U_URL },
+  { id: 'smart-cms', name: 'Smart CMS', url: process.env.SMART_M3U_URL || '' },
+  { id: 'revenda-imperio', name: 'Revenda Império', url: process.env.REVENDA_M3U_URL || '' }
+].filter((source) => source.url && source.url.trim());
 const XTREAM_URL = (process.env.XTREAM_URL || '').replace(/\/$/, '');
 const XTREAM_USERNAME = process.env.XTREAM_USERNAME || '';
 const XTREAM_PASSWORD = process.env.XTREAM_PASSWORD || '';
 const XTREAM_ENABLED = Boolean(XTREAM_URL && XTREAM_USERNAME && XTREAM_PASSWORD);
+const XTREAM_SOURCE_NAME = process.env.XTREAM_SOURCE_NAME || 'CDN4K';
 const LOCAL_PLAYLIST = Boolean(M3U_URL && !/^https?:\/\//i.test(M3U_URL.trim()));
 const TMDB_API_KEY = process.env.TMDB_API_KEY || '';
 const TMDB_LANGUAGE = process.env.TMDB_LANGUAGE || 'pt-BR';
@@ -63,25 +69,22 @@ const XTREAM_SOURCES = [
     id: 'primary',
     base: XTREAM_URL,
     username: XTREAM_USERNAME,
-    password: XTREAM_PASSWORD
+    password: XTREAM_PASSWORD,
+    sourceName: XTREAM_SOURCE_NAME
   } : null,
   {
     id: 'urlsync',
     base: 'http://auth.urlsync.gy',
     username: 'russo20',
-    password: '5a6bqe1w2qq'
-  },
-  {
-    id: '5ce',
-    base: 'http://5ce.me',
-    username: '982268151',
-    password: 'ativo1357'
+    password: '5a6bqe1w2qq',
+    sourceName: 'URLSync'
   },
   {
     id: 'cms-central',
     base: 'http://smart.cms-central.ovh',
     username: 'x0r9so',
-    password: 'v9oul523'
+    password: 'v9oul523',
+    sourceName: 'Smart CMS'
   }
 ].filter(Boolean);
 
@@ -99,6 +102,7 @@ const CACHE_TTL_MS = Number(
 const M3U_TIMEOUT_MS = Number(
   process.env.M3U_TIMEOUT_MS || 30 * 1000
 );
+const M3U_SOURCE_TIMEOUT_MS = Number(process.env.M3U_SOURCE_TIMEOUT_MS || 30 * 1000);
 
 // Limite por resposta do catálogo. Zero não significa mais infinito:
 // mantém o catálogo paginado e evita tentar devolver centenas de milhares de itens.
@@ -117,7 +121,7 @@ if (!M3U_URL) {
 
 const CACHE_FILE = path.join(
   os.tmpdir(),
-  `iracemaflix-m3u-v8-${SAFE_MODE ? 'clean' : 'full'}.jsonl`
+  `iracemaflix-m3u-v9-${SAFE_MODE ? 'clean' : 'full'}.jsonl`
 );
 
 let cache = {
@@ -279,6 +283,7 @@ function xtreamEntry(item, kind, extension = 'mp4') {
     group: xtreamGroup(item),
     provider: 'Xtream',
     xtreamSource: source,
+    sourceName: source.sourceName || (source.id === 'cms-central' ? 'Smart CMS' : source.id === 'urlsync' ? 'URLSync' : XTREAM_SOURCE_NAME),
     tvgId: item.epg_channel_id || item.epg_channel || undefined,
     type: kind === 'live' ? 'tv' : kind,
     episode: item.episode || (
@@ -487,8 +492,9 @@ async function ensureEpg() {
     }));
     const valid = results.filter(Boolean);
     if (!valid.length) {
-      epgCache.loading = null;
-      throw new Error('Nenhuma fonte EPG respondeu');
+      console.warn('[EPG] Nenhuma fonte respondeu; continuando sem programação.');
+      epgCache = { expiresAt: Date.now() + EPG_CACHE_TTL_MS, loading: null, source: '', channels: new Map(), programmes: new Map() };
+      return epgCache;
     }
     const channels = new Map();
     const programmes = new Map();
@@ -564,7 +570,9 @@ function epgScheduleForEntry(entry) {
     .filter((programme) => xmltvTime(programme.stop || programme.start) >= now)
     .sort((a, b) => xmltvTime(a.start) - xmltvTime(b.start))
     .slice(0, 3);
-  return schedule;
+  if (schedule.length) return schedule;
+  const current = epgForEntry(entry);
+  return current ? [current] : [];
 }
 
 async function fetchTmdbJson(url) {
@@ -1167,7 +1175,7 @@ function catalogGroup(group, type) {
   return `${normalized} · ${label}`;
 }
 
-function parseM3U(text) {
+function parseM3U(text, sourceName = 'Lista M3U') {
   const lines = text
     .split(/\r?\n/)
     .map((line) => line.trim());
@@ -1219,6 +1227,7 @@ function parseM3U(text) {
       group: catalogGroup(attrs['group-title'] || 'Sem categoria', type),
       type,
       provider: 'M3U',
+      sourceName,
       episode,
       id: `m3u-${hash(url)}`
     });
@@ -1229,7 +1238,7 @@ function parseM3U(text) {
   return entries;
 }
 
-function entryFromLines(extinf, rawUrl) {
+function entryFromLines(extinf, rawUrl, sourceName = 'Lista M3U') {
   const comma = extinf.indexOf(',');
 
   const title =
@@ -1271,6 +1280,8 @@ function entryFromLines(extinf, rawUrl) {
 
     provider: 'M3U',
 
+    sourceName,
+
     episode,
 
     id: `m3u-${hash(rawUrl)}`
@@ -1289,30 +1300,22 @@ function isAdultEntry(entry) {
 /*
  * Cria as URLs de tentativa.
  */
-function getM3UUrls() {
-  const original = M3U_URL.trim();
-
+function getM3UUrls(url) {
+  const original = String(url || '').trim();
+  if (!original) return [];
   if (original.startsWith('http://')) {
-    return [
-      original.replace(/^http:\/\//i, 'https://'),
-      original
-    ];
+    return original.includes(':80/') ? [original] : [original, original.replace(/^http:\/\//i, 'https://')];
   }
-
   if (original.startsWith('https://')) {
-    return [
-      original,
-      original.replace(/^https:\/\//i, 'http://')
-    ];
+    return [original, original.replace(/^https:\/\//i, 'http://')];
   }
-
   return [original];
 }
 
 /*
  * Baixa a M3U com timeout.
  */
-async function downloadM3U(url) {
+async function downloadM3U(url, timeoutMs = M3U_TIMEOUT_MS) {
   // Permite empacotar a playlist no projeto do Render e evitar novo download externo.
   if (!/^https?:\/\//i.test(url)) {
     const localPath = url.replace(/^file:\/\//i, '');
@@ -1333,7 +1336,7 @@ async function downloadM3U(url) {
 
   const timeout = setTimeout(() => {
     controller.abort();
-  }, M3U_TIMEOUT_MS);
+  }, timeoutMs);
 
   try {
     console.log(`[M3U] Conectando: ${url}`);
@@ -1379,7 +1382,7 @@ async function downloadM3U(url) {
   } catch (error) {
     if (error.name === 'AbortError') {
       throw new Error(
-        `tempo total esgotado após ${M3U_TIMEOUT_MS} ms`
+        `tempo total esgotado após ${timeoutMs} ms`
       );
     }
 
@@ -1409,226 +1412,80 @@ async function downloadM3U(url) {
  * continua disponível.
  */
 async function loadPlaylistToDisk() {
-  const urls = getM3UUrls();
-
-  let response = null;
-  let lastError = null;
-
-  console.log(
-    `[M3U] Iniciando atualização. Tentativas: ${urls.length}`
+  const sources = M3U_SOURCES.flatMap((source) =>
+    getM3UUrls(source.url).map((url) => ({ ...source, url }))
   );
-
-  for (const url of urls) {
-    try {
-      response = await downloadM3U(url);
-      console.log(
-        `[M3U] Conexão estabelecida: ${url}`
-      );
-      break;
-
-    } catch (error) {
-      lastError = error;
-
-      console.error(
-        `[M3U] Falha em ${url}: ${error.message}`
-      );
-    }
-  }
-
-  /*
-   * Nenhuma URL respondeu.
-   */
-  if (!response) {
-    const errorMessage =
-      `Falha ao baixar M3U após tentar ${urls.join(' e ')}: ` +
-      `${lastError?.message || 'erro de conexão'}`;
-
-    /*
-     * Se já existe cache válido, NÃO apaga.
-     */
-    if (fs.existsSync(CACHE_FILE)) {
-      console.warn(
-        '[M3U] Provedor indisponível. Mantendo cache anterior.'
-      );
-
-      return cache.count || await countCacheEntries();
-    }
-
-    throw new Error(errorMessage);
-  }
-
-  const tempFile =
-    `${CACHE_FILE}.${process.pid}.tmp`;
-
-  /*
-   * Remove temporário antigo.
-   */
-  try {
-    fs.rmSync(tempFile, {
-      force: true
-    });
-  } catch {}
-
-  const output = fs.createWriteStream(
-    tempFile,
-    {
-      encoding: 'utf8'
-    }
-  );
-
-  const inputStream =
-    typeof response.body?.getReader === 'function'
-      ? Readable.fromWeb(response.body)
-      : response.body;
-
-  const input = readline.createInterface({
-    input: inputStream,
-    crlfDelay: Infinity
-  });
-
-  let extinf = null;
+  const tempFile = `${CACHE_FILE}.${process.pid}.tmp`;
+  fs.rmSync(tempFile, { force: true });
+  const output = fs.createWriteStream(tempFile, { encoding: 'utf8' });
   let count = 0;
   let skippedAdult = 0;
+  let loadedSources = 0;
+  let lastError = null;
 
+  console.log(`[M3U] Iniciando atualização. Fontes configuradas: ${M3U_SOURCES.length}`);
   try {
-    for await (const rawLine of input) {
-      const line = rawLine.trim();
-
-      if (line.startsWith('#EXTINF')) {
-        extinf = line;
+    for (const source of sources) {
+      if (count >= MAX_M3U_ITEMS) break;
+      let response;
+      try {
+        response = await downloadM3U(source.url, /^https?:\/\//i.test(source.url) ? M3U_SOURCE_TIMEOUT_MS : M3U_TIMEOUT_MS);
+        console.log(`[M3U] Fonte conectada: ${source.name} (${source.url.replace(/([?&](?:username|password)=)[^&]+/gi, '$1***')})`);
+        loadedSources += 1;
+      } catch (error) {
+        lastError = error;
+        console.error(`[M3U] Fonte indisponível: ${source.name} — ${error.message}`);
         continue;
       }
 
-      // Algumas playlists quebram um EXTINF no meio de uma aspa/atributo.
-      // Une a continuação antes de tentar interpretá-la como URL.
-      if (
-        extinf &&
-        (extinf.match(/\"/g) || []).length % 2 === 1 &&
-        line &&
-        !line.startsWith('#')
-      ) {
-        extinf += ` ${line}`;
-        continue;
-      }
-
-      if (
-        extinf &&
-        line &&
-        !line.startsWith('#')
-      ) {
-        const entry = entryFromLines(
-          extinf,
-          line
-        );
-
-        if (
-          SAFE_MODE &&
-          isAdultEntry(entry)
-        ) {
-          skippedAdult += 1;
+      const inputStream = typeof response.body?.getReader === 'function' ? Readable.fromWeb(response.body) : response.body;
+      const input = readline.createInterface({ input: inputStream, crlfDelay: Infinity });
+      const readTimeout = /^https?:\/\//i.test(source.url) ? M3U_SOURCE_TIMEOUT_MS : M3U_TIMEOUT_MS;
+      const readTimer = setTimeout(() => inputStream.destroy(new Error(`leitura excedeu ${readTimeout} ms`)), readTimeout);
+      let extinf = null;
+      try {
+        for await (const rawLine of input) {
+          const line = rawLine.trim();
+          if (line.startsWith('#EXTINF')) { extinf = line; continue; }
+          if (extinf && (extinf.match(/\"/g) || []).length % 2 === 1 && line && !line.startsWith('#')) {
+            extinf += ` ${line}`;
+            continue;
+          }
+          if (!extinf || !line || line.startsWith('#')) continue;
+          const entry = entryFromLines(extinf, line, source.name);
           extinf = null;
-          continue;
+          if (SAFE_MODE && isAdultEntry(entry)) { skippedAdult += 1; continue; }
+          if (!output.write(`${JSON.stringify(entry)}\n`)) await new Promise((resolve) => output.once('drain', resolve));
+          count += 1;
+          if (count >= MAX_M3U_ITEMS) break;
         }
-
-        if (
-          !output.write(
-            `${JSON.stringify(entry)}\n`
-          )
-        ) {
-          await new Promise((resolve) =>
-            output.once(
-              'drain',
-              resolve
-            )
-          );
-        }
-
-        count += 1;
-        extinf = null;
-
-        if (count >= MAX_M3U_ITEMS) {
-          console.warn(
-            `[M3U] Limite MAX_M3U_ITEMS atingido: ${MAX_M3U_ITEMS}`
-          );
-          break;
-        }
+      } catch (error) {
+        console.error(`[M3U] Leitura interrompida em ${source.name}: ${error.message}`);
+      } finally {
+        clearTimeout(readTimer);
+        input.close();
       }
     }
-
-    await new Promise((resolve, reject) => {
-      output.end((error) =>
-        error
-          ? reject(error)
-          : resolve()
-      );
-    });
-
+    await new Promise((resolve, reject) => output.end((error) => error ? reject(error) : resolve()));
   } catch (error) {
-    try {
-      output.destroy();
-    } catch {}
-
-    fs.rmSync(tempFile, {
-      force: true
-    });
-
-    /*
-     * Se a transferência falhar e já houver cache,
-     * mantém o cache anterior.
-     */
+    output.destroy();
+    fs.rmSync(tempFile, { force: true });
     if (fs.existsSync(CACHE_FILE)) {
-      console.error(
-        `[M3U] Erro lendo playlist: ${error.message}`
-      );
-
-      console.warn(
-        '[M3U] Mantendo cache anterior.'
-      );
-
+      console.error(`[M3U] Erro lendo fontes: ${error.message}; mantendo cache anterior.`);
       return cache.count || await countCacheEntries();
     }
-
     throw error;
   }
 
   if (!count) {
-    fs.rmSync(tempFile, {
-      force: true
-    });
-
-    if (fs.existsSync(CACHE_FILE)) {
-      console.warn(
-        '[M3U] Nenhum item encontrado. Mantendo cache anterior.'
-      );
-
-      return cache.count || await countCacheEntries();
-    }
-
-    throw new Error(
-      'A URL respondeu, mas nenhum item M3U válido foi encontrado'
-    );
+    fs.rmSync(tempFile, { force: true });
+    if (fs.existsSync(CACHE_FILE)) return cache.count || await countCacheEntries();
+    throw new Error(`Nenhuma fonte M3U respondeu ou retornou itens válidos${lastError ? `: ${lastError.message}` : ''}`);
   }
 
-  /*
-   * Só substitui o cache depois que a nova M3U
-   * foi totalmente processada.
-   */
-  fs.renameSync(
-    tempFile,
-    CACHE_FILE
-  );
-
+  fs.renameSync(tempFile, CACHE_FILE);
   playlistEntries = null;
-
-  console.log(
-    `[M3U] Cache atualizado: ${count} itens` +
-    (
-      SAFE_MODE
-        ? ` (${skippedAdult} adultos removidos)`
-        : ''
-    )
-  );
-
+  console.log(`[M3U] Cache atualizado: ${count} itens de ${loadedSources} fonte(s)` + (SAFE_MODE ? ` (${skippedAdult} adultos removidos)` : ''));
   return count;
 }
 
@@ -1659,7 +1516,7 @@ async function ensurePlaylist() {
   /*
    * Cache local já processado: hidrata o índice uma vez e não baixa/reprocessa.
    */
-  if (LOCAL_PLAYLIST && fs.existsSync(CACHE_FILE) && !playlistEntries) {
+  if (LOCAL_PLAYLIST && M3U_SOURCES.length === 1 && fs.existsSync(CACHE_FILE) && !playlistEntries) {
     if (!cache.loading) {
       cache.loading = hydratePlaylistFromDisk()
         .then((count) => {
@@ -1877,15 +1734,15 @@ function streamFor(entry, context = [], index = 0) {
     ...entry.requestHeaders
   };
   const source = entry.provider === 'Xtream'
-    ? 'Iracemaflix 1'
-    : 'Iracemaflix 2';
+    ? (entry.sourceName || XTREAM_SOURCE_NAME)
+    : (entry.sourceName || 'Lista M3U');
   const quality = qualityFor(entry);
   const audio = isDublado(entry)
     ? 'Dublado'
     : isLegendado(entry)
       ? 'Legendado'
       : '';
-  const server = entry.provider === 'Xtream' ? serverLabel(entry.xtreamSource) : '';
+  const server = entry.provider === 'Xtream' ? serverLabel(entry.xtreamSource) : `Fonte: ${source}`;
   const schedule = entry.type === 'tv' ? epgScheduleForEntry(entry) : [];
   const current = currentEpgProgramme(schedule);
   const scheduleLines = schedule.map((programme, position) => {
@@ -2060,7 +1917,7 @@ function qualityFor(entry) {
     if (/8k|4320p/i.test(explicit)) return '8K';
     if (/4k|2160p|uhd/i.test(explicit)) return '4K';
     if (/1440p|2k/i.test(explicit)) return '1440p';
-    if (/1080p|full[ ._-]?hd|fhd/i.test(explicit)) return 'Full HD';
+    if (/1080p|f(?:ull|ul)?[ ._-]?hd/i.test(explicit)) return 'Full HD';
     if (/720p|hd/i.test(explicit)) return 'HD';
     return 'Auto';
   }
@@ -2068,10 +1925,16 @@ function qualityFor(entry) {
   if (/8k|4320p/i.test(text)) return '8K';
   if (/4k|2160p|uhd/i.test(text)) return '4K';
   if (/1440p|2k/i.test(text)) return '1440p';
-  if (/1080p|full[ ._-]?hd|fhd/i.test(text)) return 'Full HD';
+  if (/1080p|f(?:ull|ul)?[ ._-]?hd/i.test(text)) return 'Full HD';
   if (/720p|hd/i.test(text)) return 'HD';
   if (/576p|480p|sd/i.test(text)) return 'SD';
   return 'Auto';
+}
+
+function filterEntriesToSelectedQuality(entries, selected) {
+  const selectedQuality = qualityFor(selected);
+  if (!selectedQuality || selectedQuality === 'Auto') return entries;
+  return entries.filter((entry) => qualityFor(entry) === selectedQuality);
 }
 
 async function findRelatedEntries(type, entry, season, episode) {
@@ -2516,7 +2379,7 @@ builder.defineStreamHandler(
       let m3uItems = [];
       try {
         await ensurePlaylist();
-        m3uItems = await findRelatedEntriesByTitle('movie', item.name);
+        m3uItems = filterEntriesToSelectedQuality(await findRelatedEntriesByTitle('movie', item.name), xtreamItem);
       } catch (error) {
         console.warn(`[STREAM] M3U indisponível para filme: ${error.message}`);
       }
@@ -2541,11 +2404,11 @@ builder.defineStreamHandler(
       if (selected) {
         try {
           const exactM3u = await withTimeout(
-            ensurePlaylist().then(() => findSingleEntryByTitle('tv', selected.name)),
+            ensurePlaylist().then(() => findRelatedEntriesByTitle('tv', selected.name)),
             CHANNEL_M3U_TIMEOUT_MS,
-            undefined
+            []
           );
-          if (exactM3u) m3uItems = [exactM3u];
+          if (Array.isArray(exactM3u)) m3uItems = filterEntriesToSelectedQuality(exactM3u, selected);
         } catch (error) {
           console.warn(`[STREAM] M3U indisponível para canal: ${error.message}`);
         }
@@ -2584,35 +2447,49 @@ builder.defineStreamHandler(
       let m3uItems = [];
       try {
         await ensurePlaylist();
-        m3uItems = await findRelatedEntriesByTitle(
+        m3uItems = filterEntriesToSelectedQuality(await findRelatedEntriesByTitle(
           'series',
           item.name,
           seasonValue,
           episodeValue
-        );
+        ), xtreamItem);
       } catch (error) {
         console.warn(`[STREAM] M3U indisponível para episódio: ${error.message}`);
       }
-      return { streams: streamsForEntries([xtreamItem, ...m3uItems]) };
+      return { streams: streamsForEntries([xtreamItem, ...filterEntriesToSelectedQuality(m3uItems, episodeData)]) };
     }
     if (/^tt\d+(?::\d+:\d+)?$/i.test(String(id))) {
       try {
         const idMatch = String(id).match(/^tt\d+(?::(\d+):(\d+))?$/i);
         const result = await findImdbResult(type, id);
         const xtreamEntries = await findXtreamEntriesForImdb(type, id, result);
-        if (xtreamEntries.length) return { streams: streamsForEntries(xtreamEntries) };
-
-        // Só cai na M3U depois que a busca rápida Xtream terminou sem resultado.
-        await ensurePlaylist();
-        const entry = result
-          ? await findM3uEntryForTmdb(type, result, idMatch?.[1], idMatch?.[2])
-          : undefined;
-        const m3uEntries = entry
-          ? await findRelatedEntries(type, entry, entry.episode?.season, entry.episode?.episode)
-          : [];
-        if (entry && !m3uEntries.length) m3uEntries.push(entry);
+        let entry;
+        let m3uEntries = [];
+        try {
+          // A M3U é consultada em paralelo lógico, mas nunca pode travar o retorno Xtream.
+          await withTimeout(ensurePlaylist(), CHANNEL_M3U_TIMEOUT_MS, null);
+          entry = result
+            ? await withTimeout(
+                findM3uEntryForTmdb(type, result, idMatch?.[1], idMatch?.[2]),
+                CHANNEL_M3U_TIMEOUT_MS,
+                undefined
+              )
+            : undefined;
+          m3uEntries = entry
+            ? await withTimeout(
+                findRelatedEntries(type, entry, entry.episode?.season, entry.episode?.episode),
+                CHANNEL_M3U_TIMEOUT_MS,
+                []
+              )
+            : [];
+          if (entry && !m3uEntries.length) m3uEntries.push(entry);
+          m3uEntries = filterEntriesToSelectedQuality(m3uEntries, entry);
+        } catch (error) {
+          console.warn(`[STREAM] M3U indisponível na busca IMDb: ${error.message}`);
+        }
+        const streams = streamsForEntries([...xtreamEntries, ...m3uEntries]);
         sourceLog('imdb-stream-result', { type, id, hasResult: Boolean(result), hasEntry: Boolean(entry), xtream: xtreamEntries.length, m3u: m3uEntries.length });
-        return { streams: streamsForEntries(m3uEntries) };
+        return { streams };
       } catch (error) {
         console.warn(`[STREAM] IMDb/TMDB indisponível: ${error.message}`);
         return { streams: [] };
@@ -2631,8 +2508,8 @@ builder.defineStreamHandler(
       return {
         streams: entry
           ? streamsForEntries([
-              ...xtreamEntries,
-              ...(await findRelatedEntries('movie', entry))
+              ...filterEntriesToSelectedQuality(xtreamEntries, entry),
+              ...filterEntriesToSelectedQuality(await findRelatedEntries('movie', entry), entry)
             ])
           : []
       };
@@ -2648,8 +2525,8 @@ builder.defineStreamHandler(
       return {
         streams: entry
           ? streamsForEntries([
-              ...xtreamEntries,
-              ...(await findRelatedEntries('tv', entry))
+              ...filterEntriesToSelectedQuality(xtreamEntries, entry),
+              ...filterEntriesToSelectedQuality(await findRelatedEntries('tv', entry), entry)
             ])
           : []
       };
@@ -2680,7 +2557,7 @@ builder.defineStreamHandler(
 
     return {
       streams: entry
-        ? streamsForEntries(await findRelatedEntries('series', entry, match[2], match[3]))
+        ? streamsForEntries(filterEntriesToSelectedQuality(await findRelatedEntries('series', entry, match[2], match[3]), entry))
         : []
     };
   }
