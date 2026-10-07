@@ -52,6 +52,45 @@ const TMDB_API_KEY = process.env.TMDB_API_KEY || '';
 const TMDB_LANGUAGE = process.env.TMDB_LANGUAGE || 'pt-BR';
 const TMDB_TIMEOUT_MS = Number(process.env.TMDB_TIMEOUT_MS || 30000);
 const XTREAM_TIMEOUT_MS = Number(process.env.XTREAM_TIMEOUT_MS || 90000);
+const XTREAM_IMDB_TIMEOUT_MS = Number(process.env.XTREAM_IMDB_TIMEOUT_MS || 15000);
+const CHANNEL_XTREAM_TIMEOUT_MS = Number(process.env.CHANNEL_XTREAM_TIMEOUT_MS || 15000);
+const CHANNEL_EPG_TIMEOUT_MS = Number(process.env.CHANNEL_EPG_TIMEOUT_MS || 8000);
+const CHANNEL_M3U_TIMEOUT_MS = Number(process.env.CHANNEL_M3U_TIMEOUT_MS || 20000);
+
+// Servidores consultados quando uma busca IMDb precisa localizar uma fonte Xtream.
+const XTREAM_SOURCES = [
+  XTREAM_ENABLED ? {
+    id: 'primary',
+    base: XTREAM_URL,
+    username: XTREAM_USERNAME,
+    password: XTREAM_PASSWORD
+  } : null,
+  {
+    id: 'urlsync',
+    base: 'http://auth.urlsync.gy',
+    username: 'russo20',
+    password: '5a6bqe1w2qq'
+  },
+  {
+    id: '5ce',
+    base: 'http://5ce.me',
+    username: '982268151',
+    password: 'ativo1357'
+  },
+  {
+    id: 'cms-central',
+    base: 'http://smart.cms-central.ovh',
+    username: 'x0r9so',
+    password: 'v9oul523'
+  }
+].filter(Boolean);
+
+const EPG_SOURCES = [
+  'http://cbapp.pro:80/xmltv.php?username=Mario1193&password=8087Ma',
+  'http://auth.urlsync.gy/xmltv.php?username=russo20&password=5a6bqe1w2qq'
+];
+const EPG_TIMEOUT_MS = Number(process.env.EPG_TIMEOUT_MS || 45000);
+const EPG_CACHE_TTL_MS = Number(process.env.EPG_CACHE_TTL_MS || 15 * 60 * 1000);
 
 const CACHE_TTL_MS = Number(
   process.env.CACHE_TTL_MS || 15 * 60 * 1000
@@ -78,7 +117,7 @@ if (!M3U_URL) {
 
 const CACHE_FILE = path.join(
   os.tmpdir(),
-  `iracemaflix-m3u-v6-${SAFE_MODE ? 'clean' : 'full'}.jsonl`
+  `iracemaflix-m3u-v8-${SAFE_MODE ? 'clean' : 'full'}.jsonl`
 );
 
 let cache = {
@@ -87,9 +126,12 @@ let cache = {
   loading: null
 };
 
-// Índice de sessão: a playlist é desserializada uma vez e reutilizada.
-// As URLs dos vídeos continuam apenas como referências; nenhum vídeo é baixado.
+// A playlist fica em JSONL no disco; não carregamos centenas de milhares de
+// objetos simultaneamente na memória.
 let playlistEntries = null;
+const m3uCatalogCache = new Map();
+const m3uCatalogLoading = new Map();
+const M3U_CATALOG_CACHE_TTL_MS = Number(process.env.M3U_CATALOG_CACHE_TTL_MS || 5 * 60 * 1000);
 
 // O TMDB é consultado somente quando o usuário abre os detalhes.
 // Assim, o catálogo não dispara milhares de requisições de uma vez.
@@ -98,8 +140,16 @@ const xtreamCache = new Map();
 const xtreamMovieCache = new Map();
 const xtreamSeriesCache = new Map();
 const xtreamTvCache = new Map();
+const xtreamSourceCache = new Map();
 let xtreamLiveItems = [];
 let xtreamFailureUntil = 0;
+let epgCache = {
+  expiresAt: 0,
+  loading: null,
+  source: '',
+  channels: new Map(),
+  programmes: new Map()
+};
 
 function sourceLog(event, details = {}) {
   console.log(`[SOURCE] ${event} ${JSON.stringify(details)}`);
@@ -112,7 +162,7 @@ sourceLog('startup', {
   safeMode: SAFE_MODE
 });
 
-async function xtreamRequest(action, params = {}) {
+async function xtreamRequest(action, params = {}, timeoutMs = XTREAM_TIMEOUT_MS) {
   if (!XTREAM_ENABLED) throw new Error('Xtream não configurado');
   if (Date.now() < xtreamFailureUntil) {
     throw new Error('Xtream temporariamente indisponível; aguardando nova tentativa');
@@ -130,7 +180,7 @@ async function xtreamRequest(action, params = {}) {
     if (value !== undefined && value !== '') url.searchParams.set(name, String(value));
   }
 
-  const promise = fetchJsonWithTimeout(url, XTREAM_TIMEOUT_MS, 'Xtream')
+  const promise = fetchJsonWithTimeout(url, timeoutMs, 'Xtream')
     .then((data) => {
       sourceLog('xtream-response', {
         action,
@@ -146,6 +196,31 @@ async function xtreamRequest(action, params = {}) {
       throw error;
     });
   xtreamCache.set(key, promise);
+  return promise;
+}
+
+async function xtreamSourceRequest(source, action, params = {}) {
+  const key = JSON.stringify([source.id, action, params]);
+  if (xtreamSourceCache.has(key)) return xtreamSourceCache.get(key);
+
+  const url = new URL(`${source.base.replace(/\/$/, '')}/player_api.php`);
+  url.searchParams.set('username', source.username);
+  url.searchParams.set('password', source.password);
+  url.searchParams.set('action', action);
+  for (const [name, value] of Object.entries(params)) {
+    if (value !== undefined && value !== '') url.searchParams.set(name, String(value));
+  }
+
+  const promise = fetchJsonWithTimeout(
+    url,
+    source.timeoutMs || XTREAM_TIMEOUT_MS,
+    `Xtream ${source.id}`
+  )
+    .catch((error) => {
+      xtreamSourceCache.delete(key);
+      throw error;
+    });
+  xtreamSourceCache.set(key, promise);
   return promise;
 }
 
@@ -188,17 +263,29 @@ function xtreamSeriesMeta(item) {
 function xtreamEntry(item, kind, extension = 'mp4') {
   const id = kind === 'movie' ? item.stream_id : item.stream_id;
   const pathKind = kind === 'movie' ? 'movie' : kind === 'series' ? 'series' : 'live';
-  const base = `${XTREAM_URL}/${pathKind}/${encodeURIComponent(XTREAM_USERNAME)}/${encodeURIComponent(XTREAM_PASSWORD)}`;
+  const source = item.xtreamSource || {
+    base: XTREAM_URL,
+    username: XTREAM_USERNAME,
+    password: XTREAM_PASSWORD
+  };
+  const base = `${source.base.replace(/\/$/, '')}/${pathKind}/${encodeURIComponent(source.username)}/${encodeURIComponent(source.password)}`;
   const streamExtension = kind === 'live'
     ? String(item.container_extension || 'ts').replace(/^\./, '')
     : String(extension || 'mp4').replace(/^\./, '');
   return {
     url: `${base}/${id}.${streamExtension}`,
-    title: item.name || 'Stream Xtream',
-    originalTitle: item.name || 'Stream Xtream',
+    title: item.displayName || item.name || 'Sem título',
+    originalTitle: item.displayName || item.name || 'Sem título',
     group: xtreamGroup(item),
     provider: 'Xtream',
+    xtreamSource: source,
+    tvgId: item.epg_channel_id || item.epg_channel || undefined,
     type: kind === 'live' ? 'tv' : kind,
+    episode: item.episode || (
+      kind === 'series' && item.season !== undefined && item.episode_num !== undefined
+        ? { season: Number(item.season), episode: Number(item.episode_num) }
+        : undefined
+    ),
     id: `xtream-${kind}-${id}`
   };
 }
@@ -207,8 +294,8 @@ async function xtreamCatalog(type, extra = {}) {
   const action = type === 'movie' ? 'get_vod_streams' : type === 'series' ? 'get_series' : 'get_live_streams';
   const categoryAction = type === 'movie' ? 'get_vod_categories' : type === 'series' ? 'get_series_categories' : 'get_live_categories';
   let [items, categories] = await Promise.all([
-    xtreamRequest(action),
-    xtreamRequest(categoryAction).catch(() => [])
+    xtreamRequest(action, {}, type === 'tv' ? CHANNEL_XTREAM_TIMEOUT_MS : XTREAM_TIMEOUT_MS),
+    xtreamRequest(categoryAction, {}, type === 'tv' ? CHANNEL_XTREAM_TIMEOUT_MS : XTREAM_TIMEOUT_MS).catch(() => [])
   ]);
   if (!Array.isArray(items)) {
     throw new Error(`Xtream ${action} não retornou uma lista válida`);
@@ -230,10 +317,17 @@ async function xtreamCatalog(type, extra = {}) {
     return (!query || text.includes(query)) && genreMatches;
   });
   if (type === 'tv') xtreamLiveItems = items;
+  if (type === 'tv') {
+    await ensureEpg().catch((error) => console.warn(`[EPG] Catálogo sem EPG: ${error.message}`));
+  }
   const metas = items.slice(0, CATALOG_LIMIT).map((item) => {
     if (type === 'movie') return xtreamMovieMeta(item);
     if (type === 'series') return xtreamSeriesMeta(item);
     const id = `xtream-tv-${item.stream_id}`;
+    const programme = epgForEntry({
+      title: item.name,
+      tvgId: item.epg_channel_id || item.epg_channel
+    });
     xtreamTvCache.set(String(item.stream_id), item);
     return {
       id,
@@ -241,7 +335,9 @@ async function xtreamCatalog(type, extra = {}) {
       name: item.name || 'Canal',
       poster: item.stream_icon || item.cover || item.logo || item.channel_logo,
       posterShape: 'landscape',
-      description: xtreamGroup(item),
+      description: programme?.title
+        ? `${xtreamGroup(item)} · EPG: ${programme.title}`
+        : xtreamGroup(item),
       genres: [xtreamGroup(item)]
     };
   });
@@ -303,6 +399,172 @@ async function fetchJsonWithTimeout(url, timeoutMs, label) {
   } finally {
     clearTimeout(timeout);
   }
+}
+
+async function fetchTextWithTimeout(url, timeoutMs, label) {
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), timeoutMs);
+  try {
+    const response = await undiciFetch(url, {
+      method: 'GET',
+      dispatcher: upstreamAgent,
+      signal: controller.signal,
+      headers: { Accept: 'application/xml, text/xml, */*' }
+    });
+    if (!response.ok) throw new Error(`${label} HTTP ${response.status}`);
+    return await response.text();
+  } finally {
+    clearTimeout(timeout);
+  }
+}
+
+function xmlText(value = '') {
+  return String(value)
+    .replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, '$1')
+    .replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/&apos;/g, "'")
+    .replace(/&lt;/g, '<').replace(/&gt;/g, '>')
+    .replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim();
+}
+
+function parseXmltv(xml) {
+  const channels = new Map();
+  const programmes = new Map();
+  const channelRe = /<channel\b[^>]*\bid=["']([^"']+)["'][^>]*>([\s\S]*?)<\/channel>/gi;
+  const displayRe = /<display-name\b[^>]*>([\s\S]*?)<\/display-name>/i;
+  let match;
+  while ((match = channelRe.exec(xml))) {
+    const display = xmlText(displayRe.exec(match[2])?.[1] || match[1]);
+    channels.set(match[1].trim(), display || match[1].trim());
+  }
+  const programmeRe = /<programme\b([^>]*)>([\s\S]*?)<\/programme>/gi;
+  const attr = (text, name) => text.match(new RegExp(`${name}=["']([^"']+)["']`, 'i'))?.[1] || '';
+  while ((match = programmeRe.exec(xml))) {
+    const channel = attr(match[1], 'channel').trim();
+    const title = xmlText(match[2].match(/<title\b[^>]*>([\s\S]*?)<\/title>/i)?.[1] || '');
+    if (!channel || !title) continue;
+    const programme = { title, start: attr(match[1], 'start'), stop: attr(match[1], 'stop') };
+    const list = programmes.get(channel) || [];
+    list.push(programme);
+    programmes.set(channel, list);
+  }
+  for (const [channel, list] of programmes) {
+    list.sort((a, b) => xmltvTime(a.start) - xmltvTime(b.start));
+  }
+  return { channels, programmes };
+}
+
+function xmltvTime(value) {
+  const match = String(value || '').match(/^(\d{14})(?:\s+([+-]\d{4}))?/);
+  if (!match) return 0;
+  const raw = match[1];
+  const iso = `${raw.slice(0, 4)}-${raw.slice(4, 6)}-${raw.slice(6, 8)}T${raw.slice(8, 10)}:${raw.slice(10, 12)}:${raw.slice(12, 14)}${match[2] ? `${match[2].slice(0, 3)}:${match[2].slice(3)}` : 'Z'}`;
+  const timestamp = Date.parse(iso);
+  return Number.isFinite(timestamp) ? timestamp : 0;
+}
+
+async function ensureEpg() {
+  if (epgCache.expiresAt > Date.now()) return epgCache;
+  if (epgCache.loading) return epgCache.loading;
+  epgCache.loading = (async () => {
+    const results = await Promise.all(EPG_SOURCES.map(async (source) => {
+      try {
+        const xml = await fetchTextWithTimeout(source, EPG_TIMEOUT_MS, 'EPG');
+        const parsed = parseXmltv(xml);
+        if (!parsed.channels.size && !parsed.programmes.size) throw new Error('XMLTV vazio');
+        sourceLog('epg-ready', {
+          source: source.replace(/([?&](?:username|password)=)[^&]+/gi, '$1***'),
+          channels: parsed.channels.size,
+          programmes: parsed.programmes.size
+        });
+        return { source, ...parsed };
+      } catch (error) {
+        sourceLog('epg-error', {
+          source: source.replace(/([?&](?:username|password)=)[^&]+/gi, '$1***'),
+          message: error.message
+        });
+        return null;
+      }
+    }));
+    const valid = results.filter(Boolean);
+    if (!valid.length) {
+      epgCache.loading = null;
+      throw new Error('Nenhuma fonte EPG respondeu');
+    }
+    const channels = new Map();
+    const programmes = new Map();
+    for (const item of valid) {
+      for (const [id, name] of item.channels) if (!channels.has(id)) channels.set(id, name);
+      for (const [id, list] of item.programmes) {
+        const merged = programmes.get(id) || [];
+        for (const programme of list) {
+          if (!merged.some((existing) => existing.start === programme.start && existing.title === programme.title)) merged.push(programme);
+        }
+        merged.sort((a, b) => xmltvTime(a.start) - xmltvTime(b.start));
+        programmes.set(id, merged);
+      }
+    }
+    epgCache = {
+      expiresAt: Date.now() + EPG_CACHE_TTL_MS,
+      loading: null,
+      source: valid.map((item) => item.source).join(','),
+      channels,
+      programmes
+    };
+    return epgCache;
+  })();
+  return epgCache.loading;
+}
+
+function epgForEntry(entry) {
+  const id = String(entry?.tvgId || entry?.epg_channel_id || entry?.epg_channel || '').trim();
+  const name = normalizeMatch(entry?.title || entry?.name || '');
+  let programme = id ? epgCache.programmes.get(id) : undefined;
+  const keys = [normalizeMatch(id), name].filter((value) => value.length >= 5);
+  if (!programme && keys.length) {
+    for (const [channelId, channelName] of epgCache.channels) {
+      const channelKey = normalizeMatch(channelName);
+      if (keys.some((key) => channelKey === key || channelKey.includes(key) || key.includes(channelKey))) {
+        const candidate = epgCache.programmes.get(channelId);
+        if (candidate?.length) {
+          programme = candidate;
+          break;
+        }
+      }
+    }
+  }
+  return currentEpgProgramme(programme);
+}
+
+function currentEpgProgramme(programmes) {
+  const now = Date.now();
+  return (Array.isArray(programmes) ? programmes : programmes ? [programmes] : [])
+    .find((programme) => {
+      const start = xmltvTime(programme.start);
+      const stop = xmltvTime(programme.stop);
+      return start <= now && (!stop || now < stop);
+    }) || (Array.isArray(programmes) ? programmes.find((programme) => xmltvTime(programme.start) >= now) : undefined);
+}
+
+function epgScheduleForEntry(entry) {
+  const id = String(entry?.tvgId || entry?.epg_channel_id || entry?.epg_channel || '').trim();
+  const name = normalizeMatch(entry?.title || entry?.name || '');
+  let programmes = id ? epgCache.programmes.get(id) : undefined;
+  const keys = [normalizeMatch(id), name].filter((value) => value.length >= 5);
+  if (!programmes?.length && keys.length) {
+    for (const [channelId, channelName] of epgCache.channels) {
+      const channelKey = normalizeMatch(channelName);
+      if (keys.some((key) => channelKey === key || channelKey.includes(key) || key.includes(channelKey))) {
+        programmes = epgCache.programmes.get(channelId);
+        if (programmes?.length) break;
+      }
+    }
+  }
+  const now = Date.now();
+  const schedule = (Array.isArray(programmes) ? programmes : programmes ? [programmes] : [])
+    .filter((programme) => xmltvTime(programme.stop || programme.start) >= now)
+    .sort((a, b) => xmltvTime(a.start) - xmltvTime(b.start))
+    .slice(0, 3);
+  return schedule;
 }
 
 async function fetchTmdbJson(url) {
@@ -442,17 +704,13 @@ async function findM3uEntryForTmdb(type, result, season, episode) {
     tmdbResultTitle(result),
     result.original_title,
     result.original_name
-  ].filter(Boolean).map(normalizeMatch);
+  ].filter(Boolean).flatMap((name) => [...titleVariants(name, type)]);
 
   for await (const entry of entriesFromDisk()) {
     if (entry.type !== type) continue;
 
-    const entryName = normalizeMatch(entry.title);
-    const titleMatches = names.some((name) =>
-      name === entryName ||
-      name.includes(entryName) ||
-      entryName.includes(name)
-    );
+    const entryNames = entryTitleVariants(entry, type);
+    const titleMatches = names.some((name) => entryNames.has(name));
 
     if (!titleMatches) continue;
 
@@ -473,12 +731,28 @@ async function findM3uEntryForTmdb(type, result, season, episode) {
   return undefined;
 }
 
-async function findM3uEntryForImdbId(type, id) {
+async function findImdbResult(type, id) {
   const match = String(id).match(/^(tt\d+)(?::(\d+):(\d+))?$/i);
   if (!match) return undefined;
 
-  const results = await tmdbSearch(match[1], type);
-  const result = results[0] || (!TMDB_API_KEY ? await imdbSuggestionById(match[1]) : undefined);
+  try {
+    const results = await tmdbSearch(match[1], type);
+    if (results[0]) return results[0];
+  } catch (error) {
+    console.warn(`[IMDb] TMDB indisponível: ${error.message}`);
+  }
+  try {
+    return await imdbSuggestionById(match[1]);
+  } catch (error) {
+    console.warn(`[IMDb] Sugestão indisponível: ${error.message}`);
+    return undefined;
+  }
+}
+
+async function findM3uEntryForImdbId(type, id) {
+  const match = String(id).match(/^(tt\d+)(?::(\d+):(\d+))?$/i);
+  if (!match) return undefined;
+  const result = await findImdbResult(type, id);
   if (!result) return undefined;
 
   return findM3uEntryForTmdb(
@@ -487,6 +761,95 @@ async function findM3uEntryForImdbId(type, id) {
     match[2],
     match[3]
   );
+}
+
+async function findXtreamEntriesForImdb(type, id, result) {
+  if (!result || !['movie', 'series'].includes(type)) return [];
+  const idMatch = String(id).match(/^tt\d+(?::(\d+):(\d+))?$/i);
+  const names = [tmdbResultTitle(result), result.original_title, result.original_name]
+    .filter(Boolean)
+    .flatMap((name) => [...titleVariants(name, type)]);
+  const sourceSearch = XTREAM_SOURCES.map(async (baseSource) => {
+    const source = { ...baseSource, timeoutMs: XTREAM_IMDB_TIMEOUT_MS };
+    const matches = [];
+    try {
+      if (type === 'movie') {
+        const items = await xtreamSourceRequest(source, 'get_vod_streams');
+        if (!Array.isArray(items)) return matches;
+        for (const item of items) {
+          const itemNames = titleVariants(item.name, 'movie');
+          if (names.some((name) => itemNames.has(name))) {
+            matches.push(xtreamEntry(
+              { ...item, stream_id: item.stream_id, xtreamSource: source },
+              'movie',
+              item.container_extension || 'mp4'
+            ));
+          }
+        }
+      } else {
+        const seriesItems = await xtreamSourceRequest(source, 'get_series');
+        if (!Array.isArray(seriesItems)) return matches;
+        const matchedSeries = seriesItems.filter((item) => {
+          const itemNames = titleVariants(item.name, 'series');
+          return names.some((name) => itemNames.has(name));
+        }).slice(0, 5);
+        const infos = await Promise.all(matchedSeries.map((seriesItem) =>
+          xtreamSourceRequest(source, 'get_series_info', { series_id: seriesItem.series_id })
+            .then((info) => ({ seriesItem, info }))
+            .catch((error) => {
+              sourceLog('xtream-imdb-info-error', { source: source.id, series: seriesItem.series_id, message: error.message });
+              return { seriesItem, info: null };
+            })
+        ));
+        for (const { seriesItem, info } of infos) {
+          const episodes = Object.values(info?.episodes || {}).flat().filter(Boolean);
+          const selected = idMatch?.[1]
+            ? episodes.filter((episode) => Number(episode.season) === Number(idMatch[1]) && Number(episode.episode_num) === Number(idMatch[2]))
+            : episodes.slice(0, 1);
+          for (const episode of selected) {
+            matches.push(xtreamEntry({
+              ...episode,
+              stream_id: episode.id,
+              name: seriesItem.name,
+              displayName: `${seriesItem.name} S${String(Number(episode.season)).padStart(2, '0')} E${String(Number(episode.episode_num)).padStart(2, '0')}`,
+              episode: { season: Number(episode.season), episode: Number(episode.episode_num) },
+              xtreamSource: source
+            }, 'series', episode.container_extension || 'mp4'));
+          }
+        }
+      }
+    } catch (error) {
+      sourceLog('xtream-imdb-error', { source: source.id, type, message: error.message });
+    }
+    return matches;
+  });
+  const results = await Promise.all(sourceSearch);
+  return results.flat();
+}
+
+async function findXtreamEntriesByTitle(type, title) {
+  if (!['movie', 'tv'].includes(type)) return [];
+  const names = [...titleVariants(title, type)];
+  const matches = [];
+  for (const source of XTREAM_SOURCES) {
+    try {
+      const action = type === 'movie' ? 'get_vod_streams' : 'get_live_streams';
+      const items = await xtreamSourceRequest(source, action);
+      if (!Array.isArray(items)) continue;
+      for (const item of items) {
+        const itemNames = titleVariants(item.name, type);
+        if (!names.some((name) => itemNames.has(name))) continue;
+        matches.push(xtreamEntry(
+          { ...item, xtreamSource: source },
+          type === 'movie' ? 'movie' : 'live',
+          item.container_extension || (type === 'movie' ? 'mp4' : 'ts')
+        ));
+      }
+    } catch (error) {
+      sourceLog('xtream-title-error', { source: source.id, type, message: error.message });
+    }
+  }
+  return matches;
 }
 
 async function searchCatalogMetas(type, query, group, genre) {
@@ -498,12 +861,20 @@ async function searchCatalogMetas(type, query, group, genre) {
     return [];
   }
 
+  const resultVariants = results.map((result) => new Set([
+    tmdbResultTitle(result),
+    result.original_title,
+    result.original_name
+  ].filter(Boolean).flatMap((name) => [...titleVariants(name, type)])));
   const entries = [];
   for await (const entry of entriesFromDisk()) {
     if (entry.type !== type) continue;
     if (group && entry.group !== group) continue;
     if (genre && !entry.group.toLowerCase().includes(genre)) continue;
-    entries.push(entry);
+    const entryNames = entryTitleVariants(entry, type);
+    if (resultVariants.some((variants) => [...entryNames].some((name) => variants.has(name)))) {
+      entries.push(entry);
+    }
   }
 
   const used = new Set();
@@ -514,20 +885,17 @@ async function searchCatalogMetas(type, query, group, genre) {
       tmdbResultTitle(result),
       result.original_title,
       result.original_name
-    ].filter(Boolean).map(normalizeMatch);
+    ].filter(Boolean).flatMap((name) => [...titleVariants(name, type)]);
 
     const match = entries.find((entry) => {
-      if (used.has(entry.id)) return false;
-      const entryName = normalizeMatch(entry.title);
-      return resultNames.some((name) =>
-        name === entryName ||
-        name.includes(entryName) ||
-        entryName.includes(name)
-      );
+      const entryKey = type === 'series' ? seriesId(entry.title) : entry.id;
+      if (used.has(entryKey)) return false;
+      const entryNames = entryTitleVariants(entry, type);
+      return resultNames.some((name) => entryNames.has(name));
     });
 
     if (!match) continue;
-    used.add(match.id);
+    used.add(type === 'series' ? seriesId(match.title) : match.id);
     if (metas.length >= CATALOG_LIMIT) break;
 
     if (type === 'series') {
@@ -567,6 +935,66 @@ function cleanTitle(value = '') {
     .trim();
 }
 
+function isHumanTitle(value = '') {
+  const text = String(value).replace(/\s+/g, ' ').trim();
+  if (!text || text.length > 240 || /^data:/i.test(text)) return false;
+
+  const letters = (text.match(/[A-Za-zÀ-ÿ]/g) || []).length;
+  const looksLikeBase64 = /^[A-Za-z0-9+/]+={0,2}$/.test(text) && text.length > 80;
+  return !looksLikeBase64 && letters >= 2 && letters / text.length >= 0.12;
+}
+
+function playlistTitle(title, attrs = {}) {
+  const commaTitle = String(title || '').replace(/\s+/g, ' ').trim();
+  const tvgName = String(attrs['tvg-name'] || '').replace(/\s+/g, ' ').trim();
+
+  // O texto depois da vírgula é a fonte mais confiável. Algumas listas
+  // trazem tvg-name como Base64 de imagem, o que nunca deve virar título.
+  if (isHumanTitle(commaTitle)) return commaTitle;
+  if (isHumanTitle(tvgName)) return tvgName;
+  return commaTitle || tvgName || 'Sem título';
+}
+
+function channelDisplayTitle(title, tvgName = '') {
+  const base = String(title || '').replace(/\s+/g, ' ').trim() || 'Sem título';
+  const source = String(tvgName || '').replace(/\s+/g, ' ').trim();
+  if (!isHumanTitle(source)) return base;
+  const markers = source.match(/\b(?:8K|4K|UHD|FHD|Full[ ._-]?HD|HD|SD)\b/gi) || [];
+  const marker = [...new Set(markers.map((value) => value.toUpperCase()))].join(' ');
+  if (!marker || new RegExp(`\\b(?:${marker.replace(/\s+/g, '|')})\\b`, 'i').test(base)) return base;
+  return `${base} ${marker}`.trim();
+}
+
+function titleVariants(value = '', type = '') {
+  let text = String(value || '')
+    .replace(/\b[Ss]\d{1,3}\s*[Ee]\d{1,3}\b/g, ' ')
+    .replace(/(?:temporada|season)\s*\d+.*?(?:epis[oó]dio|episode|ep)\s*\d+/gi, ' ')
+    .replace(/\[[^\]]*\]|\([^)]*\)/g, ' ')
+    .replace(/\b(?:19|20)\d{2}\b/g, ' ')
+    .replace(/\b(?:8k|4k|uhd|fhd|full[ ._-]?hd|hd|sd|dublado|dub|dual[ -]?audio|legendado|leg)\b/gi, ' ')
+    .replace(/[._]+/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+
+  const variants = new Set();
+  const normalized = normalizeMatch(text);
+  if (normalized) variants.add(normalized);
+
+  if (type === 'series') {
+    const withoutCatalogPrefix = normalized.replace(/^(?:anime|desenho)\s+/, '').trim();
+    if (withoutCatalogPrefix) variants.add(withoutCatalogPrefix);
+  }
+
+  return variants;
+}
+
+function entryTitleVariants(entry, type = entry?.type || '') {
+  return new Set([
+    ...titleVariants(entry?.title, type),
+    ...titleVariants(entry?.originalTitle, type)
+  ]);
+}
+
 function parseAttributes(text) {
   const attrs = {};
   const re = /([\w-]+)="([^"]*)"/g;
@@ -581,7 +1009,9 @@ function parseAttributes(text) {
 }
 
 function parseEpisode(title, attrs) {
-  const source = `${title} ${attrs['tvg-name'] || ''}`;
+  const selectedTitle = playlistTitle(title, attrs);
+  const tvgName = isHumanTitle(attrs['tvg-name']) ? attrs['tvg-name'] : '';
+  const source = `${selectedTitle} ${tvgName}`;
 
   let match = source.match(
     /[Ss](\d{1,3})\s*[Ee](\d{1,3})/
@@ -770,10 +1200,12 @@ function parseM3U(text) {
         : 'Sem título';
 
     const attrs = parseAttributes(lines[i]);
-    const episode = parseEpisode(title, attrs);
+    const selectedTitle = playlistTitle(title, attrs);
+    const episode = parseEpisode(selectedTitle, attrs);
     const type = inferType(title, attrs, episode, url);
-    const displayTitle =
-      cleanTitle(attrs['tvg-name'] || title) || title;
+    const displayTitle = type === 'tv'
+      ? channelDisplayTitle(selectedTitle, `${attrs['tvg-name'] || ''} ${attrs['group-title'] || ''}`)
+      : cleanTitle(selectedTitle) || selectedTitle;
 
     const stream = parseStreamUrl(url);
 
@@ -781,10 +1213,12 @@ function parseM3U(text) {
       url: stream.url,
       requestHeaders: stream.request,
       title: displayTitle,
-      originalTitle: title,
+      originalTitle: selectedTitle,
+      tvgId: attrs['tvg-id'] || undefined,
       logo: attrs['tvg-logo'] || undefined,
       group: catalogGroup(attrs['group-title'] || 'Sem categoria', type),
       type,
+      provider: 'M3U',
       episode,
       id: `m3u-${hash(url)}`
     });
@@ -804,7 +1238,8 @@ function entryFromLines(extinf, rawUrl) {
       : 'Sem título';
 
   const attrs = parseAttributes(extinf);
-  const episode = parseEpisode(title, attrs);
+  const selectedTitle = playlistTitle(title, attrs);
+  const episode = parseEpisode(selectedTitle, attrs);
   const type = inferType(title, attrs, episode, rawUrl);
   const stream = parseStreamUrl(rawUrl);
 
@@ -813,10 +1248,15 @@ function entryFromLines(extinf, rawUrl) {
     requestHeaders: stream.request,
 
     title:
-      cleanTitle(attrs['tvg-name'] || title) ||
-      title,
+      type === 'tv'
+        ? channelDisplayTitle(selectedTitle, `${attrs['tvg-name'] || ''} ${attrs['group-title'] || ''}`)
+        : cleanTitle(selectedTitle) || selectedTitle,
 
-    originalTitle: title,
+    originalTitle: selectedTitle,
+
+    tvgId:
+      attrs['tvg-id'] ||
+      undefined,
 
     logo:
       attrs['tvg-logo'] ||
@@ -828,6 +1268,8 @@ function entryFromLines(extinf, rawUrl) {
       type
     ),
     type,
+
+    provider: 'M3U',
 
     episode,
 
@@ -1047,7 +1489,6 @@ async function loadPlaylistToDisk() {
   let extinf = null;
   let count = 0;
   let skippedAdult = 0;
-  const loadedEntries = [];
 
   try {
     for await (const rawLine of input) {
@@ -1088,8 +1529,6 @@ async function loadPlaylistToDisk() {
           extinf = null;
           continue;
         }
-
-        loadedEntries.push(entry);
 
         if (
           !output.write(
@@ -1179,7 +1618,7 @@ async function loadPlaylistToDisk() {
     CACHE_FILE
   );
 
-  playlistEntries = loadedEntries;
+  playlistEntries = null;
 
   console.log(
     `[M3U] Cache atualizado: ${count} itens` +
@@ -1213,12 +1652,7 @@ async function countCacheEntries() {
 }
 
 async function hydratePlaylistFromDisk() {
-  const loaded = [];
-  for await (const entry of entriesFromDisk()) {
-    loaded.push(entry);
-  }
-  playlistEntries = loaded;
-  return loaded.length;
+  return countCacheEntries();
 }
 
 async function ensurePlaylist() {
@@ -1421,13 +1855,16 @@ function seriesCatalogMeta(series) {
 }
 
 function tvMeta(entry) {
+  const programme = epgForEntry(entry);
   return {
     id: entry.id,
     type: 'tv',
     name: entry.title,
     poster: entry.logo || entry.stream_icon || entry.cover,
     posterShape: 'landscape',
-    description: entry.group,
+    description: programme?.title
+      ? `${entry.group} · EPG: ${programme.title}`
+      : entry.group,
     genres: [entry.group]
   };
 }
@@ -1439,26 +1876,32 @@ function streamFor(entry, context = [], index = 0) {
 
     ...entry.requestHeaders
   };
-  const hasMultiple = context.length > 1;
-  const hasLegendado = context.some(isLegendado);
-  const language = entry.provider === 'Xtream'
-    ? (hasMultiple ? `Xtream ${index + 1}` : 'Xtream')
-    : isLegendado(entry)
-    ? 'Legendado'
-    : isDublado(entry) || (hasMultiple && hasLegendado)
-      ? 'Dublado'
-      : hasMultiple
-        ? `Fonte ${index + 1}`
-        : 'Fonte M3U';
-  const group = entry.group && !/^(LAN[CÇ]AMENTOS|CINEMA)$/i.test(entry.group)
-    ? ` · ${entry.group}`
-    : '';
+  const source = entry.provider === 'Xtream'
+    ? 'Iracemaflix 1'
+    : 'Iracemaflix 2';
   const quality = qualityFor(entry);
+  const audio = isDublado(entry)
+    ? 'Dublado'
+    : isLegendado(entry)
+      ? 'Legendado'
+      : '';
+  const server = entry.provider === 'Xtream' ? serverLabel(entry.xtreamSource) : '';
+  const schedule = entry.type === 'tv' ? epgScheduleForEntry(entry) : [];
+  const current = currentEpgProgramme(schedule);
+  const scheduleLines = schedule.map((programme, position) => {
+    const prefix = position === 0 && current?.title === programme.title ? 'Agora' : 'Próximo';
+    return `${prefix}: ${programme.title}`;
+  });
+  const titleLines = [
+    [source, quality, audio].filter(Boolean).join(' · '),
+    server,
+    ...scheduleLines
+  ].filter(Boolean);
 
   return {
-    name: entry.title,
+    name: streamDisplayTitle(entry),
 
-    title: `${language}${quality ? ` · ${quality}` : ''}${group}`,
+    title: titleLines.join('\n'),
 
     url: entry.url,
 
@@ -1473,6 +1916,35 @@ function streamFor(entry, context = [], index = 0) {
       }
     }
   };
+}
+
+function serverLabel(source) {
+  const base = String(source?.base || '').replace(/^https?:\/\//i, '').split('/')[0].split(':')[0];
+  return base ? `Servidor: ${base}` : '';
+}
+
+function withTimeout(promise, timeoutMs, fallback) {
+  let timer;
+  const timeout = new Promise((resolve) => {
+    timer = setTimeout(() => resolve(fallback), timeoutMs);
+  });
+  return Promise.race([Promise.resolve(promise), timeout]).finally(() => clearTimeout(timer));
+}
+
+async function cachedM3uCatalog(key, factory) {
+  const cached = m3uCatalogCache.get(key);
+  if (cached && cached.expiresAt > Date.now()) return cached.metas;
+  if (m3uCatalogLoading.has(key)) return m3uCatalogLoading.get(key);
+  const loading = Promise.resolve().then(factory).then((metas) => {
+    m3uCatalogCache.set(key, { expiresAt: Date.now() + M3U_CATALOG_CACHE_TTL_MS, metas });
+    m3uCatalogLoading.delete(key);
+    return metas;
+  }).catch((error) => {
+    m3uCatalogLoading.delete(key);
+    throw error;
+  });
+  m3uCatalogLoading.set(key, loading);
+  return loading;
 }
 
 function streamsForEntries(entries) {
@@ -1531,10 +2003,43 @@ async function findEntry(id) {
   return undefined;
 }
 
+async function findSingleEntryByTitle(type, title) {
+  const wanted = normalizeMatch(title);
+  if (!wanted) return undefined;
+  for await (const entry of entriesFromDisk()) {
+    if (entry.type !== type) continue;
+    const candidates = [entry.title, entry.originalTitle].map(normalizeMatch).filter(Boolean);
+    if (candidates.includes(wanted)) return entry;
+  }
+  return undefined;
+}
+
 function mediaTitleKey(entry) {
-  return normalizeMatch(
-    cleanTitle(entry.originalTitle || entry.title || '')
-  );
+  return [...entryTitleVariants(entry, entry.type)][0] || '';
+}
+
+function mediaTitlesMatch(left, right, type) {
+  const leftTitles = entryTitleVariants(left, type);
+  const rightTitles = right?.type
+    ? entryTitleVariants(right, type)
+    : new Set([...titleVariants(right, type)]);
+  return [...leftTitles].some((title) => rightTitles.has(title));
+}
+
+function episodeLabel(entry) {
+  if (!entry?.episode) return '';
+  const season = Number(entry.episode.season);
+  const episode = Number(entry.episode.episode);
+  if (!Number.isFinite(season) || !Number.isFinite(episode)) return '';
+  return `S${String(season).padStart(2, '0')} E${String(episode).padStart(2, '0')}`;
+}
+
+function streamDisplayTitle(entry) {
+  const raw = String(entry?.title || entry?.originalTitle || 'Sem título').trim() || 'Sem título';
+  const base = raw;
+  const episode = episodeLabel(entry);
+  if (!episode || normalizeMatch(base).includes(normalizeMatch(episode))) return base;
+  return `${base} ${episode}`;
 }
 
 function isLegendado(entry) {
@@ -1550,6 +2055,15 @@ function isDublado(entry) {
 }
 
 function qualityFor(entry) {
+  if (entry?.type === 'tv' && entry?.provider === 'Xtream') {
+    const explicit = `${entry.streamQuality || ''} ${entry.video_quality || ''} ${entry.quality || ''} ${entry.title || ''}`;
+    if (/8k|4320p/i.test(explicit)) return '8K';
+    if (/4k|2160p|uhd/i.test(explicit)) return '4K';
+    if (/1440p|2k/i.test(explicit)) return '1440p';
+    if (/1080p|full[ ._-]?hd|fhd/i.test(explicit)) return 'Full HD';
+    if (/720p|hd/i.test(explicit)) return 'HD';
+    return 'Auto';
+  }
   const text = `${entry.group || ''} ${entry.originalTitle || ''} ${entry.title || ''} ${entry.url || ''}`;
   if (/8k|4320p/i.test(text)) return '8K';
   if (/4k|2160p|uhd/i.test(text)) return '4K';
@@ -1557,16 +2071,32 @@ function qualityFor(entry) {
   if (/1080p|full[ ._-]?hd|fhd/i.test(text)) return 'Full HD';
   if (/720p|hd/i.test(text)) return 'HD';
   if (/576p|480p|sd/i.test(text)) return 'SD';
-  return '';
+  return 'Auto';
 }
 
 async function findRelatedEntries(type, entry, season, episode) {
   const matches = [];
-  const key = mediaTitleKey(entry);
   for await (const candidate of entriesFromDisk()) {
-    if (candidate.type !== type || mediaTitleKey(candidate) !== key) {
+    if (candidate.type !== type || !mediaTitlesMatch(candidate, entry, type)) {
       continue;
     }
+    if (type === 'series' && (season !== undefined || episode !== undefined)) {
+      if (
+        candidate.episode?.season !== Number(season) ||
+        candidate.episode?.episode !== Number(episode)
+      ) {
+        continue;
+      }
+    }
+    matches.push(candidate);
+  }
+  return matches;
+}
+
+async function findRelatedEntriesByTitle(type, title, season, episode) {
+  const matches = [];
+  for await (const candidate of entriesFromDisk()) {
+    if (candidate.type !== type || !mediaTitlesMatch(candidate, title, type)) continue;
     if (type === 'series' && (season !== undefined || episode !== undefined)) {
       if (
         candidate.episode?.season !== Number(season) ||
@@ -1709,6 +2239,7 @@ async function loadSeries(id) {
 
 builder.defineCatalogHandler(
   async ({ type, id, extra = {} }) => {
+    let releaseM3uCatalog = null;
     try {
       const xtreamType = id === 'm3u-movies' ? 'movie' : id === 'm3u-series' ? 'series' : id === 'm3u-tv' ? 'tv' : type;
       if (XTREAM_ENABLED && ['movie', 'series', 'tv'].includes(xtreamType)) {
@@ -1736,6 +2267,33 @@ builder.defineCatalogHandler(
                 ? 'tv'
                 : type;
 
+      const m3uCacheKey = JSON.stringify([
+        id,
+        requestedType,
+        String(extra.search || '').trim().toLowerCase(),
+        String(extra.genre || '').trim().toLowerCase()
+      ]);
+      const cachedCatalog = m3uCatalogCache.get(m3uCacheKey);
+      if (cachedCatalog && cachedCatalog.expiresAt > Date.now()) {
+        sourceLog('catalog-cache', { source: 'm3u', type: requestedType });
+        return { metas: cachedCatalog.metas };
+      }
+      if (m3uCatalogLoading.has(m3uCacheKey)) {
+        sourceLog('catalog-wait', { source: 'm3u', type: requestedType });
+        return { metas: await m3uCatalogLoading.get(m3uCacheKey) };
+      }
+      let resolveM3uCatalog;
+      const m3uGate = new Promise((resolve) => { resolveM3uCatalog = resolve; });
+      releaseM3uCatalog = (metas) => {
+        m3uCatalogLoading.delete(m3uCacheKey);
+        resolveM3uCatalog(metas);
+      };
+      m3uCatalogLoading.set(m3uCacheKey, m3uGate);
+
+      if (requestedType === 'tv') {
+        await ensureEpg().catch((error) => console.warn(`[EPG] Catálogo M3U sem EPG: ${error.message}`));
+      }
+
       const requestedGroup =
         groupMatch
           ? Buffer
@@ -1755,14 +2313,16 @@ builder.defineCatalogHandler(
 
       const search = String(extra.search || '').trim();
       if (search) {
-        return {
-          metas: await searchCatalogMetas(
-            requestedType,
-            search,
-            requestedGroup,
-            ''
-          )
-        };
+        const metas = await searchCatalogMetas(
+          requestedType,
+          search,
+          requestedGroup,
+          ''
+        );
+        m3uCatalogCache.set(m3uCacheKey, { expiresAt: Date.now() + M3U_CATALOG_CACHE_TTL_MS, metas });
+        releaseM3uCatalog(metas);
+        releaseM3uCatalog = null;
+        return { metas };
       }
 
       const genre =
@@ -1776,17 +2336,9 @@ builder.defineCatalogHandler(
           ? ''
           : rawGenre;
 
-      const typedEntries =
-        requestedType === 'series'
-          ? await collectSeriesCatalog(
-              requestedGroup,
-              genre
-            )
-          : await collectEntries(
-              requestedType,
-              requestedGroup,
-              genre
-            );
+      const typedEntries = requestedType === 'series'
+        ? await collectSeriesCatalog(requestedGroup, genre)
+        : await collectEntries(requestedType, requestedGroup, genre);
 
       const metas =
         requestedType === 'movie'
@@ -1799,11 +2351,13 @@ builder.defineCatalogHandler(
                 seriesCatalogMeta
               );
 
-      return {
-        metas
-      };
+      m3uCatalogCache.set(m3uCacheKey, { expiresAt: Date.now() + M3U_CATALOG_CACHE_TTL_MS, metas });
+      releaseM3uCatalog(metas);
+      releaseM3uCatalog = null;
+      return { metas };
 
     } catch (error) {
+      if (releaseM3uCatalog) releaseM3uCatalog([]);
       console.error(
         '[CATALOG]',
         error
@@ -1818,12 +2372,14 @@ builder.defineCatalogHandler(
 
 builder.defineMetaHandler(
   async ({ type, id }) => {
-    if (XTREAM_ENABLED && /^xtream-movie-(\d+)$/.test(String(id))) {
-      const item = await xtreamMovieInfo(RegExp.$1);
+    const movieMatch = String(id).match(/^xtream-movie-(\d+)$/);
+    if (XTREAM_ENABLED && movieMatch) {
+      const item = await xtreamMovieInfo(movieMatch[1]);
       return { meta: await enrichMeta(item, xtreamMovieMeta(item)) };
     }
-    if (XTREAM_ENABLED && /^xtream-series-(\d+)$/.test(String(id))) {
-      const item = await xtreamSeriesInfo(RegExp.$1);
+    const seriesMatch = String(id).match(/^xtream-series-(\d+)$/);
+    if (XTREAM_ENABLED && seriesMatch) {
+      const item = await xtreamSeriesInfo(seriesMatch[1]);
       const episodes = Object.values(item.episodes || {}).flat().filter(Boolean).map((episode) => ({
         id: `xtream-episode-${item.series_id}-${episode.season}-${episode.episode_num}`,
         title: episode.title || episode.name || `Episódio ${episode.episode_num}`,
@@ -1833,22 +2389,37 @@ builder.defineMetaHandler(
       }));
       return { meta: await enrichMeta(item, { ...xtreamSeriesMeta(item), videos: episodes }) };
     }
-    if (XTREAM_ENABLED && /^xtream-tv-(\d+)$/.test(String(id))) {
-      let item = xtreamTvCache.get(RegExp.$1);
+    const tvMatch = String(id).match(/^xtream-tv-(\d+)$/);
+    if (XTREAM_ENABLED && tvMatch) {
+      const tvId = tvMatch[1];
+      let item = xtreamTvCache.get(tvId);
       if (!item) {
-        const live = await xtreamRequest('get_live_streams');
+        const live = await xtreamRequest('get_live_streams', {}, CHANNEL_XTREAM_TIMEOUT_MS);
         item = Array.isArray(live)
-          ? live.find((candidate) => String(candidate.stream_id) === RegExp.$1)
+          ? live.find((candidate) => String(candidate.stream_id) === tvId)
           : undefined;
-        if (item) xtreamTvCache.set(RegExp.$1, item);
+        if (item) xtreamTvCache.set(tvId, item);
       }
+      await withTimeout(
+        ensureEpg().catch((error) => console.warn(`[EPG] Canal sem EPG: ${error.message}`)),
+        CHANNEL_EPG_TIMEOUT_MS,
+        null
+      );
+      const programme = epgForEntry({
+        title: item?.name,
+        tvgId: item?.epg_channel_id || item?.epg_channel
+      });
       const meta = {
         id,
         type: 'tv',
         name: item?.name || 'Canal',
         poster: item?.stream_icon || item?.cover || item?.logo || item?.channel_logo,
         posterShape: 'landscape',
-        description: item ? xtreamGroup(item) : undefined
+        description: item
+          ? programme?.title
+            ? `${xtreamGroup(item)} · EPG: ${programme.title}`
+            : xtreamGroup(item)
+          : undefined
       };
       sourceLog('meta-result', { source: 'xtream', type: 'tv', id, poster: Boolean(meta.poster) });
       return { meta };
@@ -1857,15 +2428,23 @@ builder.defineMetaHandler(
 
     if (/^tt\d+(?::\d+:\d+)?$/i.test(String(id))) {
       const entry = await findM3uEntryForImdbId(type, id);
+      const series = entry && type === 'series'
+        ? await loadSeries(seriesId(entry.title))
+        : undefined;
       return {
         meta: entry
-          ? await enrichMeta(entry, type === 'movie' ? movieMeta(entry) : seriesMeta({
-              id: seriesId(entry.title),
-              title: cleanTitle(entry.title),
-              logo: entry.logo,
-              group: entry.group,
-              episodes: [entry]
-            }))
+          ? await enrichMeta(
+              entry,
+              type === 'movie'
+                ? movieMeta(entry)
+                : seriesMeta(series || {
+                    id: seriesId(entry.title),
+                    title: cleanTitle(entry.title),
+                    logo: entry.logo,
+                    group: entry.group,
+                    episodes: [entry]
+                  })
+            )
           : undefined
       };
     }
@@ -1915,17 +2494,70 @@ builder.defineMetaHandler(
 
 builder.defineStreamHandler(
   async ({ type, id }) => {
-    if (XTREAM_ENABLED && /^xtream-movie-(\d+)$/.test(String(id))) {
-      const item = await xtreamMovieInfo(RegExp.$1);
-      return { streams: [streamFor(xtreamEntry({ ...item, stream_id: RegExp.$1 }, 'movie', item.container_extension || item.container_extension || 'mp4'))] };
+    const rawId = String(id || '').trim();
+    const imdbId = rawId.match(/(tt\d+)(?::(\d+):(\d+))?/i);
+    if (imdbId) id = `${imdbId[1]}${imdbId[2] ? `:${imdbId[2]}:${imdbId[3]}` : ''}`;
+    if (type === 'tv') {
+      await withTimeout(
+        ensureEpg().catch((error) => console.warn(`[EPG] Stream sem programação: ${error.message}`)),
+        CHANNEL_EPG_TIMEOUT_MS,
+        null
+      );
     }
-    if (XTREAM_ENABLED && /^xtream-tv-(\d+)$/.test(String(id))) {
-      const selected = xtreamTvCache.get(RegExp.$1) || { stream_id: RegExp.$1, name: 'Canal', container_extension: 'ts' };
-      const key = normalizeMatch(cleanTitle(selected.name || ''));
-      const related = xtreamLiveItems.filter((item) => normalizeMatch(cleanTitle(item.name || '')) === key);
-      const items = related.length ? related : [selected];
-      const streams = streamsForEntries(items.map((item) => xtreamEntry({ ...item, container_extension: item.container_extension || 'ts' }, 'live')));
-      sourceLog('stream-result', { source: 'xtream', type: 'tv', id, count: streams.length, matchedName: selected.name });
+    const movieMatch = String(id).match(/^xtream-movie-(\d+)$/);
+    if (XTREAM_ENABLED && movieMatch) {
+      const movieId = movieMatch[1];
+      const item = await xtreamMovieInfo(movieId);
+      const xtreamItem = xtreamEntry(
+        { ...item, stream_id: movieId },
+        'movie',
+        item.container_extension || 'mp4'
+      );
+      let m3uItems = [];
+      try {
+        await ensurePlaylist();
+        m3uItems = await findRelatedEntriesByTitle('movie', item.name);
+      } catch (error) {
+        console.warn(`[STREAM] M3U indisponível para filme: ${error.message}`);
+      }
+      return { streams: streamsForEntries([xtreamItem, ...m3uItems]) };
+    }
+    const tvMatch = String(id).match(/^xtream-tv-(\d+)$/);
+    if (XTREAM_ENABLED && tvMatch) {
+      const tvId = tvMatch[1];
+      let selected = xtreamTvCache.get(tvId) || xtreamLiveItems.find((item) => String(item.stream_id) === tvId);
+      if (!selected) {
+        try {
+          const live = await xtreamRequest('get_live_streams', {}, CHANNEL_XTREAM_TIMEOUT_MS);
+          selected = Array.isArray(live)
+            ? live.find((item) => String(item.stream_id) === tvId)
+            : undefined;
+          if (selected) xtreamTvCache.set(tvId, selected);
+        } catch (error) {
+          console.warn(`[STREAM] Canal Xtream indisponível: ${error.message}`);
+        }
+      }
+      let m3uItems = [];
+      if (selected) {
+        try {
+          const exactM3u = await withTimeout(
+            ensurePlaylist().then(() => findSingleEntryByTitle('tv', selected.name)),
+            CHANNEL_M3U_TIMEOUT_MS,
+            undefined
+          );
+          if (exactM3u) m3uItems = [exactM3u];
+        } catch (error) {
+          console.warn(`[STREAM] M3U indisponível para canal: ${error.message}`);
+        }
+      }
+      const xtreamItems = selected
+        ? [xtreamEntry(
+            { ...selected, container_extension: selected.container_extension || 'ts' },
+            'live'
+          )]
+        : [];
+      const streams = streamsForEntries([...xtreamItems, ...m3uItems]);
+      sourceLog('stream-result', { source: selected ? 'xtream' : 'm3u', type: 'tv', id, count: streams.length, matchedName: selected?.name });
       return { streams };
     }
     const episodeMatch = String(id).match(/^xtream-episode-(\d+)-(\d+)-(\d+)$/);
@@ -1934,31 +2566,74 @@ builder.defineStreamHandler(
       const item = await xtreamSeriesInfo(seriesIdValue);
       const episode = Object.values(item.episodes || {}).flat().find((x) => Number(x.season) === Number(seasonValue) && Number(x.episode_num) === Number(episodeValue));
       if (!episode) return { streams: [] };
-      return { streams: [streamFor(xtreamEntry({ ...episode, stream_id: episode.id, name: episode.title || episode.name || 'Episódio' }, 'series', episode.container_extension || 'mp4'))] };
+      const episodeData = {
+        ...episode,
+        stream_id: episode.id,
+        name: item.name || episode.title || episode.name || 'Série',
+        displayName: `${item.name || 'Série'} S${String(Number(seasonValue)).padStart(2, '0')} E${String(Number(episodeValue)).padStart(2, '0')}`,
+        episode: {
+          season: Number(seasonValue),
+          episode: Number(episodeValue)
+        }
+      };
+      const xtreamItem = xtreamEntry(
+        episodeData,
+        'series',
+        episode.container_extension || 'mp4'
+      );
+      let m3uItems = [];
+      try {
+        await ensurePlaylist();
+        m3uItems = await findRelatedEntriesByTitle(
+          'series',
+          item.name,
+          seasonValue,
+          episodeValue
+        );
+      } catch (error) {
+        console.warn(`[STREAM] M3U indisponível para episódio: ${error.message}`);
+      }
+      return { streams: streamsForEntries([xtreamItem, ...m3uItems]) };
     }
-    await ensurePlaylist();
-
     if (/^tt\d+(?::\d+:\d+)?$/i.test(String(id))) {
       try {
-        const entry = await findM3uEntryForImdbId(type, id);
-        return {
-          streams: entry
-            ? streamsForEntries(await findRelatedEntries(type, entry, entry.episode?.season, entry.episode?.episode))
-            : []
-        };
+        const idMatch = String(id).match(/^tt\d+(?::(\d+):(\d+))?$/i);
+        const result = await findImdbResult(type, id);
+        const xtreamEntries = await findXtreamEntriesForImdb(type, id, result);
+        if (xtreamEntries.length) return { streams: streamsForEntries(xtreamEntries) };
+
+        // Só cai na M3U depois que a busca rápida Xtream terminou sem resultado.
+        await ensurePlaylist();
+        const entry = result
+          ? await findM3uEntryForTmdb(type, result, idMatch?.[1], idMatch?.[2])
+          : undefined;
+        const m3uEntries = entry
+          ? await findRelatedEntries(type, entry, entry.episode?.season, entry.episode?.episode)
+          : [];
+        if (entry && !m3uEntries.length) m3uEntries.push(entry);
+        sourceLog('imdb-stream-result', { type, id, hasResult: Boolean(result), hasEntry: Boolean(entry), xtream: xtreamEntries.length, m3u: m3uEntries.length });
+        return { streams: streamsForEntries(m3uEntries) };
       } catch (error) {
         console.warn(`[STREAM] IMDb/TMDB indisponível: ${error.message}`);
         return { streams: [] };
       }
     }
 
+    await ensurePlaylist();
+
     if (type === 'movie') {
       const entry =
         await findEntry(id);
+      const xtreamEntries = entry
+        ? await findXtreamEntriesByTitle('movie', entry.title)
+        : [];
 
       return {
         streams: entry
-          ? streamsForEntries(await findRelatedEntries('movie', entry))
+          ? streamsForEntries([
+              ...xtreamEntries,
+              ...(await findRelatedEntries('movie', entry))
+            ])
           : []
       };
     }
@@ -1966,10 +2641,16 @@ builder.defineStreamHandler(
     if (type === 'tv') {
       const entry =
         await findEntry(id);
+      const xtreamEntries = entry
+        ? await findXtreamEntriesByTitle('tv', entry.title)
+        : [];
 
       return {
         streams: entry
-          ? streamsForEntries(await findRelatedEntries('tv', entry))
+          ? streamsForEntries([
+              ...xtreamEntries,
+              ...(await findRelatedEntries('tv', entry))
+            ])
           : []
       };
     }
@@ -2020,6 +2701,20 @@ app.use((req, res, next) => {
 });
 app.get('/manus-routes.json', (_req, res) => {
   res.type('application/json').sendFile(path.join(__dirname, 'manus-routes.json'));
+});
+app.get('/epg.json', async (_req, res) => {
+  try {
+    const epg = await ensureEpg();
+    res.json({
+      source: epg.source.replace(/([?&](?:username|password)=)[^&]+/gi, '$1***'),
+      channels: [...epg.channels].map(([id, name]) => ({ id, name })),
+      programmes: [...epg.programmes].flatMap(([channel, programmes]) =>
+        (Array.isArray(programmes) ? programmes : [programmes]).map((programme) => ({ channel, ...programme }))
+      )
+    });
+  } catch (error) {
+    res.status(502).json({ error: error.message, channels: [], programmes: [] });
+  }
 });
 app.use(getRouter(builder.getInterface()));
 app.get('/', (_req, res) => {
