@@ -1,18 +1,20 @@
 {
   "name": "iracemaflix",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "não hospedamos nada, tudo esta na internet para qualquer um poder usar, apenas indexamos",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "test": "node --test provider-resolver.test.js live-tv-provider.test.js"
   },
   "engines": {
     "node": ">=18"
   },
   "dependencies": {
     "dotenv": "^17.0.0",
+    "express": "^4.21.2",
     "stremio-addon-sdk": "^1.6.10",
-    "undici": "",
-    "adm-zip": ""
+    "undici": "^6.21.1",
+    "adm-zip": "^0.5.16"
   }
 }

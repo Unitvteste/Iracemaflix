@@ -12,6 +12,8 @@ const express = require('express');
 const getRouter = require('stremio-addon-sdk/src/getRouter');
 
 const { fetch: undiciFetch, Agent } = require('undici');
+const { PROVIDERS, resolveProvider } = require('./provider-resolver');
+const LiveTv = require('./live-tv-provider');
 
 const AdmZip = require('adm-zip');
 
@@ -63,7 +65,18 @@ const CHANNEL_XTREAM_TIMEOUT_MS = Number(process.env.CHANNEL_XTREAM_TIMEOUT_MS |
 const CHANNEL_EPG_TIMEOUT_MS = Number(process.env.CHANNEL_EPG_TIMEOUT_MS || 8000);
 const CHANNEL_M3U_TIMEOUT_MS = Number(process.env.CHANNEL_M3U_TIMEOUT_MS || 20000);
 
-// Servidores consultados quando uma busca IMDb precisa localizar uma fonte Xtream.
+// Fontes secundárias são configuradas fora do código para não publicar credenciais.
+let XTREAM_FALLBACK_SOURCES = [];
+try {
+  const configuredSources = JSON.parse(process.env.XTREAM_FALLBACK_SOURCES_JSON || '[]');
+  if (Array.isArray(configuredSources)) {
+    XTREAM_FALLBACK_SOURCES = configuredSources.filter((source) =>
+      source && source.base && source.username && source.password
+    );
+  }
+} catch {
+  console.warn('[XTREAM] XTREAM_FALLBACK_SOURCES_JSON inválido; fontes secundárias desativadas.');
+}
 const XTREAM_SOURCES = [
   XTREAM_ENABLED ? {
     id: 'primary',
@@ -72,26 +85,16 @@ const XTREAM_SOURCES = [
     password: XTREAM_PASSWORD,
     sourceName: XTREAM_SOURCE_NAME
   } : null,
-  {
-    id: 'urlsync',
-    base: 'http://auth.urlsync.gy',
-    username: 'russo20',
-    password: '5a6bqe1w2qq',
-    sourceName: 'URLSync'
-  },
-  {
-    id: 'cms-central',
-    base: 'http://smart.cms-central.ovh',
-    username: 'x0r9so',
-    password: 'v9oul523',
-    sourceName: 'Smart CMS'
-  }
+  ...XTREAM_FALLBACK_SOURCES
 ].filter(Boolean);
 
-const EPG_SOURCES = [
-  'http://cbapp.pro:80/xmltv.php?username=Mario1193&password=8087Ma',
-  'http://auth.urlsync.gy/xmltv.php?username=russo20&password=5a6bqe1w2qq'
-];
+let EPG_SOURCES = [];
+try {
+  const configuredEpgSources = JSON.parse(process.env.EPG_SOURCES_JSON || '[]');
+  if (Array.isArray(configuredEpgSources)) EPG_SOURCES = configuredEpgSources.filter((url) => typeof url === 'string' && url);
+} catch {
+  console.warn('[EPG] EPG_SOURCES_JSON inválido; EPG externo desativado.');
+}
 const EPG_TIMEOUT_MS = Number(process.env.EPG_TIMEOUT_MS || 45000);
 const EPG_CACHE_TTL_MS = Number(process.env.EPG_CACHE_TTL_MS || 15 * 60 * 1000);
 
@@ -2104,6 +2107,7 @@ builder.defineCatalogHandler(
   async ({ type, id, extra = {} }) => {
     let releaseM3uCatalog = null;
     try {
+      if (LiveTv.handlesCatalog(id)) return await LiveTv.catalog(type, id, extra);
       const xtreamType = id === 'm3u-movies' ? 'movie' : id === 'm3u-series' ? 'series' : id === 'm3u-tv' ? 'tv' : type;
       if (XTREAM_ENABLED && ['movie', 'series', 'tv'].includes(xtreamType)) {
         try {
@@ -2235,6 +2239,9 @@ builder.defineCatalogHandler(
 
 builder.defineMetaHandler(
   async ({ type, id }) => {
+    if (String(id).startsWith(LiveTv.CHANNEL_PREFIX) || String(id).startsWith(LiveTv.EVENT_PREFIX)) {
+      return { meta: await LiveTv.meta(type, id) };
+    }
     const movieMatch = String(id).match(/^xtream-movie-(\d+)$/);
     if (XTREAM_ENABLED && movieMatch) {
       const item = await xtreamMovieInfo(movieMatch[1]);
@@ -2357,6 +2364,9 @@ builder.defineMetaHandler(
 
 builder.defineStreamHandler(
   async ({ type, id }) => {
+    if (String(id).startsWith(LiveTv.CHANNEL_PREFIX) || String(id).startsWith(LiveTv.EVENT_PREFIX)) {
+      return LiveTv.streams(type, id);
+    }
     const rawId = String(id || '').trim();
     const imdbId = rawId.match(/(tt\d+)(?::(\d+):(\d+))?/i);
     if (imdbId) id = `${imdbId[1]}${imdbId[2] ? `:${imdbId[2]}:${imdbId[3]}` : ''}`;
@@ -2567,6 +2577,34 @@ builder.defineStreamHandler(
  * Homepage do addon + rotas Stremio.
  */
 const app = express();
+const providerResolveRequests = new Map();
+app.get('/api/providers', (_req, res) => {
+  res.json({ providers: Object.entries(PROVIDERS).map(([id, provider]) => ({
+    id,
+    name: provider.name,
+    domains: provider.hosts
+  })) });
+});
+app.post('/api/providers/:provider/resolve', express.json({ limit: '8kb' }), async (req, res) => {
+  const now = Date.now();
+  const client = String(req.ip || req.socket?.remoteAddress || 'unknown');
+  const recent = (providerResolveRequests.get(client) || []).filter((timestamp) => now - timestamp < 60_000);
+  if (recent.length >= 30) return res.status(429).json({ error: 'Limite de 30 consultas por minuto excedido' });
+  recent.push(now);
+  providerResolveRequests.set(client, recent);
+  if (providerResolveRequests.size > 5000) {
+    for (const [key, timestamps] of providerResolveRequests) {
+      if (!timestamps.some((timestamp) => now - timestamp < 60_000)) providerResolveRequests.delete(key);
+    }
+  }
+  try {
+    const result = await resolveProvider(req.params.provider, req.body?.url);
+    return res.json(result);
+  } catch (error) {
+    const clientError = /inválida|Informe uma URL|não suportado|Somente URLs|credenciais embutidas|Domínio não permitido|privada ou reservada/i.test(error.message);
+    return res.status(clientError ? 400 : 502).json({ error: error.message });
+  }
+});
 app.use((req, res, next) => {
   const startedAt = Date.now();
   res.on('finish', () => {
@@ -2591,6 +2629,13 @@ app.get('/epg.json', async (_req, res) => {
     });
   } catch (error) {
     res.status(502).json({ error: error.message, channels: [], programmes: [] });
+  }
+});
+app.get('/live-tv/health', async (_req, res) => {
+  try {
+    res.json({ ok: true, ...(await LiveTv.health()) });
+  } catch (error) {
+    res.status(502).json({ ok: false, error: error.message });
   }
 });
 app.use(getRouter(builder.getInterface()));
