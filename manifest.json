@@ -18,9 +18,7 @@
     "m3u-",
     "m3u-series-",
     "xtream-",
-    "tt",
-    "iracematv_channel_",
-    "iracematv_event_"
+    "tt"
   ],
   "catalogs": [
     {
@@ -163,108 +161,6 @@
             "UHD 4K · Canais",
             "VARIEDADES",
             "YOUTUBE 24 HORAS"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "tv",
-      "id": "iracematv",
-      "name": "IracemaTV • Canais",
-      "extra": [
-        {
-          "name": "search",
-          "isRequired": false
-        },
-        {
-          "name": "genre",
-          "isRequired": false,
-          "options": [
-            "Canais Abertos",
-            "Documentários",
-            "Entretenimento",
-            "Esportes",
-            "Filmes e Séries",
-            "Infantil",
-            "Notícias"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "tv",
-      "id": "iracematv_events",
-      "name": "IracemaTV • Eventos ao Vivo",
-      "extra": [
-        {
-          "name": "search",
-          "isRequired": false
-        },
-        {
-          "name": "genre",
-          "isRequired": false,
-          "options": [
-            "Futebol",
-            "Basquete",
-            "Beisebol",
-            "Hóquei",
-            "Vôlei",
-            "Rugby",
-            "MMA",
-            "Golfe",
-            "Outros"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "tv",
-      "id": "iracematv_upcoming",
-      "name": "IracemaTV • Próximos Eventos",
-      "extra": [
-        {
-          "name": "search",
-          "isRequired": false
-        },
-        {
-          "name": "genre",
-          "isRequired": false,
-          "options": [
-            "Futebol",
-            "Basquete",
-            "Beisebol",
-            "Hóquei",
-            "Vôlei",
-            "Rugby",
-            "MMA",
-            "Golfe",
-            "Outros"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "tv",
-      "id": "iracematv_all_events",
-      "name": "IracemaTV • Todos os Eventos",
-      "extra": [
-        {
-          "name": "search",
-          "isRequired": false
-        },
-        {
-          "name": "genre",
-          "isRequired": false,
-          "options": [
-            "Futebol",
-            "Basquete",
-            "Beisebol",
-            "Hóquei",
-            "Vôlei",
-            "Rugby",
-            "MMA",
-            "Golfe",
-            "Outros"
           ]
         }
       ]
