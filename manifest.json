@@ -1,10 +1,6 @@
 {
   "id": "Iracemaflix",
-<<<<<<< HEAD
-  "version": "1.4.1",
-=======
-  "version": "1.1.0",
->>>>>>> b1d3961 (Atualiza Iracemaflix)
+  "version": "1.0.0",
   "name": "Iracemaflix",
   "description": "Filmes, séries e TV",
   "logo": "https://files.catbox.moe/628bx9.png",
@@ -24,13 +20,9 @@
     "xtream-",
     "tt",
     "iracematv_channel_",
-<<<<<<< HEAD
     "iracematv_event_",
     "iracematv_embedtv_channel_",
     "iracematv_embedtv_event_"
-=======
-    "iracematv_event_"
->>>>>>> b1d3961 (Atualiza Iracemaflix)
   ],
   "catalogs": [
     {
@@ -182,7 +174,6 @@
       "id": "iracematv",
       "name": "IracemaTV • Canais",
       "extra": [
-<<<<<<< HEAD
         {
           "name": "search",
           "isRequired": false
@@ -199,13 +190,6 @@
             "Infantil",
             "Notícias"
           ]
-=======
-        { "name": "search", "isRequired": false },
-        {
-          "name": "genre",
-          "isRequired": false,
-          "options": ["Canais Abertos", "Documentários", "Entretenimento", "Esportes", "Filmes e Séries", "Infantil", "Notícias"]
->>>>>>> b1d3961 (Atualiza Iracemaflix)
         }
       ]
     },
@@ -214,7 +198,6 @@
       "id": "iracematv_events",
       "name": "IracemaTV • Eventos ao Vivo",
       "extra": [
-<<<<<<< HEAD
         {
           "name": "search",
           "isRequired": false
@@ -233,13 +216,6 @@
             "Golfe",
             "Outros"
           ]
-=======
-        { "name": "search", "isRequired": false },
-        {
-          "name": "genre",
-          "isRequired": false,
-          "options": ["Futebol", "Basquete", "Beisebol", "Hóquei", "Vôlei", "Rugby", "MMA", "Golfe", "Outros"]
->>>>>>> b1d3961 (Atualiza Iracemaflix)
         }
       ]
     },
@@ -248,7 +224,6 @@
       "id": "iracematv_upcoming",
       "name": "IracemaTV • Próximos Eventos",
       "extra": [
-<<<<<<< HEAD
         {
           "name": "search",
           "isRequired": false
@@ -331,101 +306,6 @@
         {
           "name": "search",
           "isRequired": false
-        }
-      ]
-    },
-    {
-      "type": "movie",
-      "id": "iracema-ranking-movie-imdb",
-      "name": "Filmes • Mais bem avaliados",
-      "extra": [
-        {
-          "name": "search",
-          "isRequired": false
-        }
-      ]
-    },
-    {
-      "type": "movie",
-      "id": "iracema-ranking-movie-popular",
-      "name": "Filmes • Populares",
-      "extra": [
-        {
-          "name": "search",
-          "isRequired": false
-        }
-      ]
-    },
-    {
-      "type": "movie",
-      "id": "iracema-ranking-movie-trending-day",
-      "name": "Filmes • Em alta hoje",
-      "extra": [
-        {
-          "name": "search",
-          "isRequired": false
-        }
-      ]
-    },
-    {
-      "type": "movie",
-      "id": "iracema-ranking-movie-trending-week",
-      "name": "Filmes • Em alta na semana",
-      "extra": [
-        {
-          "name": "search",
-          "isRequired": false
-        }
-      ]
-    },
-    {
-      "type": "series",
-      "id": "iracema-ranking-series-imdb",
-      "name": "Séries • Mais bem avaliados",
-      "extra": [
-        {
-          "name": "search",
-          "isRequired": false
-        }
-      ]
-    },
-    {
-      "type": "series",
-      "id": "iracema-ranking-series-popular",
-      "name": "Séries • Populares",
-      "extra": [
-        {
-          "name": "search",
-          "isRequired": false
-        }
-      ]
-    },
-    {
-      "type": "series",
-      "id": "iracema-ranking-series-trending-day",
-      "name": "Séries • Em alta hoje",
-      "extra": [
-        {
-          "name": "search",
-          "isRequired": false
-        }
-      ]
-    },
-    {
-      "type": "series",
-      "id": "iracema-ranking-series-trending-week",
-      "name": "Séries • Em alta na semana",
-      "extra": [
-        {
-          "name": "search",
-          "isRequired": false
-=======
-        { "name": "search", "isRequired": false },
-        {
-          "name": "genre",
-          "isRequired": false,
-          "options": ["Futebol", "Basquete", "Beisebol", "Hóquei", "Vôlei", "Rugby", "MMA", "Golfe", "Outros"]
->>>>>>> b1d3961 (Atualiza Iracemaflix)
         }
       ]
     }

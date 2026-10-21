@@ -1,19 +1,11 @@
 {
   "name": "iracemaflix",
-<<<<<<< HEAD
-  "version": "1.3.27",
-=======
-  "version": "1.1.0",
->>>>>>> b1d3961 (Atualiza Iracemaflix)
+  "version": "1.0.0",
   "description": "não hospedamos nada, tudo esta na internet para qualquer um poder usar, apenas indexamos",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-<<<<<<< HEAD
     "test": "node --test"
-=======
-    "test": "node --test provider-resolver.test.js live-tv-provider.test.js"
->>>>>>> b1d3961 (Atualiza Iracemaflix)
   },
   "engines": {
     "node": ">=20"
