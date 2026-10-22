@@ -308,6 +308,94 @@
           "isRequired": false
         }
       ]
+    },
+    {
+      "type": "movie",
+      "id": "iracema-ranking-movie-imdb",
+      "name": "Filmes • Mais bem avaliados",
+      "extra": [
+        {
+          "name": "search",
+          "isRequired": false
+        }
+      ]
+    },
+    {
+      "type": "movie",
+      "id": "iracema-ranking-movie-popular",
+      "name": "Filmes • Populares",
+      "extra": [
+        {
+          "name": "search",
+          "isRequired": false
+        }
+      ]
+    },
+    {
+      "type": "movie",
+      "id": "iracema-ranking-movie-trending-day",
+      "name": "Filmes • Em alta hoje",
+      "extra": [
+        {
+          "name": "search",
+          "isRequired": false
+        }
+      ]
+    },
+    {
+      "type": "movie",
+      "id": "iracema-ranking-movie-trending-week",
+      "name": "Filmes • Em alta na semana",
+      "extra": [
+        {
+          "name": "search",
+          "isRequired": false
+        }
+      ]
+    },
+    {
+      "type": "series",
+      "id": "iracema-ranking-series-imdb",
+      "name": "Séries • Mais bem avaliados",
+      "extra": [
+        {
+          "name": "search",
+          "isRequired": false
+        }
+      ]
+    },
+    {
+      "type": "series",
+      "id": "iracema-ranking-series-popular",
+      "name": "Séries • Populares",
+      "extra": [
+        {
+          "name": "search",
+          "isRequired": false
+        }
+      ]
+    },
+    {
+      "type": "series",
+      "id": "iracema-ranking-series-trending-day",
+      "name": "Séries • Em alta hoje",
+      "extra": [
+        {
+          "name": "search",
+          "isRequired": false
+        }
+      ]
+    },
+    {
+      "type": "series",
+      "id": "iracema-ranking-series-trending-week",
+      "name": "Séries • Em alta na semana",
+      "extra": [
+        {
+          "name": "search",
+          "isRequired": false
+        }
+      ]
     }
   ],
   "behaviorHints": {
