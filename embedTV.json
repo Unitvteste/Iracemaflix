@@ -1,10 +1,6 @@
 {
   "source": "https://embedtv.cc/api/channels",
-<<<<<<< HEAD
-  "updatedAt": "2026-10-26T18:48:22.366Z",
-=======
   "updatedAt": "2026-11-03T03:43:27.776Z",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
   "complete": true,
   "total": 147,
   "captured": 147,
@@ -60,20 +56,12 @@
         8
       ],
       "preview": "https://img.faz-o-eli.online/afazenda.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/afazenda",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/afazenda",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "A Fazenda 18"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/ee6c7faedb826978e23310de163fa893/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/ee6c7faedb826978e23310de163fa893/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -85,20 +73,12 @@
         8
       ],
       "preview": "https://img.faz-o-eli.online/afazenda2.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/afazenda2",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/afazenda2",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "A Fazenda 18"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/1b11feb4a141384d7d357dc0d1a09851/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/1b11feb4a141384d7d357dc0d1a09851/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -110,20 +90,12 @@
         8
       ],
       "preview": "https://img.faz-o-eli.online/afazenda3.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/afazenda3",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/afazenda3",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "A Fazenda 18"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/6f1fb09c8720fa430fcd1b5f967c73d6/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/6f1fb09c8720fa430fcd1b5f967c73d6/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -135,20 +107,12 @@
         8
       ],
       "preview": "https://img.faz-o-eli.online/afazenda4.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/afazenda4",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/afazenda4",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "A Fazenda 18"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/28f770b439fb5ae75810b1ad80eaee40/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/28f770b439fb5ae75810b1ad80eaee40/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -160,20 +124,12 @@
         8
       ],
       "preview": "https://img.faz-o-eli.online/afazenda5.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/afazenda5",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/afazenda5",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "A Fazenda 18"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/a02e34091ac73b54132baa5b35defb98/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/a02e34091ac73b54132baa5b35defb98/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -185,20 +141,12 @@
         4
       ],
       "preview": "https://img.faz-o-eli.online/ae.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/ae",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/ae",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Filmes e Séries"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/90a4948c564a4e25f258c9005056ce60/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/90a4948c564a4e25f258c9005056ce60/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -210,20 +158,12 @@
         4
       ],
       "preview": "https://img.faz-o-eli.online/amc.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/amc",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/amc",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Filmes e Séries"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/08b79ba56b24b123b9f059764ee38c72/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/08b79ba56b24b123b9f059764ee38c72/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -235,20 +175,12 @@
         4
       ],
       "preview": "https://img.faz-o-eli.online/axn.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/axn",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/axn",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Filmes e Séries"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/306d383dc603f6545500233a4030feb3/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/306d383dc603f6545500233a4030feb3/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -260,20 +192,12 @@
         4
       ],
       "preview": "https://img.faz-o-eli.online/adultswim.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/adultswim",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/adultswim",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Filmes e Séries"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/5df75328cd2007b4c86c84845b4835c9/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/5df75328cd2007b4c86c84845b4835c9/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -285,20 +209,12 @@
         3
       ],
       "preview": "https://img.faz-o-eli.online/animalplanet.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/animalplanet",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/animalplanet",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Documentarios"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/b2db50971357255c66e5849cbc7a8bf3/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/b2db50971357255c66e5849cbc7a8bf3/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -311,21 +227,13 @@
         6
       ],
       "preview": "https://img.faz-o-eli.online/aparecida.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/aparecida",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/aparecida",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Variedades",
         "Abertos"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/0efc2e13823f299064043558419e2ec2/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/0efc2e13823f299064043558419e2ec2/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -338,21 +246,13 @@
         6
       ],
       "preview": "https://img.faz-o-eli.online/bandnews.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/bandnews",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/bandnews",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Noticias",
         "Abertos"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/a90d9dab3feed2102e680c0c9d2451fb/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/a90d9dab3feed2102e680c0c9d2451fb/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -365,21 +265,13 @@
         5
       ],
       "preview": "https://img.faz-o-eli.online/bandrj.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/bandrj",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/bandrj",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Abertos",
         "Noticias"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/697dc41d09deb887781d5a48b8e91d9c/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/697dc41d09deb887781d5a48b8e91d9c/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -392,21 +284,13 @@
         5
       ],
       "preview": "https://img.faz-o-eli.online/bandsp.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/bandsp",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/bandsp",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Abertos",
         "Noticias"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/edcc737f5ab08a3e092b888461f2bef9/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/edcc737f5ab08a3e092b888461f2bef9/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -420,22 +304,14 @@
         6
       ],
       "preview": "https://img.faz-o-eli.online/bandsports.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/bandsports",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/bandsports",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Esportes",
         "Noticias",
         "Abertos"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/68b45017dbd396c71b70858f3c87f59b/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/68b45017dbd396c71b70858f3c87f59b/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -448,21 +324,13 @@
         7
       ],
       "preview": "https://img.faz-o-eli.online/cnnbrasil.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/cnnbrasil",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/cnnbrasil",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Noticias",
         "Variedades"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/31419407d202ee5d387ab912ef658e52/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/31419407d202ee5d387ab912ef658e52/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -475,21 +343,13 @@
         6
       ],
       "preview": "https://img.faz-o-eli.online/cancaonova.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/cancaonova",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/cancaonova",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Variedades",
         "Abertos"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/9b44d04df38ce4d163838d7f476a06bf/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/9b44d04df38ce4d163838d7f476a06bf/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -501,20 +361,12 @@
         2
       ],
       "preview": "https://img.faz-o-eli.online/cartoonnetwork.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/cartoonnetwork",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/cartoonnetwork",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Infantil"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/7326312e06a62c65350c50ad4dabbcf4/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/7326312e06a62c65350c50ad4dabbcf4/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -526,20 +378,12 @@
         2
       ],
       "preview": "https://img.faz-o-eli.online/cartoonito.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/cartoonito",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/cartoonito",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Infantil"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/562e51c2831afcb73becdbbe7da4ed50/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/562e51c2831afcb73becdbbe7da4ed50/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -551,20 +395,12 @@
         1
       ],
       "preview": "https://img.faz-o-eli.online/caze1.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/caze1",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/caze1",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Esportes"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/c56a2981ecf52df29165b70cbed14770/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/c56a2981ecf52df29165b70cbed14770/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -576,20 +412,12 @@
         1
       ],
       "preview": "https://img.faz-o-eli.online/caze2.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/caze2",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/caze2",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Esportes"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/c8d082b8391c65d30dddbb715caf5a2c/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/c8d082b8391c65d30dddbb715caf5a2c/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -601,20 +429,12 @@
         1
       ],
       "preview": "https://img.faz-o-eli.online/caze3.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/caze3",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/caze3",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Esportes"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/e3d2a2da180dd242102f960c94af8c70/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/e3d2a2da180dd242102f960c94af8c70/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -626,20 +446,12 @@
         4
       ],
       "preview": "https://img.faz-o-eli.online/cinemax.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/cinemax",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/cinemax",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Filmes e Séries"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/7627929c99e250fa3e74e85e5c09dfbe/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/7627929c99e250fa3e74e85e5c09dfbe/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -651,20 +463,12 @@
         1
       ],
       "preview": "https://img.faz-o-eli.online/combate.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/combate",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/combate",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Esportes"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/61c77c11fcf8782d46bdf230250cd83b/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/61c77c11fcf8782d46bdf230250cd83b/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -677,21 +481,13 @@
         7
       ],
       "preview": "https://img.faz-o-eli.online/cultura.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/cultura",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/cultura",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Abertos",
         "Variedades"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/5af68e45c598f60f8693d26494401940/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/5af68e45c598f60f8693d26494401940/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -703,20 +499,12 @@
         3
       ],
       "preview": "https://img.faz-o-eli.online/discoverychannel.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/discoverychannel",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/discoverychannel",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Documentarios"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/8fa7feafb5c42f1c8423152a0084ba8a/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/8fa7feafb5c42f1c8423152a0084ba8a/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -728,20 +516,12 @@
         3
       ],
       "preview": "https://img.faz-o-eli.online/discoveryhh.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/discoveryhh",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/discoveryhh",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Documentarios"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/e63f8d40ca216c74c4fb0378a37482e7/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/e63f8d40ca216c74c4fb0378a37482e7/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -753,20 +533,12 @@
         3
       ],
       "preview": "https://img.faz-o-eli.online/discoveryid.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/discoveryid",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/discoveryid",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Documentarios"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/882901434d45b2fb18445c8b183e225b/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/882901434d45b2fb18445c8b183e225b/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -778,20 +550,12 @@
         2
       ],
       "preview": "https://img.faz-o-eli.online/discoverykids.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/discoverykids",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/discoverykids",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Infantil"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/2e24bb52b04acb6e6735eff553fdcd85/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/2e24bb52b04acb6e6735eff553fdcd85/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -804,21 +568,13 @@
         7
       ],
       "preview": "https://img.faz-o-eli.online/discoveryscience.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/discoveryscience",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/discoveryscience",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Documentarios",
         "Variedades"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/a12d27857dbdb1bacefd4ed4bceedfa4/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/a12d27857dbdb1bacefd4ed4bceedfa4/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -830,20 +586,12 @@
         3
       ],
       "preview": "https://img.faz-o-eli.online/discoverytheather.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/discoverytheather",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/discoverytheather",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Documentarios"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/d74fe6d695be08b4bffecafe53c46cb9/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/d74fe6d695be08b4bffecafe53c46cb9/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -855,20 +603,12 @@
         3
       ],
       "preview": "https://img.faz-o-eli.online/discoveryturbo.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/discoveryturbo",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/discoveryturbo",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Documentarios"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/bfd97521f5182aca7066b23a7d08c3ef/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/bfd97521f5182aca7066b23a7d08c3ef/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -880,20 +620,12 @@
         3
       ],
       "preview": "https://img.faz-o-eli.online/discoveryworld.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/discoveryworld",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/discoveryworld",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Documentarios"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/2f75629475991f77afa6d5560ac9713a/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/2f75629475991f77afa6d5560ac9713a/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -906,21 +638,13 @@
         7
       ],
       "preview": "https://img.faz-o-eli.online/disneyplus1.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/disneyplus1",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/disneyplus1",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Esportes",
         "Variedades"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/c94e799fa4f77681fd178a19a6b22abd/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/c94e799fa4f77681fd178a19a6b22abd/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -933,21 +657,13 @@
         7
       ],
       "preview": "https://img.faz-o-eli.online/disneyplus2.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/disneyplus2",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/disneyplus2",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Esportes",
         "Variedades"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/c19b927c40c7ff69802b737859824d20/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/c19b927c40c7ff69802b737859824d20/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -960,21 +676,13 @@
         7
       ],
       "preview": "https://img.faz-o-eli.online/disneyplus3.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/disneyplus3",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/disneyplus3",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Esportes",
         "Variedades"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/28443cf80823c654cb71b3b0ea5336a7/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/28443cf80823c654cb71b3b0ea5336a7/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -986,20 +694,12 @@
         1
       ],
       "preview": "https://img.faz-o-eli.online/espn.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/espn",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/espn",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Esportes"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/c146c0c2fd0ca7008eae212c1d758c89/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/c146c0c2fd0ca7008eae212c1d758c89/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -1011,20 +711,12 @@
         1
       ],
       "preview": "https://img.faz-o-eli.online/espn2.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/espn2",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/espn2",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Esportes"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/5e14870f2b4cce591c22bed11ad119d3/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/5e14870f2b4cce591c22bed11ad119d3/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -1036,20 +728,12 @@
         1
       ],
       "preview": "https://img.faz-o-eli.online/espn3.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/espn3",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/espn3",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Esportes"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/fe5e4414929a3f6bccb53377ddaed481/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/fe5e4414929a3f6bccb53377ddaed481/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -1061,20 +745,12 @@
         1
       ],
       "preview": "https://img.faz-o-eli.online/espn4.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/espn4",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/espn4",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Esportes"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/0adc0e889642c9ab3fd7e3cb9e3d2856/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/0adc0e889642c9ab3fd7e3cb9e3d2856/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -1086,20 +762,12 @@
         1
       ],
       "preview": "https://img.faz-o-eli.online/espn5.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/espn5",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/espn5",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Esportes"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/93b307cac23b067223c32043cdfdefca/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/93b307cac23b067223c32043cdfdefca/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -1111,20 +779,12 @@
         1
       ],
       "preview": "https://img.faz-o-eli.online/espn6.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/espn6",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/espn6",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Esportes"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/7adb150ec4a34418566e71ae2126b707/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/7adb150ec4a34418566e71ae2126b707/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -1136,20 +796,12 @@
         7
       ],
       "preview": "https://img.faz-o-eli.online/foodnetwork.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/foodnetwork",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/foodnetwork",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Variedades"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/01b5a1d5bdd623c770cbc03eda9e57cb/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/01b5a1d5bdd623c770cbc03eda9e57cb/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -1161,20 +813,12 @@
         4
       ],
       "preview": "https://img.faz-o-eli.online/gnt.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/gnt",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/gnt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Filmes e Séries"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/e053cc5f53cbfc88fc58c065063c319f/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/e053cc5f53cbfc88fc58c065063c319f/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -1186,20 +830,12 @@
         6
       ],
       "preview": "https://img.faz-o-eli.online/globoam.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/globoam",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/globoam",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Abertos"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/52edae35c460f79bd9974ea2612368c3/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/52edae35c460f79bd9974ea2612368c3/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -1211,20 +847,12 @@
         6
       ],
       "preview": "https://img.faz-o-eli.online/globodf.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/globodf",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/globodf",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Abertos"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/794fd9bd36988924fcde3b92825e5054/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/794fd9bd36988924fcde3b92825e5054/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -1236,20 +864,12 @@
         6
       ],
       "preview": "https://img.faz-o-eli.online/globoce.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/globoce",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/globoce",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Abertos"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/b9da731a47899db1a517365a95e00809/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/b9da731a47899db1a517365a95e00809/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -1261,20 +881,12 @@
         6
       ],
       "preview": "https://img.faz-o-eli.online/globoes.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/globoes",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/globoes",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Abertos"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/0b5a05c46238b8a8b2eb4a6e8830c6ec/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/0b5a05c46238b8a8b2eb4a6e8830c6ec/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -1286,20 +898,12 @@
         6
       ],
       "preview": "https://img.faz-o-eli.online/globomg.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/globomg",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/globomg",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Abertos"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/f13bd3aee6a0899c258c13c3b42d0608/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/f13bd3aee6a0899c258c13c3b42d0608/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -1311,20 +915,12 @@
         6
       ],
       "preview": "https://img.faz-o-eli.online/globogo.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/globogo",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/globogo",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Abertos"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/2355f87f5a8f1ef4e82e7a2137c2ed77/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/2355f87f5a8f1ef4e82e7a2137c2ed77/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -1337,21 +933,13 @@
         6
       ],
       "preview": "https://img.faz-o-eli.online/globonews.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/globonews",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/globonews",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Noticias",
         "Abertos"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/e2f57f5c3cdc0f1dfa4e3a3cc1aad846/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/e2f57f5c3cdc0f1dfa4e3a3cc1aad846/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -1363,20 +951,12 @@
         6
       ],
       "preview": "https://img.faz-o-eli.online/globonovelas.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/globonovelas",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/globonovelas",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Abertos"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/923161550744468a1f9b87fa01c49642/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/923161550744468a1f9b87fa01c49642/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -1388,20 +968,12 @@
         6
       ],
       "preview": "https://img.faz-o-eli.online/globopb.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/globopb",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/globopb",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Abertos"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/8aa7cacd88230924feb2e314dde9658d/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/8aa7cacd88230924feb2e314dde9658d/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -1413,20 +985,12 @@
         6
       ],
       "preview": "https://img.faz-o-eli.online/globope.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/globope",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/globope",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Abertos"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/240d48a1d9459a42f1354cf9ad78671b/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/240d48a1d9459a42f1354cf9ad78671b/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -1438,20 +1002,12 @@
         6
       ],
       "preview": "https://img.faz-o-eli.online/globorj.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/globorj",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/globorj",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Abertos"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/85e8d6c86fdc433bca04b55abcb8e8e7/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/85e8d6c86fdc433bca04b55abcb8e8e7/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -1463,20 +1019,12 @@
         6
       ],
       "preview": "https://img.faz-o-eli.online/globors.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/globors",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/globors",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Abertos"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/10895170f65bb6dd551a8f9909a6728d/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/10895170f65bb6dd551a8f9909a6728d/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -1488,20 +1036,12 @@
         6
       ],
       "preview": "https://img.faz-o-eli.online/globosp.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/globosp",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/globosp",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Abertos"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/e5b90a9d7647e25adabe80de72131f86/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/e5b90a9d7647e25adabe80de72131f86/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -1513,20 +1053,12 @@
         2
       ],
       "preview": "https://img.faz-o-eli.online/gloob.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/gloob",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/gloob",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Infantil"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/4cf686a1a5d3e62600351f8405c92b87/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/4cf686a1a5d3e62600351f8405c92b87/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -1538,20 +1070,12 @@
         4
       ],
       "preview": "https://img.faz-o-eli.online/hbo.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/hbo",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/hbo",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Filmes e Séries"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/576ee0580b01f6c3a8864bb318900a85/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/576ee0580b01f6c3a8864bb318900a85/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -1563,20 +1087,12 @@
         4
       ],
       "preview": "https://img.faz-o-eli.online/hbo2.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/hbo2",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/hbo2",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Filmes e Séries"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/4d0b25fd825653148766ae3e6dc3743b/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/4d0b25fd825653148766ae3e6dc3743b/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -1588,20 +1104,12 @@
         4
       ],
       "preview": "https://img.faz-o-eli.online/hbofamily.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/hbofamily",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/hbofamily",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Filmes e Séries"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/4c913a83693a6eeb8b9139995c4b4264/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/4c913a83693a6eeb8b9139995c4b4264/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -1613,20 +1121,12 @@
         4
       ],
       "preview": "https://img.faz-o-eli.online/hbomundi.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/hbomundi",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/hbomundi",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Filmes e Séries"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/1b867e172c110c39d96ee236ff8b44b5/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/1b867e172c110c39d96ee236ff8b44b5/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -1638,20 +1138,12 @@
         4
       ],
       "preview": "https://img.faz-o-eli.online/hbopop.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/hbopop",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/hbopop",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Filmes e Séries"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/beb58f1c653d16eedd17d7cb642e3b68/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/beb58f1c653d16eedd17d7cb642e3b68/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -1663,20 +1155,12 @@
         4
       ],
       "preview": "https://img.faz-o-eli.online/hboplus.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/hboplus",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/hboplus",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Filmes e Séries"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/f12c33ebaf4ae65046a1ffdda8811437/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/f12c33ebaf4ae65046a1ffdda8811437/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -1688,20 +1172,12 @@
         4
       ],
       "preview": "https://img.faz-o-eli.online/hboxtreme.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/hboxtreme",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/hboxtreme",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Filmes e Séries"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/747e41be088ffd715bce8c65fc48e38c/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/747e41be088ffd715bce8c65fc48e38c/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -1714,21 +1190,13 @@
         7
       ],
       "preview": "https://img.faz-o-eli.online/hgtv.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/hgtv",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/hgtv",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Filmes e Séries",
         "Variedades"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/e5651c1c1ba05284a348f075694b2b98/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/e5651c1c1ba05284a348f075694b2b98/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -1740,20 +1208,12 @@
         3
       ],
       "preview": "https://img.faz-o-eli.online/history.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/history",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/history",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Documentarios"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/5d1c8c31561de757a82c9219b1edf7af/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/5d1c8c31561de757a82c9219b1edf7af/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -1765,20 +1225,12 @@
         3
       ],
       "preview": "https://img.faz-o-eli.online/history2.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/history2",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/history2",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Documentarios"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/5c0188971813ad4c80f83a719f0d2eac/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/5c0188971813ad4c80f83a719f0d2eac/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -1791,21 +1243,13 @@
         7
       ],
       "preview": "https://img.faz-o-eli.online/mtv.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/mtv",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/mtv",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Abertos",
         "Variedades"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/67ca14e572b2a5f57288e39bc882783f/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/67ca14e572b2a5f57288e39bc882783f/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -1817,20 +1261,12 @@
         7
       ],
       "preview": "https://img.faz-o-eli.online/masterchef.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/masterchef",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/masterchef",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Variedades"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/5a4ab022be6b78ace9bff4ce501f667c/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/5a4ab022be6b78ace9bff4ce501f667c/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -1842,20 +1278,12 @@
         1
       ],
       "preview": "https://img.faz-o-eli.online/max1.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/max1",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/max1",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Esportes"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/522a22259e192b77e867da18878b2677/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/522a22259e192b77e867da18878b2677/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -1867,20 +1295,12 @@
         1
       ],
       "preview": "https://img.faz-o-eli.online/max2.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/max2",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/max2",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Esportes"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/3b555c5c3fb7dd9bff86fcfb6c6ac739/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/3b555c5c3fb7dd9bff86fcfb6c6ac739/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -1892,20 +1312,12 @@
         1
       ],
       "preview": "https://img.faz-o-eli.online/max3.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/max3",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/max3",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Esportes"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/2f3e1d465837b55ae6d0fe76f995e912/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/2f3e1d465837b55ae6d0fe76f995e912/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -1917,20 +1329,12 @@
         4
       ],
       "preview": "https://img.faz-o-eli.online/megapix.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/megapix",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/megapix",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Filmes e Séries"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/c33a8dfa4415c6de6b2683808b06340d/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/c33a8dfa4415c6de6b2683808b06340d/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -1943,21 +1347,13 @@
         7
       ],
       "preview": "https://img.faz-o-eli.online/multishow.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/multishow",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/multishow",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Abertos",
         "Variedades"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/27d865041e301dccc5f39012d66da6e1/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/27d865041e301dccc5f39012d66da6e1/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -1969,20 +1365,12 @@
         4
       ],
       "preview": "https://img.faz-o-eli.online/off.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/off",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/off",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Filmes e Séries"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/8ff12354498f3731fe4865abd2e2770b/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/8ff12354498f3731fe4865abd2e2770b/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -1994,20 +1382,12 @@
         1
       ],
       "preview": "https://img.faz-o-eli.online/paramountplus.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/paramountplus",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/paramountplus",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Esportes"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/cab2ce6bbe489364b94ed2ab7e486ac6/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/cab2ce6bbe489364b94ed2ab7e486ac6/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -2019,20 +1399,12 @@
         1
       ],
       "preview": "https://img.faz-o-eli.online/paramountplus2.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/paramountplus2",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/paramountplus2",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Esportes"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/1d95266cfd67920b05fbaef02c4deaae/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/1d95266cfd67920b05fbaef02c4deaae/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -2043,19 +1415,11 @@
         0
       ],
       "preview": "https://img.faz-o-eli.online/playboy.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/playboy",
-      "categoryNames": [
-        "Todos"
-      ],
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/e312e1675bbacead69890d1b2e133855/error.txt",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/playboy",
       "categoryNames": [
         "Todos"
       ],
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/e312e1675bbacead69890d1b2e133855/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -2067,20 +1431,12 @@
         1
       ],
       "preview": "https://img.faz-o-eli.online/premiere.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/premiere",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/premiere",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Esportes"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/b9a5124dc1cd9a72f1e97ff3547fe5fc/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/b9a5124dc1cd9a72f1e97ff3547fe5fc/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -2092,20 +1448,12 @@
         1
       ],
       "preview": "https://img.faz-o-eli.online/premiere2.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/premiere2",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/premiere2",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Esportes"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/3d75ef6da762791e77da0343b7488c38/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/3d75ef6da762791e77da0343b7488c38/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -2117,20 +1465,12 @@
         1
       ],
       "preview": "https://img.faz-o-eli.online/premiere3.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/premiere3",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/premiere3",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Esportes"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/77e812948dbd5c1429adc0417a58cf34/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/77e812948dbd5c1429adc0417a58cf34/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -2142,20 +1482,12 @@
         1
       ],
       "preview": "https://img.faz-o-eli.online/premiere4.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/premiere4",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/premiere4",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Esportes"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/9c4ea7755009d9dc653682ac579c9be4/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/9c4ea7755009d9dc653682ac579c9be4/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -2167,20 +1499,12 @@
         1
       ],
       "preview": "https://img.faz-o-eli.online/premiere5.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/premiere5",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/premiere5",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Esportes"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/7c62fcb7580ffea77473244cb8a2f707/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/7c62fcb7580ffea77473244cb8a2f707/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -2192,20 +1516,12 @@
         1
       ],
       "preview": "https://img.faz-o-eli.online/premiere6.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/premiere6",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/premiere6",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Esportes"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/e95dc6cce1036b13dbf5e7c2b510a8a5/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/e95dc6cce1036b13dbf5e7c2b510a8a5/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -2217,20 +1533,12 @@
         1
       ],
       "preview": "https://img.faz-o-eli.online/premiere7.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/premiere7",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/premiere7",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Esportes"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/c28ae4fed37aee71d866c80e12426e87/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/c28ae4fed37aee71d866c80e12426e87/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -2242,20 +1550,12 @@
         1
       ],
       "preview": "https://img.faz-o-eli.online/premiere8.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/premiere8",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/premiere8",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Esportes"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/e44f32eb8116189fcfef03734d40800a/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/e44f32eb8116189fcfef03734d40800a/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -2267,20 +1567,12 @@
         1
       ],
       "preview": "https://img.faz-o-eli.online/primevideo.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/primevideo",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/primevideo",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Esportes"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/45bc7d44ef0e568c75c3ba252544c9c4/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/45bc7d44ef0e568c75c3ba252544c9c4/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -2292,20 +1584,12 @@
         1
       ],
       "preview": "https://img.faz-o-eli.online/primevideo2.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/primevideo2",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/primevideo2",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Esportes"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/ebd2e0a238ea19f4d3dcfb38fe154f93/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/ebd2e0a238ea19f4d3dcfb38fe154f93/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -2317,20 +1601,12 @@
         1
       ],
       "preview": "https://img.faz-o-eli.online/primevideo3.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/primevideo3",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/primevideo3",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Esportes"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/0e575b1be5652125b365ae07e5660d66/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/0e575b1be5652125b365ae07e5660d66/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -2342,20 +1618,12 @@
         1
       ],
       "preview": "https://img.faz-o-eli.online/primevideo4.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/primevideo4",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/primevideo4",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Esportes"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/69a94615b235159ed0e2f48a04929503/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/69a94615b235159ed0e2f48a04929503/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -2369,22 +1637,14 @@
         7
       ],
       "preview": "https://img.faz-o-eli.online/recordmg.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/recordmg",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/recordmg",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Abertos",
         "Noticias",
         "Variedades"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/16cf8e025d9ac7ed1c167536ec99c834/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/16cf8e025d9ac7ed1c167536ec99c834/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -2398,22 +1658,14 @@
         7
       ],
       "preview": "https://img.faz-o-eli.online/recordrj.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/recordrj",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/recordrj",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Abertos",
         "Noticias",
         "Variedades"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/501d0415932ad05c6ade898d47383870/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/501d0415932ad05c6ade898d47383870/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -2427,22 +1679,14 @@
         7
       ],
       "preview": "https://img.faz-o-eli.online/recordsp.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/recordsp",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/recordsp",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Abertos",
         "Noticias",
         "Variedades"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/d6df707cb4205199a7c3bd841d47ab46/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/d6df707cb4205199a7c3bd841d47ab46/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -2456,22 +1700,14 @@
         7
       ],
       "preview": "https://img.faz-o-eli.online/recordgo.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/recordgo",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/recordgo",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Abertos",
         "Noticias",
         "Variedades"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/0df66f0412894e2cf48ddce13a4ad15b/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/0df66f0412894e2cf48ddce13a4ad15b/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -2484,21 +1720,13 @@
         6
       ],
       "preview": "https://img.faz-o-eli.online/redevida.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/redevida",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/redevida",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Variedades",
         "Abertos"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/3265b841255a6ef4f95ee25891e2f2d4/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/3265b841255a6ef4f95ee25891e2f2d4/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -2512,22 +1740,14 @@
         7
       ],
       "preview": "https://img.faz-o-eli.online/sbtrj.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/sbtrj",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/sbtrj",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Noticias",
         "Abertos",
         "Variedades"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/c68ff40d17c636c94204abf7cc411e6c/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/c68ff40d17c636c94204abf7cc411e6c/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -2541,22 +1761,14 @@
         7
       ],
       "preview": "https://img.faz-o-eli.online/sbtsp.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/sbtsp",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/sbtsp",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Noticias",
         "Abertos",
         "Variedades"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/f12e42d4569fbca9d600ebcec234b17b/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/f12e42d4569fbca9d600ebcec234b17b/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -2567,19 +1779,11 @@
         0
       ],
       "preview": "https://img.faz-o-eli.online/sexyhot.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/sexyhot",
-      "categoryNames": [
-        "Todos"
-      ],
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/1eb8cd31ed7db7e3352384d3912c2e7a/error.txt",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/sexyhot",
       "categoryNames": [
         "Todos"
       ],
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/1eb8cd31ed7db7e3352384d3912c2e7a/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -2591,20 +1795,12 @@
         4
       ],
       "preview": "https://img.faz-o-eli.online/sonychannel.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/sonychannel",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/sonychannel",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Filmes e Séries"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/60ead3f9d488db25e2942464820d432b/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/60ead3f9d488db25e2942464820d432b/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -2616,20 +1812,12 @@
         4
       ],
       "preview": "https://img.faz-o-eli.online/space.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/space",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/space",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Filmes e Séries"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/90ad9f883f842745c2f608732c88e56e/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/90ad9f883f842745c2f608732c88e56e/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -2641,20 +1829,12 @@
         1
       ],
       "preview": "https://img.faz-o-eli.online/sportynet.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/sportynet",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/sportynet",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Esportes"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/0e1471ec23b2570782083639e2a73714/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/0e1471ec23b2570782083639e2a73714/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -2666,20 +1846,12 @@
         1
       ],
       "preview": "https://img.faz-o-eli.online/sportynetplus1.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/sportynetplus1",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/sportynetplus1",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Esportes"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/8fe421a696e2639ea2524752e81d9111/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/8fe421a696e2639ea2524752e81d9111/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -2691,20 +1863,12 @@
         1
       ],
       "preview": "https://img.faz-o-eli.online/sportynetplus2.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/sportynetplus2",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/sportynetplus2",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Esportes"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/977c0569446b0da2cba11d3aaf70b447/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/977c0569446b0da2cba11d3aaf70b447/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -2716,20 +1880,12 @@
         1
       ],
       "preview": "https://img.faz-o-eli.online/sportynetplus3.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/sportynetplus3",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/sportynetplus3",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Esportes"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/3e65c0160eb67ecc7c4f3080161c8a80/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/3e65c0160eb67ecc7c4f3080161c8a80/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -2741,20 +1897,12 @@
         1
       ],
       "preview": "https://img.faz-o-eli.online/sportv.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/sportv",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/sportv",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Esportes"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/0ad81c47cd1a3290a7e0840caffff3b6/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/0ad81c47cd1a3290a7e0840caffff3b6/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -2766,20 +1914,12 @@
         1
       ],
       "preview": "https://img.faz-o-eli.online/sportv2.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/sportv2",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/sportv2",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Esportes"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/91b986774c37bc63570ac333673e82db/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/91b986774c37bc63570ac333673e82db/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -2791,20 +1931,12 @@
         1
       ],
       "preview": "https://img.faz-o-eli.online/sportv3.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/sportv3",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/sportv3",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Esportes"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/1dff09d1b1258b780ee786aa7be2736f/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/1dff09d1b1258b780ee786aa7be2736f/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -2816,20 +1948,12 @@
         1
       ],
       "preview": "https://img.faz-o-eli.online/sportv4.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/sportv4",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/sportv4",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Esportes"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/ca0f548594af039f56a60e52d6d8404c/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/ca0f548594af039f56a60e52d6d8404c/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -2841,20 +1965,12 @@
         4
       ],
       "preview": "https://img.faz-o-eli.online/starchannel.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/starchannel",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/starchannel",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Filmes e Séries"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/d8d060fb3df9f30e590eee40bd72750c/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/d8d060fb3df9f30e590eee40bd72750c/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -2866,20 +1982,12 @@
         4
       ],
       "preview": "https://img.faz-o-eli.online/studiouniversal.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/studiouniversal",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/studiouniversal",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Filmes e Séries"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/76e2f85ef835fe02fa70d57a67106b7c/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/76e2f85ef835fe02fa70d57a67106b7c/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -2891,20 +1999,12 @@
         4
       ],
       "preview": "https://img.faz-o-eli.online/tcm.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/tcm",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/tcm",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Filmes e Séries"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/da93d94aec336b86c655b74b3f9c6e95/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/da93d94aec336b86c655b74b3f9c6e95/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -2916,20 +2016,12 @@
         4
       ],
       "preview": "https://img.faz-o-eli.online/tlc.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/tlc",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/tlc",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Filmes e Séries"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/f4dfe4504e94c1984d95cb91e9748989/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/f4dfe4504e94c1984d95cb91e9748989/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -2941,20 +2033,12 @@
         4
       ],
       "preview": "https://img.faz-o-eli.online/tnt.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/tnt",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/tnt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Filmes e Séries"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/821718d0ed5a938e3704f8145fb02562/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/821718d0ed5a938e3704f8145fb02562/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -2966,20 +2050,12 @@
         4
       ],
       "preview": "https://img.faz-o-eli.online/tntnovelas.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/tntnovelas",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/tntnovelas",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Filmes e Séries"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/59d538890682091fbb0a4bb3573ffba4/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/59d538890682091fbb0a4bb3573ffba4/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -2991,20 +2067,12 @@
         4
       ],
       "preview": "https://img.faz-o-eli.online/tntseries.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/tntseries",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/tntseries",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Filmes e Séries"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/a6102696f74afb52e8454e775f322f5c/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/a6102696f74afb52e8454e775f322f5c/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -3017,21 +2085,13 @@
         6
       ],
       "preview": "https://img.faz-o-eli.online/tvpaieterno.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/tvpaieterno",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/tvpaieterno",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Variedades",
         "Abertos"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/2d410e713153bf81e849b1d448f6fff0/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/2d410e713153bf81e849b1d448f6fff0/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -3043,20 +2103,12 @@
         4
       ],
       "preview": "https://img.faz-o-eli.online/telecineaction.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/telecineaction",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/telecineaction",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Filmes e Séries"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/01e2ce7627e8c49d6720826f098487d5/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/01e2ce7627e8c49d6720826f098487d5/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -3068,20 +2120,12 @@
         4
       ],
       "preview": "https://img.faz-o-eli.online/telecinecult.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/telecinecult",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/telecinecult",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Filmes e Séries"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/73e89d2cc5040b9ca96f2936179a40c5/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/73e89d2cc5040b9ca96f2936179a40c5/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -3093,20 +2137,12 @@
         4
       ],
       "preview": "https://img.faz-o-eli.online/telecinefun.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/telecinefun",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/telecinefun",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Filmes e Séries"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/fb0ded652256a6dce28539a82e16ae4f/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/fb0ded652256a6dce28539a82e16ae4f/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -3118,20 +2154,12 @@
         4
       ],
       "preview": "https://img.faz-o-eli.online/telecinepipoca.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/telecinepipoca",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/telecinepipoca",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Filmes e Séries"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/36840f78eda5e2bd24a53b8e20534c45/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/36840f78eda5e2bd24a53b8e20534c45/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -3143,20 +2171,12 @@
         4
       ],
       "preview": "https://img.faz-o-eli.online/telecinepremium.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/telecinepremium",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/telecinepremium",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Filmes e Séries"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/742207ffcfedaa43f72ede2360ec613a/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/742207ffcfedaa43f72ede2360ec613a/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -3168,20 +2188,12 @@
         4
       ],
       "preview": "https://img.faz-o-eli.online/telecinetouch.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/telecinetouch",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/telecinetouch",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Filmes e Séries"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/ee7a8d363ded1409276f02ae9677b094/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/ee7a8d363ded1409276f02ae9677b094/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -3193,20 +2205,12 @@
         1
       ],
       "preview": "https://img.faz-o-eli.online/ufcfightpass.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/ufcfightpass",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/ufcfightpass",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Esportes"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/0095c8c814f8e33b3243815b51ac1960/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/0095c8c814f8e33b3243815b51ac1960/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -3218,20 +2222,12 @@
         4
       ],
       "preview": "https://img.faz-o-eli.online/universaltv.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/universaltv",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/universaltv",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Filmes e Séries"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/7d607d14bdc59bcdc6bfaa055ec20410/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/7d607d14bdc59bcdc6bfaa055ec20410/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -3243,20 +2239,12 @@
         4
       ],
       "preview": "https://img.faz-o-eli.online/warnerchannel.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/warnerchannel",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/warnerchannel",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Filmes e Séries"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/176ef5a2e7d424c92ebc1da2dac40ff1/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/176ef5a2e7d424c92ebc1da2dac40ff1/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -3269,21 +2257,13 @@
         7
       ],
       "preview": "https://img.faz-o-eli.online/xsports.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/xsports",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/xsports",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Esportes",
         "Variedades"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/f7509abb9e9edb60b950a81c7450fa7e/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/f7509abb9e9edb60b950a81c7450fa7e/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -3296,21 +2276,13 @@
         1
       ],
       "preview": "https://img.faz-o-eli.online/pt_abola.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/pt_abola",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/pt_abola",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Portugal",
         "Esportes"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/2515baa11fe47e41305a9baa7814d215/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/2515baa11fe47e41305a9baa7814d215/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -3323,21 +2295,13 @@
         1
       ],
       "preview": "https://img.faz-o-eli.online/pt_benficatv.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/pt_benficatv",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/pt_benficatv",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Portugal",
         "Esportes"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/2a83033c67fb7b5b363fc9b79bddbd2a/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/2a83033c67fb7b5b363fc9b79bddbd2a/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -3350,21 +2314,13 @@
         1
       ],
       "preview": "https://img.faz-o-eli.online/pt_canal11.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/pt_canal11",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/pt_canal11",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Portugal",
         "Esportes"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/597e12c86abbb0a1d194502aa0c9089c/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/597e12c86abbb0a1d194502aa0c9089c/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -3377,21 +2333,13 @@
         1
       ],
       "preview": "https://img.faz-o-eli.online/pt_eleven1.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/pt_eleven1",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/pt_eleven1",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Portugal",
         "Esportes"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/24b23412032130fd7349c318d6235aac/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/24b23412032130fd7349c318d6235aac/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -3404,21 +2352,13 @@
         1
       ],
       "preview": "https://img.faz-o-eli.online/pt_eleven2.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/pt_eleven2",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/pt_eleven2",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Portugal",
         "Esportes"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/c5cdc8846e5a2cdb1fde31d6252ee2ed/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/c5cdc8846e5a2cdb1fde31d6252ee2ed/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -3431,21 +2371,13 @@
         1
       ],
       "preview": "https://img.faz-o-eli.online/pt_eleven3.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/pt_eleven3",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/pt_eleven3",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Portugal",
         "Esportes"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/48c901296b3d9f7372208898982f5c80/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/48c901296b3d9f7372208898982f5c80/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -3458,21 +2390,13 @@
         1
       ],
       "preview": "https://img.faz-o-eli.online/pt_sportv1.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/pt_sportv1",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/pt_sportv1",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Portugal",
         "Esportes"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/028cd8d8b617abc5c7277df046aba44c/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/028cd8d8b617abc5c7277df046aba44c/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -3485,21 +2409,13 @@
         1
       ],
       "preview": "https://img.faz-o-eli.online/pt_sportv2.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/pt_sportv2",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/pt_sportv2",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Portugal",
         "Esportes"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/26826e44af6529d9a887b359e1ac2572/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/26826e44af6529d9a887b359e1ac2572/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -3512,21 +2428,13 @@
         1
       ],
       "preview": "https://img.faz-o-eli.online/pt_sportv3.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/pt_sportv3",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/pt_sportv3",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Portugal",
         "Esportes"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/09151284b99f035f53ac00102e21613e/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/09151284b99f035f53ac00102e21613e/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -3539,21 +2447,13 @@
         1
       ],
       "preview": "https://img.faz-o-eli.online/pt_sportv4.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/pt_sportv4",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/pt_sportv4",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Portugal",
         "Esportes"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/5a437bd10f6e5cca3d41f07d2942c215/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/5a437bd10f6e5cca3d41f07d2942c215/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -3566,21 +2466,13 @@
         1
       ],
       "preview": "https://img.faz-o-eli.online/pt_sportv5.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/pt_sportv5",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/pt_sportv5",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Portugal",
         "Esportes"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/34ada12e30d8a5e39ca8491428cba3d7/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/34ada12e30d8a5e39ca8491428cba3d7/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -3593,21 +2485,13 @@
         1
       ],
       "preview": "https://img.faz-o-eli.online/pt_sportv6.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/pt_sportv6",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/pt_sportv6",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Portugal",
         "Esportes"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/7b3783edfa31bae8ace16325efe114a7/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/7b3783edfa31bae8ace16325efe114a7/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -3620,21 +2504,13 @@
         1
       ],
       "preview": "https://img.faz-o-eli.online/pt_sportv7.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/pt_sportv7",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/pt_sportv7",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Portugal",
         "Esportes"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/8602e1ab0efa7085d59839cf8764c395/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/8602e1ab0efa7085d59839cf8764c395/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -3647,21 +2523,13 @@
         2
       ],
       "preview": "https://img.faz-o-eli.online/24h_chaves.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/24h_chaves",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/24h_chaves",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Variedades",
         "Infantil"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/2a670c222cc118edbd8603b25486a1ab/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/2a670c222cc118edbd8603b25486a1ab/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -3674,21 +2542,13 @@
         2
       ],
       "preview": "https://img.faz-o-eli.online/24h_dragonball.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/24h_dragonball",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/24h_dragonball",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Variedades",
         "Infantil"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/742a8d12c0a3ef5b594817ec18504f71/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/742a8d12c0a3ef5b594817ec18504f71/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -3700,20 +2560,12 @@
         7
       ],
       "preview": "https://img.faz-o-eli.online/24h_friends.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/24h_friends",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/24h_friends",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Variedades"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/e6761d1dbb7b6189e20ee04bac7ff4c3/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/e6761d1dbb7b6189e20ee04bac7ff4c3/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -3726,21 +2578,13 @@
         2
       ],
       "preview": "https://img.faz-o-eli.online/24h_naruto.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/24h_naruto",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/24h_naruto",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Variedades",
         "Infantil"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/09dca9dbbcf21ec9eb7f9dfeaa5f1eb7/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/09dca9dbbcf21ec9eb7f9dfeaa5f1eb7/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -3753,21 +2597,13 @@
         2
       ],
       "preview": "https://img.faz-o-eli.online/24h_simpsons.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/24h_simpsons",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/24h_simpsons",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Variedades",
         "Infantil"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/d671840087a5ba4ae2b3c680e355ed6c/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/d671840087a5ba4ae2b3c680e355ed6c/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -3779,20 +2615,12 @@
         7
       ],
       "preview": "https://img.faz-o-eli.online/24h_odeiachris.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/24h_odeiachris",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/24h_odeiachris",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Variedades"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/d1ec15ad300f8d6ab628794388f9dbfe/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/d1ec15ad300f8d6ab628794388f9dbfe/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     },
     {
@@ -3805,21 +2633,13 @@
         2
       ],
       "preview": "https://img.faz-o-eli.online/24h_picapau.prev.png",
-<<<<<<< HEAD
-      "url": "https://e3e47154d482d8fc9bbc1224b4d2b706.embedtv.cc/24h_picapau",
-=======
       "url": "https://9d3569088e0b9028ea4e8156bf1cbca4.embedtv.cc/24h_picapau",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "categoryNames": [
         "Todos",
         "Variedades",
         "Infantil"
       ],
-<<<<<<< HEAD
-      "errorTxt": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/290b7499d00602751cff968e500dd312/error.txt",
-=======
       "errorTxt": "https://92ef03b0a53c20499bcde22fe03440c5.s25-cloudfront-net.lat/stream/290b7499d00602751cff968e500dd312/error.txt",
->>>>>>> 3bb3a95 (Atualização do Iracemaflix)
       "captureStatus": "captured"
     }
   ]
