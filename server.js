@@ -1754,7 +1754,7 @@ function positiveEnvNumber(name, fallback, max = 600_000) {
   return fallback;
 }
 
-const PORT = Number(CONFIG.PORT || 7000);
+const PORT = Number(process.env.PORT || CONFIG.PORT || 7000);
 const M3U_URL = CONFIG.M3U_URL || './playlist-real-full.m3u';
 const SMART_CMS_FALLBACK_M3U_URL = CONFIG.SMART_CMS_FALLBACK_M3U_URL || '';
 const LOCAL_PLAYLIST = Boolean(M3U_URL && !/^https?:\/\//i.test(M3U_URL.trim()));
