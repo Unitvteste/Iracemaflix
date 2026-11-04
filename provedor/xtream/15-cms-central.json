@@ -1,0 +1,10 @@
+{
+  "id": "cms-central",
+  "sourceName": "Smart CMS",
+  "base": "http://smart.cms-central.ovh:80",
+  "username": "78069211",
+  "password": "fk7106",
+  "playlistUrl": "http://smart.cms-central.ovh:80/get.php?username=78069211&password=fk7106&type=m3u_plus",
+  "xtreamTimeoutMs": 50000,
+  "m3uTimeoutMs": 90000
+}

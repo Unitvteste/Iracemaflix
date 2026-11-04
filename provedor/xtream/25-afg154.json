@@ -1,0 +1,10 @@
+{
+  "id": "afg154",
+  "sourceName": "AFG154",
+  "base": "http://afg154.life",
+  "username": "2517196817962",
+  "password": "1854172424814",
+  "playlistUrl": "http://afg154.life/get.php?username=2517196817962&password=1854172424814&type=m3u_plus",
+  "xtreamTimeoutMs": 55000,
+  "m3uTimeoutMs": 90000
+}

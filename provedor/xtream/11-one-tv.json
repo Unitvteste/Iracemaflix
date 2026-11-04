@@ -1,0 +1,10 @@
+{
+  "id": "one-tv",
+  "sourceName": "One TV",
+  "base": "http://one-tv.sbs",
+  "username": "9a31d0691f",
+  "password": "c9090c45007e",
+  "playlistUrl": "http://one-tv.sbs/get.php?username=9a31d0691f&password=c9090c45007e&type=m3u_plus",
+  "xtreamTimeoutMs": 50000,
+  "m3uTimeoutMs": 50000
+}

@@ -1,0 +1,10 @@
+{
+  "id": "5ce",
+  "sourceName": "5CE",
+  "base": "http://5ce.me",
+  "username": "982268151",
+  "password": "ativo1357",
+  "playlistUrl": "http://5ce.me/get.php?username=982268151&password=ativo1357&type=m3u_plus",
+  "xtreamTimeoutMs": 15000,
+  "m3uTimeoutMs": 90000
+}

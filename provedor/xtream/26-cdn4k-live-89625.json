@@ -1,0 +1,10 @@
+{
+  "id": "cdn4k-live-89625",
+  "sourceName": "CDN4K.live 89625",
+  "base": "http://cdn4k.live:80",
+  "username": "89625u16",
+  "password": "z17844a8",
+  "playlistUrl": "http://cdn4k.live:80/get.php?username=89625u16&password=z17844a8&type=m3u_plus&output=ts",
+  "xtreamTimeoutMs": 45000,
+  "m3uTimeoutMs": 90000
+}

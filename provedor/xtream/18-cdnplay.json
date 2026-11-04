@@ -1,0 +1,8 @@
+{
+  "id": "cdnplay",
+  "sourceName": "CDNPlay",
+  "base": "http://cdnplay.pro:80",
+  "username": "123456789",
+  "password": "123456789",
+  "playlistUrl": "http://cdnplay.pro:80/get.php?username=123456789&password=123456789&type=m3u_plus"
+}

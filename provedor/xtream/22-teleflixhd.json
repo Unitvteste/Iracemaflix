@@ -1,0 +1,10 @@
+{
+  "id": "teleflixhd",
+  "sourceName": "Teleflix HD",
+  "base": "http://teleflixhd.club",
+  "username": "asd97571830",
+  "password": "Zaptv2024",
+  "playlistUrl": "http://teleflixhd.club/get.php?username=asd97571830&password=Zaptv2024&type=m3u_plus",
+  "xtreamTimeoutMs": 55000,
+  "m3uTimeoutMs": 90000
+}

@@ -1,0 +1,8 @@
+{
+  "id": "urlsync",
+  "sourceName": "URLSync",
+  "base": "http://auth.urlsync.gy",
+  "username": "russo20",
+  "password": "5a6bqe1w2qq",
+  "playlistUrl": "http://auth.urlsync.gy/get.php?username=russo20&password=5a6bqe1w2qq&type=m3u_plus"
+}

@@ -1,0 +1,10 @@
+{
+  "id": "vaiagora",
+  "sourceName": "Vai Agora",
+  "base": "http://vaiagora.vip:80",
+  "username": "NinoCaique",
+  "password": "282TVWvdm",
+  "playlistUrl": "http://vaiagora.vip:80/get.php?username=NinoCaique&password=282TVWvdm&type=m3u_plus&output=ts",
+  "xtreamTimeoutMs": 50000,
+  "m3uTimeoutMs": 90000
+}

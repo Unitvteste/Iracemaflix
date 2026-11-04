@@ -1,8 +1,14 @@
 {
   "id": "Iracemaflix",
+<<<<<<< HEAD
   "version": "1.1.1",
   "name": "Iracemaflix",
   "description": "Filmes, séries e TV",
+=======
+  "version": "1.2.0",
+  "name": "Iracemaflix",
+  "description": "Filmes, séries, canais de TV, eventos ao vivo, doramas, novelas, animes e muito mais. Conteúdos dublados em PT-BR e legendados.",
+>>>>>>> 3bb3a95 (Atualização do Iracemaflix)
   "logo": "https://files.catbox.moe/628bx9.png",
   "resources": [
     "catalog",

@@ -1,0 +1,8 @@
+{
+  "id": "env-beleco",
+  "sourceName": "Beleco",
+  "base": "http://beleco.ddns.net",
+  "username": "002894",
+  "password": "hejEm2",
+  "playlistUrl": "http://beleco.ddns.net/get.php?username=002894&password=hejEm2&type=m3u_plus"
+}

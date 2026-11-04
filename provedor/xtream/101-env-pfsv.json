@@ -1,0 +1,8 @@
+{
+  "id": "env-pfsv",
+  "sourceName": "PFSV",
+  "base": "http://pfsv.io",
+  "username": "rodrigolobogf",
+  "password": "Hstv1020",
+  "playlistUrl": "http://pfsv.io/get.php?username=rodrigolobogf&password=Hstv1020&type=m3u_plus"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "env-novomundo",
+  "sourceName": "Novo Mundo",
+  "base": "http://novomundo.live:80",
+  "username": "41625496",
+  "password": "52949419",
+  "playlistUrl": "http://novomundo.live:80/get.php?username=41625496&password=52949419&type=m3u_plus"
+}

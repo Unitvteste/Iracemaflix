@@ -1,0 +1,8 @@
+{
+  "id": "dvdplay2",
+  "sourceName": "DVDPlay2",
+  "base": "http://dvdplay2.com",
+  "username": "047597",
+  "password": "un7yWp",
+  "playlistUrl": "http://dvdplay2.com/get.php?username=047597&password=un7yWp&type=m3u_plus"
+}

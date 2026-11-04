@@ -1,0 +1,10 @@
+{
+  "id": "lbplay",
+  "sourceName": "LB Play",
+  "base": "http://lbplay.ddns.me",
+  "username": "asd97571830",
+  "password": "Zaptv2024",
+  "playlistUrl": "http://lbplay.ddns.me/get.php?username=asd97571830&password=Zaptv2024&type=m3u_plus",
+  "xtreamTimeoutMs": 55000,
+  "m3uTimeoutMs": 90000
+}
