@@ -1,0 +1,10 @@
+{
+  "id": "clbtw",
+  "sourceName": "CLBTW",
+  "base": "http://clbtw.net",
+  "username": "jugatha2603",
+  "password": "2251855Nux",
+  "playlistUrl": "http://clbtw.net/get.php?username=jugatha2603&password=2251855Nux&type=m3u_plus",
+  "xtreamTimeoutMs": 60000,
+  "m3uTimeoutMs": 12000
+}

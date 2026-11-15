@@ -7,7 +7,7 @@
   "CACHE_TTL_MS": "900000",
   "CATALOG_LIMIT": "0",
   "MAX_M3U_ITEMS": "0",
-  "XTREAM_TIMEOUT_MS": "ms199err",
+  "XTREAM_TIMEOUT_MS": 15000,
   "LIVE_TV_API_BASE": "https://api.reidoscanais.my",
   "LIVE_TV_CACHE_MS": "300000",
   "LIVE_TV_RESOLVE_CACHE_MS": "600000",
@@ -16,5 +16,57 @@
   "PROVIDER_RESOLVER_TIMEOUT_MS": "12000",
   "PROVIDER_RESOLVER_MAX_HTML_BYTES": "1000000",
   "PROVIDER_RESOLVER_MAX_IFRAME_DEPTH": "2",
-  "PROVIDER_RESOLVER_MAX_PAGES": "8"
+  "PROVIDER_RESOLVER_MAX_PAGES": "8",
+  "M3U_SOURCE_TIMEOUT_MS": 15000,
+  "M3U_TIMEOUT_MS": 15000,
+  "EMBEDTV_API_BASE": "https://embedtv.cc",
+  "EMBEDTV_SOURCE_REFERER": "https://embedtv.cc/",
+  "EMBEDTV_FALLBACK_FILE": "./embedTV.json",
+  "M3U_SOURCES": [
+    {
+      "id": "murbax",
+      "name": "Murbax M3U",
+      "url": "http://murbax.com:80/get.php?username=dcruz08&password=9461Ms&type=m3u_plus"
+    },
+    {
+      "id": "cerejadoce",
+      "name": "Cereja Doce M3U",
+      "url": "http://cerejadoce.live/get.php?username=Keber8420&password=Dwre4f73w&type=m3u_plus"
+    },
+    {
+      "id": "clbtw",
+      "name": "CLBTW M3U",
+      "url": "http://clbtw.net:80/get.php?username=jugatha2603&password=2251855Nux&type=m3u_plus&output=ts"
+    },
+    {
+      "id": "masterflix",
+      "name": "MasterFlix M3U",
+      "url": "http://masterflix.vip:80/get.php?username=21984473386tv1&password=12345678Ab&type=m3u_plus&output=ts"
+    },
+    {
+      "id": "magnum-ott",
+      "name": "Magnum OTT M3U",
+      "url": "http://magnum-ott.net:80/get.php?username=846KF3ZM1495548&password=H9HqIOWiSn&type=m3u_plus&output=ts"
+    },
+    {
+      "id": "pfsv",
+      "name": "PFSV M3U",
+      "url": "http://pfsv.io:80/get.php?username=brunojeec2014&password=376971&type=m3u"
+    },
+    {
+      "id": "claxys",
+      "name": "Claxys M3U",
+      "url": "http://claxys.info/get.php?username=ytallo00422&password=nJ38wP&type=m3u_plus&output=ts"
+    },
+    {
+      "id": "maquiavelv2",
+      "name": "Maquiavel V2 M3U",
+      "url": "http://maquiavelv2.shop/get.php?username=677189849&password=017521443&type=m3u_plus&output=ts"
+    },
+    {
+      "id": "lunarsv",
+      "name": "LunarSV M3U",
+      "url": "http://lunarsv.top/get.php?username=marciomuge&password=2658w5d2f3c5&type=m3u_plus"
+    }
+  ]
 }

@@ -1,0 +1,11 @@
+{
+  "id": "ddats",
+  "sourceName": "DDATS",
+  "base": "http://ddats.pro:80",
+  "username": "",
+  "password": "",
+  "enabled": true,
+  "note": "Novo provedor enviado pelo usuário.",
+  "lastChecked": "2026-11-13",
+  "expiraEm": "2026-11-24"
+}

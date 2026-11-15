@@ -1,0 +1,10 @@
+{
+  "id": "cerejadoce",
+  "sourceName": "Cereja Doce",
+  "base": "http://cerejadoce.live",
+  "username": "Keber8420",
+  "password": "Dwre4f73w",
+  "playlistUrl": "http://cerejadoce.live/get.php?username=Keber8420&password=Dwre4f73w&type=m3u_plus",
+  "xtreamTimeoutMs": 60000,
+  "m3uTimeoutMs": 12000
+}

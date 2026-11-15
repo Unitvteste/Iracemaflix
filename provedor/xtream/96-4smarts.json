@@ -1,0 +1,10 @@
+{
+  "id": "4smarts",
+  "sourceName": "4Smarts",
+  "base": "http://4smarts.xyz",
+  "username": "",
+  "password": "",
+  "enabled": true,
+  "note": "Não respondeu ao player_api em 13/11/2026 (conexão aberta sem resposta). Ative com \"enabled\": true quando voltar.",
+  "lastChecked": "2026-11-13"
+}

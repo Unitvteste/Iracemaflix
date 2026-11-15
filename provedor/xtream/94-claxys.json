@@ -1,0 +1,10 @@
+{
+  "id": "claxys",
+  "sourceName": "Claxys",
+  "base": "http://claxys.info",
+  "username": "ytallo00422",
+  "password": "nJ38wP",
+  "playlistUrl": "http://claxys.info/get.php?username=ytallo00422&password=nJ38wP&type=m3u_plus",
+  "xtreamTimeoutMs": 60000,
+  "m3uTimeoutMs": 12000
+}

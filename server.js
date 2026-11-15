@@ -534,7 +534,7 @@ const LiveTv = (() => {
 const dns = require('node:dns').promises;
 const net = require('node:net');
 
-const API_BASE = (CONFIG.LIVE_TV_API_BASE || 'https://api.reidoscanais.si').replace(/\/$/, '');
+const API_BASE = (CONFIG.LIVE_TV_API_BASE || 'https://api.reidoscanais.im').replace(/\/$/, '');
 const EMBED_CANAIS_HOME = (CONFIG.EMBED_CANAIS_HOME || 'https://embedcanais.online/').replace(/\/$/, '/');
 const EMBED_CANAIS_TIMEOUT_MS = boundedInt(CONFIG.EMBED_CANAIS_TIMEOUT_MS, 12000, 3000, 15000);
 const EMBED_CANAIS_PROVIDER = 'Emb Canais';

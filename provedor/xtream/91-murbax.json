@@ -1,0 +1,10 @@
+{
+  "id": "murbax",
+  "sourceName": "Murbax",
+  "base": "http://murbax.com",
+  "username": "dcruz08",
+  "password": "9461Ms",
+  "playlistUrl": "http://murbax.com/get.php?username=dcruz08&password=9461Ms&type=m3u_plus",
+  "xtreamTimeoutMs": 60000,
+  "m3uTimeoutMs": 12000
+}

@@ -9,11 +9,18 @@ const XTREAM_SOURCES = fs.readdirSync(xtreamDir)
   .filter((name) => name.endsWith('.json'))
   .sort()
   .map((name) => {
-    const source = JSON.parse(fs.readFileSync(path.join(xtreamDir, name), 'utf8'));
-    if (!source.id || !source.base || !source.username || !source.password) {
-      throw new Error(`Configuração Xtream inválida: ${name}`);
+    try {
+      const source = JSON.parse(fs.readFileSync(path.join(xtreamDir, name), 'utf8'));
+      if (!source.id || !source.base || !source.username || !source.password) {
+        console.warn(`[CONFIG] Ignorando configuração Xtream inválida: ${name}`);
+        return null;
+      }
+      return { ...source, base: String(source.base).replace(/\/$/, '') };
+    } catch (error) {
+      console.warn(`[CONFIG] Ignorando configuração Xtream ilegível: ${name}`);
+      return null;
     }
-    return { ...source, base: String(source.base).replace(/\/$/, '') };
-  });
+  })
+  .filter(Boolean);
 
 module.exports = Object.freeze({ app, XTREAM_SOURCES, EPG_SOURCES });
