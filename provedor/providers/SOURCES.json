@@ -93,5 +93,15 @@
       "topfilmes",
       "vaqueirofilmes"
     ]
+  },
+  "upstreamUpdates": {
+    "animesfhd": {
+      "source": "https://github.com/nathanael540/nuvio-fontes-ptbr-plugin",
+      "file": "providers/animesfhd.js",
+      "version": "1.0.0",
+      "retrieved": "2026-11-18",
+      "license": "GPL-3.0",
+      "validation": "Node 26.4.0; Black Clover (TMDB 73223) and One Piece (TMDB 37854) each returned 2 streams in the isolated adapter test."
+    }
   }
 }

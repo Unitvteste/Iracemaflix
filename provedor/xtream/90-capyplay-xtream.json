@@ -1,0 +1,10 @@
+{
+  "id": "capyplay-xtream",
+  "sourceName": "CapyPlay",
+  "base": "http://capyplay.space",
+  "username": "797688011",
+  "password": "268968497",
+  "playlistUrl": "http://capyplay.space/get.php?username=797688011&password=268968497&type=m3u_plus",
+  "xtreamTimeoutMs": 25000,
+  "m3uTimeoutMs": 25000
+}

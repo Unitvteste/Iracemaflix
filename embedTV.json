@@ -1,6 +1,6 @@
 {
   "source": "https://embedtv.cc/api/channels",
-  "updatedAt": "2026-11-15T16:32:00.298Z",
+  "updatedAt": "2026-11-19T15:40:45.976Z",
   "complete": true,
   "total": 147,
   "captured": 147,
@@ -56,12 +56,12 @@
         8
       ],
       "preview": "https://img.faz-o-eli.online/afazenda.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/afazenda",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/afazenda",
       "categoryNames": [
         "Todos",
         "A Fazenda 18"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/ee6c7faedb826978e23310de163fa893/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/ee6c7faedb826978e23310de163fa893/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -73,12 +73,12 @@
         8
       ],
       "preview": "https://img.faz-o-eli.online/afazenda2.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/afazenda2",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/afazenda2",
       "categoryNames": [
         "Todos",
         "A Fazenda 18"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/1b11feb4a141384d7d357dc0d1a09851/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/1b11feb4a141384d7d357dc0d1a09851/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -90,12 +90,12 @@
         8
       ],
       "preview": "https://img.faz-o-eli.online/afazenda3.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/afazenda3",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/afazenda3",
       "categoryNames": [
         "Todos",
         "A Fazenda 18"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/6f1fb09c8720fa430fcd1b5f967c73d6/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/6f1fb09c8720fa430fcd1b5f967c73d6/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -107,12 +107,12 @@
         8
       ],
       "preview": "https://img.faz-o-eli.online/afazenda4.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/afazenda4",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/afazenda4",
       "categoryNames": [
         "Todos",
         "A Fazenda 18"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/28f770b439fb5ae75810b1ad80eaee40/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/28f770b439fb5ae75810b1ad80eaee40/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -124,12 +124,12 @@
         8
       ],
       "preview": "https://img.faz-o-eli.online/afazenda5.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/afazenda5",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/afazenda5",
       "categoryNames": [
         "Todos",
         "A Fazenda 18"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/a02e34091ac73b54132baa5b35defb98/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/a02e34091ac73b54132baa5b35defb98/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -141,12 +141,12 @@
         4
       ],
       "preview": "https://img.faz-o-eli.online/ae.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/ae",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/ae",
       "categoryNames": [
         "Todos",
         "Filmes e Séries"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/90a4948c564a4e25f258c9005056ce60/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/90a4948c564a4e25f258c9005056ce60/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -158,12 +158,12 @@
         4
       ],
       "preview": "https://img.faz-o-eli.online/amc.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/amc",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/amc",
       "categoryNames": [
         "Todos",
         "Filmes e Séries"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/08b79ba56b24b123b9f059764ee38c72/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/08b79ba56b24b123b9f059764ee38c72/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -175,12 +175,12 @@
         4
       ],
       "preview": "https://img.faz-o-eli.online/axn.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/axn",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/axn",
       "categoryNames": [
         "Todos",
         "Filmes e Séries"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/306d383dc603f6545500233a4030feb3/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/306d383dc603f6545500233a4030feb3/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -192,12 +192,12 @@
         4
       ],
       "preview": "https://img.faz-o-eli.online/adultswim.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/adultswim",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/adultswim",
       "categoryNames": [
         "Todos",
         "Filmes e Séries"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/5df75328cd2007b4c86c84845b4835c9/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/5df75328cd2007b4c86c84845b4835c9/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -209,12 +209,12 @@
         3
       ],
       "preview": "https://img.faz-o-eli.online/animalplanet.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/animalplanet",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/animalplanet",
       "categoryNames": [
         "Todos",
         "Documentarios"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/b2db50971357255c66e5849cbc7a8bf3/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/b2db50971357255c66e5849cbc7a8bf3/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -227,13 +227,13 @@
         6
       ],
       "preview": "https://img.faz-o-eli.online/aparecida.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/aparecida",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/aparecida",
       "categoryNames": [
         "Todos",
         "Variedades",
         "Abertos"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/0efc2e13823f299064043558419e2ec2/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/0efc2e13823f299064043558419e2ec2/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -246,13 +246,13 @@
         6
       ],
       "preview": "https://img.faz-o-eli.online/bandnews.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/bandnews",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/bandnews",
       "categoryNames": [
         "Todos",
         "Noticias",
         "Abertos"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/a90d9dab3feed2102e680c0c9d2451fb/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/a90d9dab3feed2102e680c0c9d2451fb/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -265,13 +265,13 @@
         5
       ],
       "preview": "https://img.faz-o-eli.online/bandrj.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/bandrj",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/bandrj",
       "categoryNames": [
         "Todos",
         "Abertos",
         "Noticias"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/697dc41d09deb887781d5a48b8e91d9c/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/697dc41d09deb887781d5a48b8e91d9c/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -284,13 +284,13 @@
         5
       ],
       "preview": "https://img.faz-o-eli.online/bandsp.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/bandsp",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/bandsp",
       "categoryNames": [
         "Todos",
         "Abertos",
         "Noticias"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/edcc737f5ab08a3e092b888461f2bef9/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/edcc737f5ab08a3e092b888461f2bef9/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -304,14 +304,14 @@
         6
       ],
       "preview": "https://img.faz-o-eli.online/bandsports.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/bandsports",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/bandsports",
       "categoryNames": [
         "Todos",
         "Esportes",
         "Noticias",
         "Abertos"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/68b45017dbd396c71b70858f3c87f59b/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/68b45017dbd396c71b70858f3c87f59b/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -324,13 +324,13 @@
         7
       ],
       "preview": "https://img.faz-o-eli.online/cnnbrasil.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/cnnbrasil",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/cnnbrasil",
       "categoryNames": [
         "Todos",
         "Noticias",
         "Variedades"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/31419407d202ee5d387ab912ef658e52/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/31419407d202ee5d387ab912ef658e52/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -343,13 +343,13 @@
         6
       ],
       "preview": "https://img.faz-o-eli.online/cancaonova.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/cancaonova",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/cancaonova",
       "categoryNames": [
         "Todos",
         "Variedades",
         "Abertos"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/9b44d04df38ce4d163838d7f476a06bf/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/9b44d04df38ce4d163838d7f476a06bf/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -361,12 +361,12 @@
         2
       ],
       "preview": "https://img.faz-o-eli.online/cartoonnetwork.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/cartoonnetwork",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/cartoonnetwork",
       "categoryNames": [
         "Todos",
         "Infantil"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/7326312e06a62c65350c50ad4dabbcf4/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/7326312e06a62c65350c50ad4dabbcf4/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -378,12 +378,12 @@
         2
       ],
       "preview": "https://img.faz-o-eli.online/cartoonito.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/cartoonito",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/cartoonito",
       "categoryNames": [
         "Todos",
         "Infantil"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/562e51c2831afcb73becdbbe7da4ed50/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/562e51c2831afcb73becdbbe7da4ed50/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -395,12 +395,12 @@
         1
       ],
       "preview": "https://img.faz-o-eli.online/caze1.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/caze1",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/caze1",
       "categoryNames": [
         "Todos",
         "Esportes"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/c56a2981ecf52df29165b70cbed14770/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/c56a2981ecf52df29165b70cbed14770/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -412,12 +412,12 @@
         1
       ],
       "preview": "https://img.faz-o-eli.online/caze2.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/caze2",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/caze2",
       "categoryNames": [
         "Todos",
         "Esportes"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/c8d082b8391c65d30dddbb715caf5a2c/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/c8d082b8391c65d30dddbb715caf5a2c/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -429,12 +429,12 @@
         1
       ],
       "preview": "https://img.faz-o-eli.online/caze3.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/caze3",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/caze3",
       "categoryNames": [
         "Todos",
         "Esportes"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/e3d2a2da180dd242102f960c94af8c70/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/e3d2a2da180dd242102f960c94af8c70/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -446,12 +446,12 @@
         4
       ],
       "preview": "https://img.faz-o-eli.online/cinemax.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/cinemax",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/cinemax",
       "categoryNames": [
         "Todos",
         "Filmes e Séries"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/7627929c99e250fa3e74e85e5c09dfbe/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/7627929c99e250fa3e74e85e5c09dfbe/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -463,12 +463,12 @@
         1
       ],
       "preview": "https://img.faz-o-eli.online/combate.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/combate",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/combate",
       "categoryNames": [
         "Todos",
         "Esportes"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/61c77c11fcf8782d46bdf230250cd83b/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/61c77c11fcf8782d46bdf230250cd83b/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -481,13 +481,13 @@
         7
       ],
       "preview": "https://img.faz-o-eli.online/cultura.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/cultura",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/cultura",
       "categoryNames": [
         "Todos",
         "Abertos",
         "Variedades"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/5af68e45c598f60f8693d26494401940/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/5af68e45c598f60f8693d26494401940/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -499,12 +499,12 @@
         3
       ],
       "preview": "https://img.faz-o-eli.online/discoverychannel.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/discoverychannel",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/discoverychannel",
       "categoryNames": [
         "Todos",
         "Documentarios"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/8fa7feafb5c42f1c8423152a0084ba8a/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/8fa7feafb5c42f1c8423152a0084ba8a/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -516,12 +516,12 @@
         3
       ],
       "preview": "https://img.faz-o-eli.online/discoveryhh.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/discoveryhh",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/discoveryhh",
       "categoryNames": [
         "Todos",
         "Documentarios"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/e63f8d40ca216c74c4fb0378a37482e7/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/e63f8d40ca216c74c4fb0378a37482e7/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -533,12 +533,12 @@
         3
       ],
       "preview": "https://img.faz-o-eli.online/discoveryid.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/discoveryid",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/discoveryid",
       "categoryNames": [
         "Todos",
         "Documentarios"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/882901434d45b2fb18445c8b183e225b/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/882901434d45b2fb18445c8b183e225b/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -550,12 +550,12 @@
         2
       ],
       "preview": "https://img.faz-o-eli.online/discoverykids.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/discoverykids",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/discoverykids",
       "categoryNames": [
         "Todos",
         "Infantil"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/2e24bb52b04acb6e6735eff553fdcd85/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/2e24bb52b04acb6e6735eff553fdcd85/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -568,13 +568,13 @@
         7
       ],
       "preview": "https://img.faz-o-eli.online/discoveryscience.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/discoveryscience",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/discoveryscience",
       "categoryNames": [
         "Todos",
         "Documentarios",
         "Variedades"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/a12d27857dbdb1bacefd4ed4bceedfa4/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/a12d27857dbdb1bacefd4ed4bceedfa4/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -586,12 +586,12 @@
         3
       ],
       "preview": "https://img.faz-o-eli.online/discoverytheather.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/discoverytheather",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/discoverytheather",
       "categoryNames": [
         "Todos",
         "Documentarios"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/d74fe6d695be08b4bffecafe53c46cb9/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/d74fe6d695be08b4bffecafe53c46cb9/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -603,12 +603,12 @@
         3
       ],
       "preview": "https://img.faz-o-eli.online/discoveryturbo.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/discoveryturbo",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/discoveryturbo",
       "categoryNames": [
         "Todos",
         "Documentarios"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/bfd97521f5182aca7066b23a7d08c3ef/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/bfd97521f5182aca7066b23a7d08c3ef/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -620,12 +620,12 @@
         3
       ],
       "preview": "https://img.faz-o-eli.online/discoveryworld.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/discoveryworld",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/discoveryworld",
       "categoryNames": [
         "Todos",
         "Documentarios"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/2f75629475991f77afa6d5560ac9713a/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/2f75629475991f77afa6d5560ac9713a/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -638,13 +638,13 @@
         7
       ],
       "preview": "https://img.faz-o-eli.online/disneyplus1.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/disneyplus1",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/disneyplus1",
       "categoryNames": [
         "Todos",
         "Esportes",
         "Variedades"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/c94e799fa4f77681fd178a19a6b22abd/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/c94e799fa4f77681fd178a19a6b22abd/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -657,13 +657,13 @@
         7
       ],
       "preview": "https://img.faz-o-eli.online/disneyplus2.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/disneyplus2",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/disneyplus2",
       "categoryNames": [
         "Todos",
         "Esportes",
         "Variedades"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/c19b927c40c7ff69802b737859824d20/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/c19b927c40c7ff69802b737859824d20/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -676,13 +676,13 @@
         7
       ],
       "preview": "https://img.faz-o-eli.online/disneyplus3.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/disneyplus3",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/disneyplus3",
       "categoryNames": [
         "Todos",
         "Esportes",
         "Variedades"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/28443cf80823c654cb71b3b0ea5336a7/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/28443cf80823c654cb71b3b0ea5336a7/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -694,12 +694,12 @@
         1
       ],
       "preview": "https://img.faz-o-eli.online/espn.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/espn",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/espn",
       "categoryNames": [
         "Todos",
         "Esportes"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/c146c0c2fd0ca7008eae212c1d758c89/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/c146c0c2fd0ca7008eae212c1d758c89/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -711,12 +711,12 @@
         1
       ],
       "preview": "https://img.faz-o-eli.online/espn2.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/espn2",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/espn2",
       "categoryNames": [
         "Todos",
         "Esportes"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/5e14870f2b4cce591c22bed11ad119d3/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/5e14870f2b4cce591c22bed11ad119d3/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -728,12 +728,12 @@
         1
       ],
       "preview": "https://img.faz-o-eli.online/espn3.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/espn3",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/espn3",
       "categoryNames": [
         "Todos",
         "Esportes"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/fe5e4414929a3f6bccb53377ddaed481/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/fe5e4414929a3f6bccb53377ddaed481/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -745,12 +745,12 @@
         1
       ],
       "preview": "https://img.faz-o-eli.online/espn4.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/espn4",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/espn4",
       "categoryNames": [
         "Todos",
         "Esportes"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/0adc0e889642c9ab3fd7e3cb9e3d2856/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/0adc0e889642c9ab3fd7e3cb9e3d2856/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -762,12 +762,12 @@
         1
       ],
       "preview": "https://img.faz-o-eli.online/espn5.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/espn5",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/espn5",
       "categoryNames": [
         "Todos",
         "Esportes"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/93b307cac23b067223c32043cdfdefca/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/93b307cac23b067223c32043cdfdefca/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -779,12 +779,12 @@
         1
       ],
       "preview": "https://img.faz-o-eli.online/espn6.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/espn6",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/espn6",
       "categoryNames": [
         "Todos",
         "Esportes"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/7adb150ec4a34418566e71ae2126b707/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/7adb150ec4a34418566e71ae2126b707/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -796,12 +796,12 @@
         7
       ],
       "preview": "https://img.faz-o-eli.online/foodnetwork.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/foodnetwork",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/foodnetwork",
       "categoryNames": [
         "Todos",
         "Variedades"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/01b5a1d5bdd623c770cbc03eda9e57cb/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/01b5a1d5bdd623c770cbc03eda9e57cb/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -813,12 +813,12 @@
         4
       ],
       "preview": "https://img.faz-o-eli.online/gnt.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/gnt",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/gnt",
       "categoryNames": [
         "Todos",
         "Filmes e Séries"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/e053cc5f53cbfc88fc58c065063c319f/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/e053cc5f53cbfc88fc58c065063c319f/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -830,12 +830,12 @@
         6
       ],
       "preview": "https://img.faz-o-eli.online/globoam.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/globoam",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/globoam",
       "categoryNames": [
         "Todos",
         "Abertos"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/52edae35c460f79bd9974ea2612368c3/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/52edae35c460f79bd9974ea2612368c3/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -847,12 +847,12 @@
         6
       ],
       "preview": "https://img.faz-o-eli.online/globodf.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/globodf",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/globodf",
       "categoryNames": [
         "Todos",
         "Abertos"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/794fd9bd36988924fcde3b92825e5054/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/794fd9bd36988924fcde3b92825e5054/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -864,12 +864,12 @@
         6
       ],
       "preview": "https://img.faz-o-eli.online/globoce.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/globoce",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/globoce",
       "categoryNames": [
         "Todos",
         "Abertos"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/b9da731a47899db1a517365a95e00809/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/b9da731a47899db1a517365a95e00809/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -881,12 +881,12 @@
         6
       ],
       "preview": "https://img.faz-o-eli.online/globoes.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/globoes",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/globoes",
       "categoryNames": [
         "Todos",
         "Abertos"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/0b5a05c46238b8a8b2eb4a6e8830c6ec/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/0b5a05c46238b8a8b2eb4a6e8830c6ec/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -898,12 +898,12 @@
         6
       ],
       "preview": "https://img.faz-o-eli.online/globomg.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/globomg",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/globomg",
       "categoryNames": [
         "Todos",
         "Abertos"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/f13bd3aee6a0899c258c13c3b42d0608/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/f13bd3aee6a0899c258c13c3b42d0608/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -915,12 +915,12 @@
         6
       ],
       "preview": "https://img.faz-o-eli.online/globogo.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/globogo",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/globogo",
       "categoryNames": [
         "Todos",
         "Abertos"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/2355f87f5a8f1ef4e82e7a2137c2ed77/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/2355f87f5a8f1ef4e82e7a2137c2ed77/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -933,13 +933,13 @@
         6
       ],
       "preview": "https://img.faz-o-eli.online/globonews.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/globonews",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/globonews",
       "categoryNames": [
         "Todos",
         "Noticias",
         "Abertos"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/e2f57f5c3cdc0f1dfa4e3a3cc1aad846/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/e2f57f5c3cdc0f1dfa4e3a3cc1aad846/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -951,12 +951,12 @@
         6
       ],
       "preview": "https://img.faz-o-eli.online/globonovelas.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/globonovelas",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/globonovelas",
       "categoryNames": [
         "Todos",
         "Abertos"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/923161550744468a1f9b87fa01c49642/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/923161550744468a1f9b87fa01c49642/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -968,12 +968,12 @@
         6
       ],
       "preview": "https://img.faz-o-eli.online/globopb.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/globopb",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/globopb",
       "categoryNames": [
         "Todos",
         "Abertos"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/8aa7cacd88230924feb2e314dde9658d/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/8aa7cacd88230924feb2e314dde9658d/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -985,12 +985,12 @@
         6
       ],
       "preview": "https://img.faz-o-eli.online/globope.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/globope",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/globope",
       "categoryNames": [
         "Todos",
         "Abertos"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/240d48a1d9459a42f1354cf9ad78671b/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/240d48a1d9459a42f1354cf9ad78671b/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -1002,12 +1002,12 @@
         6
       ],
       "preview": "https://img.faz-o-eli.online/globorj.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/globorj",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/globorj",
       "categoryNames": [
         "Todos",
         "Abertos"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/85e8d6c86fdc433bca04b55abcb8e8e7/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/85e8d6c86fdc433bca04b55abcb8e8e7/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -1019,12 +1019,12 @@
         6
       ],
       "preview": "https://img.faz-o-eli.online/globors.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/globors",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/globors",
       "categoryNames": [
         "Todos",
         "Abertos"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/10895170f65bb6dd551a8f9909a6728d/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/10895170f65bb6dd551a8f9909a6728d/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -1036,12 +1036,12 @@
         6
       ],
       "preview": "https://img.faz-o-eli.online/globosp.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/globosp",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/globosp",
       "categoryNames": [
         "Todos",
         "Abertos"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/e5b90a9d7647e25adabe80de72131f86/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/e5b90a9d7647e25adabe80de72131f86/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -1053,12 +1053,12 @@
         2
       ],
       "preview": "https://img.faz-o-eli.online/gloob.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/gloob",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/gloob",
       "categoryNames": [
         "Todos",
         "Infantil"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/4cf686a1a5d3e62600351f8405c92b87/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/4cf686a1a5d3e62600351f8405c92b87/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -1070,12 +1070,12 @@
         4
       ],
       "preview": "https://img.faz-o-eli.online/hbo.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/hbo",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/hbo",
       "categoryNames": [
         "Todos",
         "Filmes e Séries"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/576ee0580b01f6c3a8864bb318900a85/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/576ee0580b01f6c3a8864bb318900a85/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -1087,12 +1087,12 @@
         4
       ],
       "preview": "https://img.faz-o-eli.online/hbo2.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/hbo2",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/hbo2",
       "categoryNames": [
         "Todos",
         "Filmes e Séries"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/4d0b25fd825653148766ae3e6dc3743b/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/4d0b25fd825653148766ae3e6dc3743b/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -1104,12 +1104,12 @@
         4
       ],
       "preview": "https://img.faz-o-eli.online/hbofamily.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/hbofamily",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/hbofamily",
       "categoryNames": [
         "Todos",
         "Filmes e Séries"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/4c913a83693a6eeb8b9139995c4b4264/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/4c913a83693a6eeb8b9139995c4b4264/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -1121,12 +1121,12 @@
         4
       ],
       "preview": "https://img.faz-o-eli.online/hbomundi.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/hbomundi",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/hbomundi",
       "categoryNames": [
         "Todos",
         "Filmes e Séries"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/1b867e172c110c39d96ee236ff8b44b5/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/1b867e172c110c39d96ee236ff8b44b5/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -1138,12 +1138,12 @@
         4
       ],
       "preview": "https://img.faz-o-eli.online/hbopop.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/hbopop",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/hbopop",
       "categoryNames": [
         "Todos",
         "Filmes e Séries"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/beb58f1c653d16eedd17d7cb642e3b68/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/beb58f1c653d16eedd17d7cb642e3b68/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -1155,12 +1155,12 @@
         4
       ],
       "preview": "https://img.faz-o-eli.online/hboplus.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/hboplus",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/hboplus",
       "categoryNames": [
         "Todos",
         "Filmes e Séries"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/f12c33ebaf4ae65046a1ffdda8811437/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/f12c33ebaf4ae65046a1ffdda8811437/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -1172,12 +1172,12 @@
         4
       ],
       "preview": "https://img.faz-o-eli.online/hboxtreme.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/hboxtreme",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/hboxtreme",
       "categoryNames": [
         "Todos",
         "Filmes e Séries"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/747e41be088ffd715bce8c65fc48e38c/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/747e41be088ffd715bce8c65fc48e38c/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -1190,13 +1190,13 @@
         7
       ],
       "preview": "https://img.faz-o-eli.online/hgtv.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/hgtv",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/hgtv",
       "categoryNames": [
         "Todos",
         "Filmes e Séries",
         "Variedades"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/e5651c1c1ba05284a348f075694b2b98/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/e5651c1c1ba05284a348f075694b2b98/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -1208,12 +1208,12 @@
         3
       ],
       "preview": "https://img.faz-o-eli.online/history.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/history",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/history",
       "categoryNames": [
         "Todos",
         "Documentarios"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/5d1c8c31561de757a82c9219b1edf7af/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/5d1c8c31561de757a82c9219b1edf7af/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -1225,12 +1225,12 @@
         3
       ],
       "preview": "https://img.faz-o-eli.online/history2.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/history2",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/history2",
       "categoryNames": [
         "Todos",
         "Documentarios"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/5c0188971813ad4c80f83a719f0d2eac/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/5c0188971813ad4c80f83a719f0d2eac/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -1243,13 +1243,13 @@
         7
       ],
       "preview": "https://img.faz-o-eli.online/mtv.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/mtv",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/mtv",
       "categoryNames": [
         "Todos",
         "Abertos",
         "Variedades"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/67ca14e572b2a5f57288e39bc882783f/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/67ca14e572b2a5f57288e39bc882783f/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -1261,12 +1261,12 @@
         7
       ],
       "preview": "https://img.faz-o-eli.online/masterchef.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/masterchef",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/masterchef",
       "categoryNames": [
         "Todos",
         "Variedades"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/5a4ab022be6b78ace9bff4ce501f667c/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/5a4ab022be6b78ace9bff4ce501f667c/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -1278,12 +1278,12 @@
         1
       ],
       "preview": "https://img.faz-o-eli.online/max1.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/max1",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/max1",
       "categoryNames": [
         "Todos",
         "Esportes"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/522a22259e192b77e867da18878b2677/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/522a22259e192b77e867da18878b2677/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -1295,12 +1295,12 @@
         1
       ],
       "preview": "https://img.faz-o-eli.online/max2.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/max2",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/max2",
       "categoryNames": [
         "Todos",
         "Esportes"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/3b555c5c3fb7dd9bff86fcfb6c6ac739/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/3b555c5c3fb7dd9bff86fcfb6c6ac739/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -1312,12 +1312,12 @@
         1
       ],
       "preview": "https://img.faz-o-eli.online/max3.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/max3",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/max3",
       "categoryNames": [
         "Todos",
         "Esportes"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/2f3e1d465837b55ae6d0fe76f995e912/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/2f3e1d465837b55ae6d0fe76f995e912/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -1329,12 +1329,12 @@
         4
       ],
       "preview": "https://img.faz-o-eli.online/megapix.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/megapix",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/megapix",
       "categoryNames": [
         "Todos",
         "Filmes e Séries"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/c33a8dfa4415c6de6b2683808b06340d/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/c33a8dfa4415c6de6b2683808b06340d/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -1347,13 +1347,13 @@
         7
       ],
       "preview": "https://img.faz-o-eli.online/multishow.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/multishow",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/multishow",
       "categoryNames": [
         "Todos",
         "Abertos",
         "Variedades"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/27d865041e301dccc5f39012d66da6e1/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/27d865041e301dccc5f39012d66da6e1/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -1365,12 +1365,12 @@
         4
       ],
       "preview": "https://img.faz-o-eli.online/off.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/off",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/off",
       "categoryNames": [
         "Todos",
         "Filmes e Séries"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/8ff12354498f3731fe4865abd2e2770b/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/8ff12354498f3731fe4865abd2e2770b/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -1382,12 +1382,12 @@
         1
       ],
       "preview": "https://img.faz-o-eli.online/paramountplus.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/paramountplus",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/paramountplus",
       "categoryNames": [
         "Todos",
         "Esportes"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/cab2ce6bbe489364b94ed2ab7e486ac6/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/cab2ce6bbe489364b94ed2ab7e486ac6/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -1399,12 +1399,12 @@
         1
       ],
       "preview": "https://img.faz-o-eli.online/paramountplus2.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/paramountplus2",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/paramountplus2",
       "categoryNames": [
         "Todos",
         "Esportes"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/1d95266cfd67920b05fbaef02c4deaae/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/1d95266cfd67920b05fbaef02c4deaae/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -1415,11 +1415,11 @@
         0
       ],
       "preview": "https://img.faz-o-eli.online/playboy.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/playboy",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/playboy",
       "categoryNames": [
         "Todos"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/e312e1675bbacead69890d1b2e133855/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/e312e1675bbacead69890d1b2e133855/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -1431,12 +1431,12 @@
         1
       ],
       "preview": "https://img.faz-o-eli.online/premiere.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/premiere",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/premiere",
       "categoryNames": [
         "Todos",
         "Esportes"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/b9a5124dc1cd9a72f1e97ff3547fe5fc/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/b9a5124dc1cd9a72f1e97ff3547fe5fc/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -1448,12 +1448,12 @@
         1
       ],
       "preview": "https://img.faz-o-eli.online/premiere2.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/premiere2",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/premiere2",
       "categoryNames": [
         "Todos",
         "Esportes"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/3d75ef6da762791e77da0343b7488c38/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/3d75ef6da762791e77da0343b7488c38/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -1465,12 +1465,12 @@
         1
       ],
       "preview": "https://img.faz-o-eli.online/premiere3.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/premiere3",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/premiere3",
       "categoryNames": [
         "Todos",
         "Esportes"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/77e812948dbd5c1429adc0417a58cf34/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/77e812948dbd5c1429adc0417a58cf34/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -1482,12 +1482,12 @@
         1
       ],
       "preview": "https://img.faz-o-eli.online/premiere4.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/premiere4",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/premiere4",
       "categoryNames": [
         "Todos",
         "Esportes"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/9c4ea7755009d9dc653682ac579c9be4/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/9c4ea7755009d9dc653682ac579c9be4/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -1499,12 +1499,12 @@
         1
       ],
       "preview": "https://img.faz-o-eli.online/premiere5.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/premiere5",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/premiere5",
       "categoryNames": [
         "Todos",
         "Esportes"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/7c62fcb7580ffea77473244cb8a2f707/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/7c62fcb7580ffea77473244cb8a2f707/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -1516,12 +1516,12 @@
         1
       ],
       "preview": "https://img.faz-o-eli.online/premiere6.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/premiere6",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/premiere6",
       "categoryNames": [
         "Todos",
         "Esportes"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/e95dc6cce1036b13dbf5e7c2b510a8a5/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/e95dc6cce1036b13dbf5e7c2b510a8a5/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -1533,12 +1533,12 @@
         1
       ],
       "preview": "https://img.faz-o-eli.online/premiere7.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/premiere7",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/premiere7",
       "categoryNames": [
         "Todos",
         "Esportes"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/c28ae4fed37aee71d866c80e12426e87/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/c28ae4fed37aee71d866c80e12426e87/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -1550,12 +1550,12 @@
         1
       ],
       "preview": "https://img.faz-o-eli.online/premiere8.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/premiere8",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/premiere8",
       "categoryNames": [
         "Todos",
         "Esportes"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/e44f32eb8116189fcfef03734d40800a/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/e44f32eb8116189fcfef03734d40800a/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -1567,12 +1567,12 @@
         1
       ],
       "preview": "https://img.faz-o-eli.online/primevideo.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/primevideo",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/primevideo",
       "categoryNames": [
         "Todos",
         "Esportes"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/45bc7d44ef0e568c75c3ba252544c9c4/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/45bc7d44ef0e568c75c3ba252544c9c4/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -1584,12 +1584,12 @@
         1
       ],
       "preview": "https://img.faz-o-eli.online/primevideo2.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/primevideo2",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/primevideo2",
       "categoryNames": [
         "Todos",
         "Esportes"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/ebd2e0a238ea19f4d3dcfb38fe154f93/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/ebd2e0a238ea19f4d3dcfb38fe154f93/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -1601,12 +1601,12 @@
         1
       ],
       "preview": "https://img.faz-o-eli.online/primevideo3.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/primevideo3",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/primevideo3",
       "categoryNames": [
         "Todos",
         "Esportes"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/0e575b1be5652125b365ae07e5660d66/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/0e575b1be5652125b365ae07e5660d66/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -1618,12 +1618,12 @@
         1
       ],
       "preview": "https://img.faz-o-eli.online/primevideo4.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/primevideo4",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/primevideo4",
       "categoryNames": [
         "Todos",
         "Esportes"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/69a94615b235159ed0e2f48a04929503/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/69a94615b235159ed0e2f48a04929503/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -1637,14 +1637,14 @@
         7
       ],
       "preview": "https://img.faz-o-eli.online/recordmg.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/recordmg",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/recordmg",
       "categoryNames": [
         "Todos",
         "Abertos",
         "Noticias",
         "Variedades"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/16cf8e025d9ac7ed1c167536ec99c834/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/16cf8e025d9ac7ed1c167536ec99c834/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -1658,14 +1658,14 @@
         7
       ],
       "preview": "https://img.faz-o-eli.online/recordrj.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/recordrj",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/recordrj",
       "categoryNames": [
         "Todos",
         "Abertos",
         "Noticias",
         "Variedades"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/501d0415932ad05c6ade898d47383870/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/501d0415932ad05c6ade898d47383870/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -1679,14 +1679,14 @@
         7
       ],
       "preview": "https://img.faz-o-eli.online/recordsp.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/recordsp",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/recordsp",
       "categoryNames": [
         "Todos",
         "Abertos",
         "Noticias",
         "Variedades"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/d6df707cb4205199a7c3bd841d47ab46/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/d6df707cb4205199a7c3bd841d47ab46/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -1700,14 +1700,14 @@
         7
       ],
       "preview": "https://img.faz-o-eli.online/recordgo.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/recordgo",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/recordgo",
       "categoryNames": [
         "Todos",
         "Abertos",
         "Noticias",
         "Variedades"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/0df66f0412894e2cf48ddce13a4ad15b/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/0df66f0412894e2cf48ddce13a4ad15b/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -1720,13 +1720,13 @@
         6
       ],
       "preview": "https://img.faz-o-eli.online/redevida.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/redevida",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/redevida",
       "categoryNames": [
         "Todos",
         "Variedades",
         "Abertos"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/3265b841255a6ef4f95ee25891e2f2d4/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/3265b841255a6ef4f95ee25891e2f2d4/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -1740,14 +1740,14 @@
         7
       ],
       "preview": "https://img.faz-o-eli.online/sbtrj.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/sbtrj",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/sbtrj",
       "categoryNames": [
         "Todos",
         "Noticias",
         "Abertos",
         "Variedades"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/c68ff40d17c636c94204abf7cc411e6c/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/c68ff40d17c636c94204abf7cc411e6c/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -1761,14 +1761,14 @@
         7
       ],
       "preview": "https://img.faz-o-eli.online/sbtsp.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/sbtsp",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/sbtsp",
       "categoryNames": [
         "Todos",
         "Noticias",
         "Abertos",
         "Variedades"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/f12e42d4569fbca9d600ebcec234b17b/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/f12e42d4569fbca9d600ebcec234b17b/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -1779,11 +1779,11 @@
         0
       ],
       "preview": "https://img.faz-o-eli.online/sexyhot.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/sexyhot",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/sexyhot",
       "categoryNames": [
         "Todos"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/1eb8cd31ed7db7e3352384d3912c2e7a/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/1eb8cd31ed7db7e3352384d3912c2e7a/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -1795,12 +1795,12 @@
         4
       ],
       "preview": "https://img.faz-o-eli.online/sonychannel.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/sonychannel",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/sonychannel",
       "categoryNames": [
         "Todos",
         "Filmes e Séries"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/60ead3f9d488db25e2942464820d432b/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/60ead3f9d488db25e2942464820d432b/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -1812,12 +1812,12 @@
         4
       ],
       "preview": "https://img.faz-o-eli.online/space.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/space",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/space",
       "categoryNames": [
         "Todos",
         "Filmes e Séries"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/90ad9f883f842745c2f608732c88e56e/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/90ad9f883f842745c2f608732c88e56e/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -1829,12 +1829,12 @@
         1
       ],
       "preview": "https://img.faz-o-eli.online/sportynet.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/sportynet",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/sportynet",
       "categoryNames": [
         "Todos",
         "Esportes"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/0e1471ec23b2570782083639e2a73714/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/0e1471ec23b2570782083639e2a73714/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -1846,12 +1846,12 @@
         1
       ],
       "preview": "https://img.faz-o-eli.online/sportynetplus1.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/sportynetplus1",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/sportynetplus1",
       "categoryNames": [
         "Todos",
         "Esportes"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/8fe421a696e2639ea2524752e81d9111/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/8fe421a696e2639ea2524752e81d9111/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -1863,12 +1863,12 @@
         1
       ],
       "preview": "https://img.faz-o-eli.online/sportynetplus2.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/sportynetplus2",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/sportynetplus2",
       "categoryNames": [
         "Todos",
         "Esportes"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/977c0569446b0da2cba11d3aaf70b447/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/977c0569446b0da2cba11d3aaf70b447/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -1880,12 +1880,12 @@
         1
       ],
       "preview": "https://img.faz-o-eli.online/sportynetplus3.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/sportynetplus3",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/sportynetplus3",
       "categoryNames": [
         "Todos",
         "Esportes"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/3e65c0160eb67ecc7c4f3080161c8a80/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/3e65c0160eb67ecc7c4f3080161c8a80/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -1897,12 +1897,12 @@
         1
       ],
       "preview": "https://img.faz-o-eli.online/sportv.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/sportv",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/sportv",
       "categoryNames": [
         "Todos",
         "Esportes"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/0ad81c47cd1a3290a7e0840caffff3b6/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/0ad81c47cd1a3290a7e0840caffff3b6/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -1914,12 +1914,12 @@
         1
       ],
       "preview": "https://img.faz-o-eli.online/sportv2.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/sportv2",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/sportv2",
       "categoryNames": [
         "Todos",
         "Esportes"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/91b986774c37bc63570ac333673e82db/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/91b986774c37bc63570ac333673e82db/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -1931,12 +1931,12 @@
         1
       ],
       "preview": "https://img.faz-o-eli.online/sportv3.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/sportv3",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/sportv3",
       "categoryNames": [
         "Todos",
         "Esportes"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/1dff09d1b1258b780ee786aa7be2736f/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/1dff09d1b1258b780ee786aa7be2736f/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -1948,12 +1948,12 @@
         1
       ],
       "preview": "https://img.faz-o-eli.online/sportv4.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/sportv4",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/sportv4",
       "categoryNames": [
         "Todos",
         "Esportes"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/ca0f548594af039f56a60e52d6d8404c/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/ca0f548594af039f56a60e52d6d8404c/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -1965,12 +1965,12 @@
         4
       ],
       "preview": "https://img.faz-o-eli.online/starchannel.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/starchannel",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/starchannel",
       "categoryNames": [
         "Todos",
         "Filmes e Séries"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/d8d060fb3df9f30e590eee40bd72750c/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/d8d060fb3df9f30e590eee40bd72750c/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -1982,12 +1982,12 @@
         4
       ],
       "preview": "https://img.faz-o-eli.online/studiouniversal.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/studiouniversal",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/studiouniversal",
       "categoryNames": [
         "Todos",
         "Filmes e Séries"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/76e2f85ef835fe02fa70d57a67106b7c/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/76e2f85ef835fe02fa70d57a67106b7c/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -1999,12 +1999,12 @@
         4
       ],
       "preview": "https://img.faz-o-eli.online/tcm.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/tcm",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/tcm",
       "categoryNames": [
         "Todos",
         "Filmes e Séries"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/da93d94aec336b86c655b74b3f9c6e95/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/da93d94aec336b86c655b74b3f9c6e95/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -2016,12 +2016,12 @@
         4
       ],
       "preview": "https://img.faz-o-eli.online/tlc.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/tlc",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/tlc",
       "categoryNames": [
         "Todos",
         "Filmes e Séries"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/f4dfe4504e94c1984d95cb91e9748989/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/f4dfe4504e94c1984d95cb91e9748989/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -2033,12 +2033,12 @@
         4
       ],
       "preview": "https://img.faz-o-eli.online/tnt.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/tnt",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/tnt",
       "categoryNames": [
         "Todos",
         "Filmes e Séries"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/821718d0ed5a938e3704f8145fb02562/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/821718d0ed5a938e3704f8145fb02562/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -2050,12 +2050,12 @@
         4
       ],
       "preview": "https://img.faz-o-eli.online/tntnovelas.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/tntnovelas",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/tntnovelas",
       "categoryNames": [
         "Todos",
         "Filmes e Séries"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/59d538890682091fbb0a4bb3573ffba4/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/59d538890682091fbb0a4bb3573ffba4/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -2067,12 +2067,12 @@
         4
       ],
       "preview": "https://img.faz-o-eli.online/tntseries.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/tntseries",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/tntseries",
       "categoryNames": [
         "Todos",
         "Filmes e Séries"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/a6102696f74afb52e8454e775f322f5c/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/a6102696f74afb52e8454e775f322f5c/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -2085,13 +2085,13 @@
         6
       ],
       "preview": "https://img.faz-o-eli.online/tvpaieterno.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/tvpaieterno",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/tvpaieterno",
       "categoryNames": [
         "Todos",
         "Variedades",
         "Abertos"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/2d410e713153bf81e849b1d448f6fff0/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/2d410e713153bf81e849b1d448f6fff0/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -2103,12 +2103,12 @@
         4
       ],
       "preview": "https://img.faz-o-eli.online/telecineaction.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/telecineaction",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/telecineaction",
       "categoryNames": [
         "Todos",
         "Filmes e Séries"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/01e2ce7627e8c49d6720826f098487d5/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/01e2ce7627e8c49d6720826f098487d5/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -2120,12 +2120,12 @@
         4
       ],
       "preview": "https://img.faz-o-eli.online/telecinecult.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/telecinecult",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/telecinecult",
       "categoryNames": [
         "Todos",
         "Filmes e Séries"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/73e89d2cc5040b9ca96f2936179a40c5/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/73e89d2cc5040b9ca96f2936179a40c5/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -2137,12 +2137,12 @@
         4
       ],
       "preview": "https://img.faz-o-eli.online/telecinefun.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/telecinefun",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/telecinefun",
       "categoryNames": [
         "Todos",
         "Filmes e Séries"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/fb0ded652256a6dce28539a82e16ae4f/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/fb0ded652256a6dce28539a82e16ae4f/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -2154,12 +2154,12 @@
         4
       ],
       "preview": "https://img.faz-o-eli.online/telecinepipoca.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/telecinepipoca",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/telecinepipoca",
       "categoryNames": [
         "Todos",
         "Filmes e Séries"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/36840f78eda5e2bd24a53b8e20534c45/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/36840f78eda5e2bd24a53b8e20534c45/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -2171,12 +2171,12 @@
         4
       ],
       "preview": "https://img.faz-o-eli.online/telecinepremium.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/telecinepremium",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/telecinepremium",
       "categoryNames": [
         "Todos",
         "Filmes e Séries"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/742207ffcfedaa43f72ede2360ec613a/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/742207ffcfedaa43f72ede2360ec613a/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -2188,12 +2188,12 @@
         4
       ],
       "preview": "https://img.faz-o-eli.online/telecinetouch.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/telecinetouch",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/telecinetouch",
       "categoryNames": [
         "Todos",
         "Filmes e Séries"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/ee7a8d363ded1409276f02ae9677b094/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/ee7a8d363ded1409276f02ae9677b094/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -2205,12 +2205,12 @@
         1
       ],
       "preview": "https://img.faz-o-eli.online/ufcfightpass.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/ufcfightpass",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/ufcfightpass",
       "categoryNames": [
         "Todos",
         "Esportes"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/0095c8c814f8e33b3243815b51ac1960/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/0095c8c814f8e33b3243815b51ac1960/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -2222,12 +2222,12 @@
         4
       ],
       "preview": "https://img.faz-o-eli.online/universaltv.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/universaltv",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/universaltv",
       "categoryNames": [
         "Todos",
         "Filmes e Séries"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/7d607d14bdc59bcdc6bfaa055ec20410/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/7d607d14bdc59bcdc6bfaa055ec20410/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -2239,12 +2239,12 @@
         4
       ],
       "preview": "https://img.faz-o-eli.online/warnerchannel.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/warnerchannel",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/warnerchannel",
       "categoryNames": [
         "Todos",
         "Filmes e Séries"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/176ef5a2e7d424c92ebc1da2dac40ff1/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/176ef5a2e7d424c92ebc1da2dac40ff1/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -2257,13 +2257,13 @@
         7
       ],
       "preview": "https://img.faz-o-eli.online/xsports.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/xsports",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/xsports",
       "categoryNames": [
         "Todos",
         "Esportes",
         "Variedades"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/f7509abb9e9edb60b950a81c7450fa7e/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/f7509abb9e9edb60b950a81c7450fa7e/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -2276,13 +2276,13 @@
         1
       ],
       "preview": "https://img.faz-o-eli.online/pt_abola.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/pt_abola",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/pt_abola",
       "categoryNames": [
         "Todos",
         "Portugal",
         "Esportes"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/2515baa11fe47e41305a9baa7814d215/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/2515baa11fe47e41305a9baa7814d215/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -2295,13 +2295,13 @@
         1
       ],
       "preview": "https://img.faz-o-eli.online/pt_benficatv.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/pt_benficatv",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/pt_benficatv",
       "categoryNames": [
         "Todos",
         "Portugal",
         "Esportes"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/2a83033c67fb7b5b363fc9b79bddbd2a/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/2a83033c67fb7b5b363fc9b79bddbd2a/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -2314,13 +2314,13 @@
         1
       ],
       "preview": "https://img.faz-o-eli.online/pt_canal11.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/pt_canal11",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/pt_canal11",
       "categoryNames": [
         "Todos",
         "Portugal",
         "Esportes"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/597e12c86abbb0a1d194502aa0c9089c/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/597e12c86abbb0a1d194502aa0c9089c/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -2333,13 +2333,13 @@
         1
       ],
       "preview": "https://img.faz-o-eli.online/pt_eleven1.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/pt_eleven1",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/pt_eleven1",
       "categoryNames": [
         "Todos",
         "Portugal",
         "Esportes"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/24b23412032130fd7349c318d6235aac/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/24b23412032130fd7349c318d6235aac/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -2352,13 +2352,13 @@
         1
       ],
       "preview": "https://img.faz-o-eli.online/pt_eleven2.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/pt_eleven2",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/pt_eleven2",
       "categoryNames": [
         "Todos",
         "Portugal",
         "Esportes"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/c5cdc8846e5a2cdb1fde31d6252ee2ed/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/c5cdc8846e5a2cdb1fde31d6252ee2ed/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -2371,13 +2371,13 @@
         1
       ],
       "preview": "https://img.faz-o-eli.online/pt_eleven3.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/pt_eleven3",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/pt_eleven3",
       "categoryNames": [
         "Todos",
         "Portugal",
         "Esportes"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/48c901296b3d9f7372208898982f5c80/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/48c901296b3d9f7372208898982f5c80/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -2390,13 +2390,13 @@
         1
       ],
       "preview": "https://img.faz-o-eli.online/pt_sportv1.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/pt_sportv1",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/pt_sportv1",
       "categoryNames": [
         "Todos",
         "Portugal",
         "Esportes"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/028cd8d8b617abc5c7277df046aba44c/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/028cd8d8b617abc5c7277df046aba44c/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -2409,13 +2409,13 @@
         1
       ],
       "preview": "https://img.faz-o-eli.online/pt_sportv2.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/pt_sportv2",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/pt_sportv2",
       "categoryNames": [
         "Todos",
         "Portugal",
         "Esportes"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/26826e44af6529d9a887b359e1ac2572/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/26826e44af6529d9a887b359e1ac2572/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -2428,13 +2428,13 @@
         1
       ],
       "preview": "https://img.faz-o-eli.online/pt_sportv3.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/pt_sportv3",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/pt_sportv3",
       "categoryNames": [
         "Todos",
         "Portugal",
         "Esportes"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/09151284b99f035f53ac00102e21613e/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/09151284b99f035f53ac00102e21613e/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -2447,13 +2447,13 @@
         1
       ],
       "preview": "https://img.faz-o-eli.online/pt_sportv4.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/pt_sportv4",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/pt_sportv4",
       "categoryNames": [
         "Todos",
         "Portugal",
         "Esportes"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/5a437bd10f6e5cca3d41f07d2942c215/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/5a437bd10f6e5cca3d41f07d2942c215/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -2466,13 +2466,13 @@
         1
       ],
       "preview": "https://img.faz-o-eli.online/pt_sportv5.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/pt_sportv5",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/pt_sportv5",
       "categoryNames": [
         "Todos",
         "Portugal",
         "Esportes"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/34ada12e30d8a5e39ca8491428cba3d7/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/34ada12e30d8a5e39ca8491428cba3d7/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -2485,13 +2485,13 @@
         1
       ],
       "preview": "https://img.faz-o-eli.online/pt_sportv6.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/pt_sportv6",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/pt_sportv6",
       "categoryNames": [
         "Todos",
         "Portugal",
         "Esportes"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/7b3783edfa31bae8ace16325efe114a7/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/7b3783edfa31bae8ace16325efe114a7/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -2504,13 +2504,13 @@
         1
       ],
       "preview": "https://img.faz-o-eli.online/pt_sportv7.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/pt_sportv7",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/pt_sportv7",
       "categoryNames": [
         "Todos",
         "Portugal",
         "Esportes"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/8602e1ab0efa7085d59839cf8764c395/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/8602e1ab0efa7085d59839cf8764c395/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -2523,13 +2523,13 @@
         2
       ],
       "preview": "https://img.faz-o-eli.online/24h_chaves.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/24h_chaves",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/24h_chaves",
       "categoryNames": [
         "Todos",
         "Variedades",
         "Infantil"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/2a670c222cc118edbd8603b25486a1ab/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/2a670c222cc118edbd8603b25486a1ab/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -2542,13 +2542,13 @@
         2
       ],
       "preview": "https://img.faz-o-eli.online/24h_dragonball.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/24h_dragonball",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/24h_dragonball",
       "categoryNames": [
         "Todos",
         "Variedades",
         "Infantil"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/742a8d12c0a3ef5b594817ec18504f71/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/742a8d12c0a3ef5b594817ec18504f71/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -2560,12 +2560,12 @@
         7
       ],
       "preview": "https://img.faz-o-eli.online/24h_friends.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/24h_friends",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/24h_friends",
       "categoryNames": [
         "Todos",
         "Variedades"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/e6761d1dbb7b6189e20ee04bac7ff4c3/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/e6761d1dbb7b6189e20ee04bac7ff4c3/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -2578,13 +2578,13 @@
         2
       ],
       "preview": "https://img.faz-o-eli.online/24h_naruto.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/24h_naruto",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/24h_naruto",
       "categoryNames": [
         "Todos",
         "Variedades",
         "Infantil"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/09dca9dbbcf21ec9eb7f9dfeaa5f1eb7/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/09dca9dbbcf21ec9eb7f9dfeaa5f1eb7/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -2597,13 +2597,13 @@
         2
       ],
       "preview": "https://img.faz-o-eli.online/24h_simpsons.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/24h_simpsons",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/24h_simpsons",
       "categoryNames": [
         "Todos",
         "Variedades",
         "Infantil"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/d671840087a5ba4ae2b3c680e355ed6c/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/d671840087a5ba4ae2b3c680e355ed6c/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -2615,12 +2615,12 @@
         7
       ],
       "preview": "https://img.faz-o-eli.online/24h_odeiachris.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/24h_odeiachris",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/24h_odeiachris",
       "categoryNames": [
         "Todos",
         "Variedades"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/d1ec15ad300f8d6ab628794388f9dbfe/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/d1ec15ad300f8d6ab628794388f9dbfe/error.txt",
       "captureStatus": "captured"
     },
     {
@@ -2633,13 +2633,13 @@
         2
       ],
       "preview": "https://img.faz-o-eli.online/24h_picapau.prev.png",
-      "url": "https://70d97bb087c415c253fabb925bccbd75.embedtv.cc/24h_picapau",
+      "url": "https://b0f648597eec0c9e3c9a2c89754880c7.embedtv.cc/24h_picapau",
       "categoryNames": [
         "Todos",
         "Variedades",
         "Infantil"
       ],
-      "errorTxt": "https://8082b6e2113420e4c4f714d5b2223041.s25-cloudfront-net.lat/stream/290b7499d00602751cff968e500dd312/error.txt",
+      "errorTxt": "https://d1fef5dd7e4357116a4a09ec1bbffcaa.s25-cloudfront-net.lat/stream/290b7499d00602751cff968e500dd312/error.txt",
       "captureStatus": "captured"
     }
   ]

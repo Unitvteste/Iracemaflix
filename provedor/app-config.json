@@ -7,22 +7,64 @@
   "CACHE_TTL_MS": "900000",
   "CATALOG_LIMIT": "0",
   "MAX_M3U_ITEMS": "0",
-  "XTREAM_TIMEOUT_MS": 15000,
+  "IMDB_STREAM_TIMEOUT_MS": 25000,
+  "XTREAM_TIMEOUT_MS": 25000,
+  "PROVIDER_SEARCH_PRIORITY": [
+    "megaembed",
+    "embedmovies",
+    "redeflix",
+    "playerflix",
+    "myembed",
+    "fshd",
+    "pomfy",
+    "rivo",
+    "vaqueirofilmes",
+    "pobreflix",
+    "framextv"
+  ],
+  "XTREAM_SEARCH_PRIORITY": [
+    "anbinvlink",
+    "5ce",
+    "cms-central",
+    "ultclub",
+    "capyplay-xtream",
+    "4kplay",
+    "teleflixhd",
+    "afg154",
+    "murbax",
+    "cerejadoce",
+    "claxys",
+    "clbtw",
+    "azqkdk-xtream",
+    "cdn4k-live-89625",
+    "cdn4k-live-aripai",
+    "primary",
+    "one-tv",
+    "oneplayfastpro",
+    "env-beleco",
+    "env-novomundo",
+    "lbplay"
+  ],
   "LIVE_TV_API_BASE": "https://api.reidoscanais.my",
   "LIVE_TV_CACHE_MS": "300000",
   "LIVE_TV_RESOLVE_CACHE_MS": "600000",
   "LIVE_TV_MAX_CAPTURE_PAGES": "8",
-  "LIVE_TV_PAGE_TIMEOUT_MS": "6000",
-  "PROVIDER_RESOLVER_TIMEOUT_MS": "12000",
+  "LIVE_TV_PAGE_TIMEOUT_MS": 25000,
+  "PROVIDER_RESOLVER_TIMEOUT_MS": "25000",
   "PROVIDER_RESOLVER_MAX_HTML_BYTES": "1000000",
   "PROVIDER_RESOLVER_MAX_IFRAME_DEPTH": "2",
   "PROVIDER_RESOLVER_MAX_PAGES": "8",
-  "M3U_SOURCE_TIMEOUT_MS": 15000,
-  "M3U_TIMEOUT_MS": 15000,
+  "M3U_SOURCE_TIMEOUT_MS": 25000,
+  "M3U_TIMEOUT_MS": 25000,
   "EMBEDTV_API_BASE": "https://embedtv.cc",
   "EMBEDTV_SOURCE_REFERER": "https://embedtv.cc/",
   "EMBEDTV_FALLBACK_FILE": "./embedTV.json",
   "M3U_SOURCES": [
+    {
+      "id": "smart-cms-central",
+      "name": "Smart CMS M3U",
+      "url": "http://smart.cms-central.ovh:80/get.php?username=Voana2025&password=Raquel2025&type=m3u_plus"
+    },
     {
       "id": "murbax",
       "name": "Murbax M3U",
@@ -67,6 +109,30 @@
       "id": "lunarsv",
       "name": "LunarSV M3U",
       "url": "http://lunarsv.top/get.php?username=marciomuge&password=2658w5d2f3c5&type=m3u_plus"
+    },
+    {
+      "id": "flix-cdn700",
+      "name": "Flix CDN700 M3U",
+      "url": "http://flix.cdn700.sbs/get.php?username=Gabriel12&password=Gabriel12&type=m3u_plus"
+    },
+    {
+      "id": "capyplay",
+      "name": "CapyPlay M3U",
+      "url": "http://capyplay.space/get.php?username=797688011&password=268968497&type=m3u_plus"
+    },
+    {
+      "id": "azqkdk",
+      "name": "AZQKDK M3U",
+      "url": "http://azqkdk.club/get.php?username=1705821282&password=centralsegura&type=m3u_plus"
     }
-  ]
+  ],
+  "PROVIDER_SOURCE_TIMEOUT_MS": 25000,
+  "DIRECT_PROVIDER_API_TIMEOUT_MS": 25000,
+  "XTREAM_IMDB_TIMEOUT_MS": 25000,
+  "CHANNEL_XTREAM_TIMEOUT_MS": 25000,
+  "CHANNEL_M3U_TIMEOUT_MS": 25000,
+  "IMDB_M3U_TIMEOUT_MS": 25000,
+  "EMBED_CANAIS_TIMEOUT_MS": 25000,
+  "LIVE_TV_CAPTURE_TIMEOUT_MS": 25000,
+  "M3U_SOURCE_BODY_TIMEOUT_MS": 120000
 }

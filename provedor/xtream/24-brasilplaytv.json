@@ -5,6 +5,6 @@
   "username": "asd97571830",
   "password": "Zaptv2024",
   "playlistUrl": "http://brasilplaytv.com/get.php?username=asd97571830&password=Zaptv2024&type=m3u_plus",
-  "xtreamTimeoutMs": 55000,
-  "m3uTimeoutMs": 90000
+  "xtreamTimeoutMs": 25000,
+  "m3uTimeoutMs": 25000
 }

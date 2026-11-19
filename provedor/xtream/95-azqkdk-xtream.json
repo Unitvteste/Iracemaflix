@@ -1,0 +1,10 @@
+{
+  "id": "azqkdk-xtream",
+  "sourceName": "AZQKDK",
+  "base": "http://azqkdk.club",
+  "username": "1705821282",
+  "password": "centralsegura",
+  "playlistUrl": "http://azqkdk.club/get.php?username=1705821282&password=centralsegura&type=m3u_plus",
+  "xtreamTimeoutMs": 25000,
+  "m3uTimeoutMs": 25000
+}

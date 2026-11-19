@@ -5,6 +5,6 @@
   "username": "aripai",
   "password": "i2p4t6v10",
   "playlistUrl": "http://cdn4k.live:80/get.php?username=aripai&password=i2p4t6v10&type=m3u_plus&output=ts",
-  "xtreamTimeoutMs": 45000,
-  "m3uTimeoutMs": 90000
+  "xtreamTimeoutMs": 25000,
+  "m3uTimeoutMs": 25000
 }

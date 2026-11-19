@@ -5,6 +5,6 @@
   "username": "21984473386tv1",
   "password": "12345678Ab",
   "playlistUrl": "http://masterflix.vip/get.php?username=21984473386tv1&password=12345678Ab&type=m3u_plus",
-  "xtreamTimeoutMs": 60000,
-  "m3uTimeoutMs": 12000
+  "xtreamTimeoutMs": 25000,
+  "m3uTimeoutMs": 25000
 }
